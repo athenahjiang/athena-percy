@@ -1,0 +1,61 @@
+Issue key,Issue id,Parent id,Summary,Custom field (Story Points),Custom field (Epic Link)
+COLTEC-1026,2861173,,Remove 'BETA UPDATE' lozenge from Eligibility Header,,COLTEC-903
+COLTEC-1061,2885977,,Add STC 98 to Default STC Favorites,2,COLTEC-903
+COLTEC-1014,2852206,,Remove Beta Survey Link from Eligibility Header,1,COLTEC-903
+COLTEC-586,2617578,,Check More Empty Benefits Conditions,2,COLTEC-903
+COLTEC-897,2788582,,Upgrade Athena Common Packages in eligibility-service,2,COLTEC-737
+COLTEC-1016,2856633,,Add cxflow to patient-eligibility-details repo,1,COLTEC-908
+COLTEC-1017,2856635,,Add cxflow to custom-eligibility-check repo,1,COLTEC-908
+COLTEC-1022,2857067,,"Figure out what all columns need to be widen, add logs",3,COLTEC-908
+COLTEC-904,2794294,,Add scopes to Eligibility buscalls that are using AllowMDP bypass,3,COLTEC-908
+COLTEC-652,2642515,,"Spike - KT EliD logging, monitoring, alerting, Dashboards",2,COLTEC-523
+COLTEC-620,2634496,,EliD knowledge Transfer,3,COLTEC-523
+COLTEC-648,2642511,,Spike - KT EliD Benefits Tab,5,COLTEC-523
+COLTEC-659,2644928,,Redo COLTEC-541,2,COLTEC-523
+COLTEC-746,2695983,,Amplitude changes for EliD,3,COLTEC-523
+COLTEC-855,2756406,,"Add AppDynamics for measuring page load, each tab load for EliD",3,COLTEC-523
+COLTEC-30,2111558,,[Spike] Investigate fix for COLTEC-13,2,COLTEC-524
+COLTEC-774,2717277,,SPIKE: Investigate COLTEC-254 - MASS GENERAL BRIGHAM ACO Eligibility Response Issue,2,COLTEC-524
+COLTEC-400,2497216,,[19661] Invalid success response from POST:/patients/{patientid}/insurances/{insuranceid}/benefitdetails,3,COLTEC-524
+COLTEC-916,2805404,,[Spike] Answer Sara's query on Copay confluence page,3,COLTEC-929
+COLTEC-1167,2968838,,Andrea AWS Training,3,COLTEC-959
+COLTEC-1142,2942678,,[SPIKE] Investigate G Code date logic underlying COLTEC-1097,3,COLTEC-959
+COLTEC-1222,3022923,,Add Checkmarx integration to custom-eligibility-check,2,COLTEC-959
+COLTEC-1300,3054636,,Add Checkmarx integration to patient-eligibility-details,1,COLTEC-959
+COLTEC-553,2606816,,Remove filters from GetProviderOptionListData call in CEC,2,COLTEC-274
+COLTEC-435,2519209,,Log errors AthenaNetError,2,COLTEC-408
+COLTEC-509,2579478,,"Hide ""Custom eligibility check"" when eligibility service is unavailable",2,COLTEC-407
+COLTEC-502,2571989,,Spike - Investigate areas where indices are necessary ,2,COLTEC-407
+COLTEC-574,2612586,,Create AppDynamics Dashboard,2,COLTEC-407
+COLTEC-541,2600093,,Update id types from int to bigint,2,COLTEC-407
+COLTEC-1138,2939971,,Create SOP and assistive py script for DR,3,COLTEC-1084
+COLTEC-950,2832523,,[Spike]FileCloud S3 onboarding,3,COLTEC-896
+COLTEC-1027,2862629,,Monolith Event post processing,2,COLTEC-896
+COLTEC-935,2827799,,Requesting a New FileType in FileCloud,2,COLTEC-896
+COLTEC-931,2825661,,Accessing FileCloud from INS account - S3 onboarding,3,COLTEC-896
+COLTEC-954,2832758,,Spike - Create SOP on DLQ message and its error,2,COLTEC-896
+COLTEC-720,2685625,,Header Styling Updates,2,COLTEC-699
+COLTEC-726,2685631,,Add 'Plan Type' to header,2,COLTEC-699
+COLTEC-638,2341068,,Add PCP Column on Elig History tab - Front End Changes,3,COLTEC-698
+COLTEC-728,2685633,,Eligibility History Tab Copy Changes,1,COLTEC-698
+COLTEC-836,2751652,,Display the right ordinal name on EliD,3,COLTEC-459
+COLTEC-934,2826458,,add rollout of COLTEC836_DISPLAY_RIGHT_ORDINAL_NAME,,COLTEC-459
+COLTEC-675,2654163,,Grace Period Missing from New UX,2,COLTEC-676
+COLTEC-743,2694352,,SPIKE: Determine Cause of Missing Hospice Segments,2,COLTEC-676
+COLTEC-867,2767779,,Implement error banner for DOS dropdown selection,2,COLTEC-676
+COLTEC-841,2751947,,Fetch username from JWT,2,COLTEC-840
+COLTEC-1098,2922882,,In ELID bem-helper.ts Add NAMESPACE,1,COLTEC-840
+COLTEC-779,2719552,2341068,Front end - PCP on history tab,,
+COLTEC-752,2703761,2695983,Implement Amplitude changes,,
+COLTEC-583,2615985,2606816,Test loading full provider list,,
+COLTEC-535,2594853,2579478,"Perl side code change: hide ""Custom eligibility check"" when eligibility service is unavailable",,
+COLTEC-582,2615982,2606816,Implement full Provider list,,
+COLTEC-548,2603499,,Copy up of //anet/tasks/COLTEC_filtered/coltec535_hide_custom_eligibility_check_when_eligibility_service_is_unavailable on Thu Jan 26 16:28:25 2023,,
+COLTEC-862,2764186,2644928,Superfly-way decision- should we or should we not?,,
+COLTEC-773,2715259,2685631,Header 'Plan Type' Frontend Changes,,
+COLTEC-753,2703762,2695983,Athena Conf PR for toggle,,
+COLTEC-873,2775130,2579644,Bump EliS version to 1.0.3 and deploy,,
+COLTEC-592,2621707,2608062,Release patient-eligibility-details 0.2.3 to COLTECALPHA clients,,
+COLTEC-1157,2961478,,Copy up of //anet/tasks/COLTEC_filtered/coltec1027_monolith_event_post_processing on Thu Oct 19 14:54:31 2023,,
+COLTEC-939,2828718,,Copy up of //anet/tasks/COLTEC_filtered/coltec836_display_the_right_ordinal_name_on_elid on Wed Jul 12 14:31:22 2023,,
+,,,,99,

@@ -1,0 +1,77 @@
+{
+    "version": "0",
+    "id": "63ca4c5c-af57-ae1d-6a3d-964a45d73c8f",
+    "detail-type": "Eligibility.checked",
+    "source": "collector.eligibility",
+    "account": "466489598210",
+    "time": "2023-10-30T15:25:08Z",
+    "region": "us-east-1",
+    "resources":
+    [
+        "arn:aws:events:us-east-1:466489598210:endpoint/message-bus-global-endpoint-m-dev"
+    ],
+    "detail":
+    {
+        "source":
+        {
+            "observer":
+            {
+                "reference": "Organization/a-1.Practice-"
+            }
+        },
+        "resourceType": "AuditEvent",
+        "meta":
+        {
+            "versionId": "0"
+        },
+        "entity":
+        [
+            {
+                "what":
+                {
+                    "reference": "#payload"
+                }
+            }
+        ],
+        "agent":
+        [
+            {
+                "name": "collector.eligibility",
+                "requestor": "false"
+            }
+        ],
+        "contained":
+        [
+            {
+                "payload":
+                {
+                    "patientInsuranceId": "456",
+                    "checkedBy": "pjiang4",
+                    "eligibilityReceiver": "UHC_VPN",
+                    "benefitsVersion": "1",
+                    "patientId": "123",
+                    "dateOfService": "10/30/2023",
+                    "eligibilityClass": "UHC",
+                    "providerName": "bkaiser",
+                    "dateOfInquiry": "10/30/2023",
+                    "eligibilityTrackId": "789",
+                    "inquiryReason": "USER-REQUESTED",
+                    "providerId": "57",
+                    "subscriberId": "939798072",
+                    "contextId": "94",
+                    "result":
+                    {
+                        "code": "1"
+                    }
+                }
+            }
+        ],
+        "id": "8227AC14-7738-11EE-A225-EC427ABAC52E",
+        "type":
+        {
+            "system": "http://fhir.athena.io/CodeSystem/SubscriptionTopic",
+            "code": "Eligibility.checked"
+        },
+        "recorded": "2023-10-30T11:25:08-04:00"
+    }
+}

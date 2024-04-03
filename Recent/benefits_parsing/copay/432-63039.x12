@@ -1,0 +1,186 @@
+ISA*00*          *00*          *ZZ*042064683      *ZZ*043387530      *210720*1758*^*00501*818319432*0*P*:~
+GS*HB*RTE_5010*043387530*20210720*17584221*432*X*005010X279A1~
+ST*271*0001*005010X279A1~
+BHT*0022*11*B432.63039*20210720*17584221~
+HL*1**20*1~
+NM1*PR*2*AETNA INC*****PI*953402799~
+HL*2*1*21*1~
+NM1*1P*1*Sample*Laura*T***XX*1245319599~
+HL*3*2*22*0~
+TRN*2*B432.63039*9182736450~
+NM1*IL*1*MILLER*DANIEL*C***MI*W214778037~
+REF*18*0869768~
+REF*6P*086976802000101*ATHENAHEALTH, INC.~
+N3*305 WALDO STATION RD~
+N4*WALDO*ME*04915~
+DMG*D8*19761001*M~
+DTP*346*D8*20210101~
+DTP*472*D8*20210720~
+DTP*356*D8*20150101~
+EB*L*EMP*30*PS~
+LS*2120~
+NM1*P3*2*PCP SELECTION NOT REQUIRED~
+LE*2120~
+EB*W~
+LS*2120~
+NM1*PR*2*Aetna~
+N3*PO Box 14079~
+N4*Lexington*KY*40512~
+LE*2120~
+EB*1*EMP*30*PS*HSA Aetna Choice POS II~
+EB*C*IND*30***23*3000*****Y~
+MSG*All Other In-Network Providers~
+MSG*INT MED AND RX,DED INCLUDED IN OOP~
+EB*C*IND*30***29*0*****Y~
+EB*G*IND*30****4500*****Y~
+MSG*All Other In-Network Providers~
+MSG*INT MED AND RX~
+EB*G*IND*30***29*1500*****Y~
+EB*C*IND*30***23*6000*****N~
+MSG*INT MED AND RX,DED INCLUDED IN OOP~
+EB*C*IND*30***29*3000*****N~
+EB*G*IND*30****9000*****N~
+MSG*INT MED AND RX~
+EB*G*IND*30***29*6000*****N~
+EB*F*EMP*30*********W~
+MSG*Plan Requires Precert~
+EB*F*EMP*30~
+MSG*Plan includes NAP, but program limitations may apply in relation to Third Party Discount Networks. Final determination is made at the time of claim processing.~
+MSG*We are unable to determine your participation status with this patient's network.~
+MSG*SELF-FUNDED~
+EB*H*EMP*30***32~
+EB*1*EMP*33^86^98^UC^50^48^1^47^AL^MH^88~
+EB*A*EMP*33*****0****Y~
+MSG*All Other In-Network Providers~
+MSG*Chiropractor Visit or Evaluation~
+MSG*Lab Performed by Chiropractor~
+MSG*Xray by Chiropractor~
+MSG*Manipulation by Chiropractor~
+III*ZZ*11~
+EB*A*EMP*86*****0****Y~
+MSG*All Other In-Network Providers~
+MSG*Non Emergency use of Emergency Room~
+MSG*Emergency Room Physician~
+MSG*Emergency use of Emergency Room~
+EB*A*EMP*98*****0****Y~
+MSG*All Other In-Network Providers~
+MSG*GYN Visit~
+MSG*Specialist Visit or Evaluation~
+MSG*Primary Care Visit or Evaluation~
+III*ZZ*11~
+EB*A*EMP*98*****0****Y~
+MSG*All Other In-Network Providers~
+MSG*Walk In Clinic Visit~
+EB*A*EMP*UC^86*****0****Y~
+MSG*All Other In-Network Providers~
+MSG*Urgent Care~
+MSG*Non Urgent Services at an Urgent Care Facility~
+EB*A*EMP*50*****0****Y~
+MSG*All Other In-Network Providers~
+MSG*Facility~
+III*ZZ*22~
+EB*A*EMP*48*****0****Y~
+MSG*All Other In-Network Providers~
+MSG*Medical Ancillary~
+MSG*Semi Private Room and Board~
+MSG*Intensive Care~
+EB*B*EMP*33****0*****Y~
+MSG*All Other In-Network Providers~
+MSG*Chiropractor Visit or Evaluation~
+MSG*Lab Performed by Chiropractor~
+MSG*Xray by Chiropractor~
+MSG*Manipulation by Chiropractor~
+III*ZZ*11~
+EB*B*EMP*86****0*****Y~
+MSG*All Other In-Network Providers~
+MSG*Non Emergency use of Emergency Room~
+MSG*Emergency Room Physician~
+MSG*Emergency use of Emergency Room~
+EB*B*EMP*98****0*****Y~
+MSG*All Other In-Network Providers~
+MSG*GYN Visit~
+MSG*Specialist Visit or Evaluation~
+MSG*Primary Care Visit or Evaluation~
+III*ZZ*11~
+EB*B*EMP*98****0*****Y~
+MSG*All Other In-Network Providers~
+MSG*Walk In Clinic Visit~
+EB*B*EMP*UC^86****0*****Y~
+MSG*All Other In-Network Providers~
+MSG*Urgent Care~
+MSG*Non Urgent Services at an Urgent Care Facility~
+EB*B*EMP*50****0*****Y~
+MSG*All Other In-Network Providers~
+MSG*Facility~
+III*ZZ*22~
+EB*B*EMP*48****0*****Y~
+MSG*All Other In-Network Providers~
+MSG*Medical Ancillary~
+MSG*Semi Private Room and Board~
+MSG*Intensive Care~
+EB*A*EMP*33*****.3****N~
+MSG*Chiropractor Visit or Evaluation,COINS APPLIES TO OUT OF POCKET~
+MSG*Lab Performed by Chiropractor,COINS APPLIES TO OUT OF POCKET~
+MSG*Xray by Chiropractor,COINS APPLIES TO OUT OF POCKET~
+MSG*Manipulation by Chiropractor,COINS APPLIES TO OUT OF POCKET~
+III*ZZ*11~
+EB*A*EMP*86*****.1****N~
+MSG*Non Emergency use of Emergency Room,COINS APPLIES TO OUT OF POCKET~
+EB*A*EMP*86*****0****N~
+MSG*Emergency Room Physician~
+MSG*Emergency use of Emergency Room~
+EB*A*EMP*98*****.3****N~
+MSG*GYN Visit,COINS APPLIES TO OUT OF POCKET~
+MSG*Specialist Visit or Evaluation,COINS APPLIES TO OUT OF POCKET~
+MSG*Primary Care Visit or Evaluation,COINS APPLIES TO OUT OF POCKET~
+III*ZZ*11~
+EB*A*EMP*98*****.3****N~
+MSG*Walk In Clinic Visit,COINS APPLIES TO OUT OF POCKET~
+EB*A*EMP*UC^86*****.3****N~
+MSG*Urgent Care,COINS APPLIES TO OUT OF POCKET~
+MSG*Non Urgent Services at an Urgent Care Facility,COINS APPLIES TO OUT OF POCKET~
+EB*A*EMP*50*****.3****N~
+MSG*Facility,COINS APPLIES TO OUT OF POCKET~
+III*ZZ*22~
+EB*A*EMP*48*****.3****N~
+MSG*Semi Private Room and Board,COINS APPLIES TO OUT OF POCKET~
+MSG*Intensive Care,COINS APPLIES TO OUT OF POCKET~
+EB*A*EMP*48*****.3****N~
+MSG*Facility,COINS APPLIES TO OUT OF POCKET~
+III*ZZ*21~
+EB*B*EMP*33****0*****N~
+MSG*Chiropractor Visit or Evaluation~
+MSG*Lab Performed by Chiropractor~
+MSG*Xray by Chiropractor~
+MSG*Manipulation by Chiropractor~
+III*ZZ*11~
+EB*B*EMP*86****0*****N~
+MSG*Non Emergency use of Emergency Room~
+MSG*Emergency Room Physician~
+MSG*Emergency use of Emergency Room~
+EB*B*EMP*98****0*****N~
+MSG*GYN Visit~
+MSG*Specialist Visit or Evaluation~
+MSG*Primary Care Visit or Evaluation~
+III*ZZ*11~
+EB*B*EMP*98****0*****N~
+MSG*Walk In Clinic Visit~
+EB*B*EMP*UC^86****0*****N~
+MSG*Urgent Care~
+MSG*Non Urgent Services at an Urgent Care Facility~
+EB*B*EMP*50****0*****N~
+MSG*Facility~
+III*ZZ*22~
+EB*B*EMP*48****0*****N~
+MSG*Semi Private Room and Board~
+MSG*Intensive Care~
+EB*B*EMP*48****0*****N~
+MSG*Facility~
+III*ZZ*21~
+EB*I*EMP*98*********W~
+MSG*Teladoc Virtual Primary Care General Medicine/EXCLUSION~
+MSG*Teladoc Virtual Primary Care Physician includes Wellness/EXCLUSION~
+MSG*Teladoc Virtual Primary Care Physician does not include Wellness/EXCLUSION~
+SE*182*0001~
+GE*1*432~
+IEA*1*818319432~

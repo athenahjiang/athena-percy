@@ -1,0 +1,26 @@
+<Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+  <collectionProp name="Arguments.arguments">
+    <elementProp name="host" elementType="Argument">
+      <stringProp name="Argument.name">host</stringProp>
+      <stringProp name="Argument.value">eligibility.dev.api.athena.io</stringProp>
+      <stringProp name="Argument.metadata">=</stringProp>
+    </elementProp>
+    <elementProp name="authToken" elementType="Argument">
+      <stringProp name="Argument.name">authToken</stringProp>
+      <stringProp name="Argument.value">
+        eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk
+      </stringProp>
+      <stringProp name="Argument.metadata">=</stringProp>
+    </elementProp>
+    <elementProp name="prefix" elementType="Argument">
+      <stringProp name="Argument.name">prefix</stringProp>
+      <stringProp name="Argument.value">/eligibility-service_947726-dev</stringProp>
+      <stringProp name="Argument.metadata">=</stringProp>
+    </elementProp>
+    <elementProp name="port" elementType="Argument">
+      <stringProp name="Argument.name">port</stringProp>
+      <stringProp name="Argument.value"></stringProp>
+      <stringProp name="Argument.metadata">=</stringProp>
+    </elementProp>
+  </collectionProp>
+</Arguments>

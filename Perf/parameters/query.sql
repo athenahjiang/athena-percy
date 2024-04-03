@@ -1,0 +1,12 @@
+with TRACKCNT as 
+(
+	select PATIENTID, PATIENTINSURANCEID, count(*) as CNT 
+	from ELIGIBILITYTRACK
+	where PATIENTID is not null
+	and PATIENTINSURANCEID is not null
+	group by PATIENTID, PATIENTINSURANCEID
+) 
+select 432 as CONTEXTID, PATIENTID, PATIENTINSURANCEID, CNT
+from TRACKCNT where CNT>15 and CNT<35
+fetch first 900 rows only
+;

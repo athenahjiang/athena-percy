@@ -1,0 +1,74 @@
+# $ATHENA_HOME/htdocs/schedule/checkin.esp
+
+my $colcr_start_classic_app_on_checkin = Athena::RolloutToggle::GetEnabledVersion($dbh, {
+	KEY => 'COLCR_START_CLASSIC_APP_ON_CHECKIN'
+}) eq 'ON';
+warn "percy: colcr_start_classic_app_on_checkin: $colcr_start_classic_app_on_checkin \n";
+
+my @patientinsurancedetails = BusCall::PatientInsurance::InsurancePackageSQL($dbh, {
+	PATIENTID => $patientid,
+})->TableHash($dbh);
+foreach my $patientinsurancedetail (@patientinsurancedetails) {
+	$patientinsuranceid{$patientinsurancedetail->{SEQUENCENUMBER} - 1} = $patientinsurancedetail->{ID};
+}
+
+my $react_apps_start_script;
+if ($colcr_start_classic_app_on_checkin) {
+	my $newfinancials_checkin_conf = eval { Athena::Conf::AthenaNet::Rollout('colkon')->{new_financials_checkin_conf}; } // 0;
+
+	use Data::Dumper;
+	my $context_id = GetPracticeID($dbh);
+	warn "percy: context_id: $context_id \n";
+
+	my $athena_conf_eligibility_service = Athena::Conf::AthenaNet::InternalServices('collector')->{eligibility_service};
+	my $baseurl = $athena_conf_eligibility_service->{baseurl};
+	$baseurl = "localhost:8080";
+	warn "percy: baseurl: $baseurl \n";
+
+	warn "percy: patientid: $patientid \n";
+
+	warn "percy: patientinsuranceid: ",Dumper(%patientinsuranceid),"\n";
+
+	# start react apps using StartClassicApp
+	$react_apps_start_script = Appointment::Views::CheckIn::GenerateStartReactAppJS($dbh, {
+		USERNAME         => $session{USERNAME},
+		PERCYTESTAPP => {
+			CONTEXTID => $context_id,
+			PATIENTID => $patientid,
+			PATIENTINSURANCEID => $patientinsuranceid{0},
+			BASEURL => $baseurl,
+		},
+		CONTACTMANAGEMENTAPP => {
+			PATIENTID      => EscapeJS($patientid),
+			APPOINTMENTID  => EscapeJS($appointmentid),
+			EMBEDDEDINPAGE => 'CheckIn',
+			CONTAINERID    => 'new-contact-section'
+		},
+		PATIENTPORTALINFOAPP => {
+			PATIENTID      => EscapeJS($patientid),
+			APPOINTMENTID  => EscapeJS($appointmentid),
+			EMBEDDEDINPAGE => 'CheckIn',
+			CONTAINERID    => 'new-contact-section'
+		},
+		$newfinancials_checkin_conf
+			? (
+				PATIENTFINANCIALAPP => {
+					PATIENTID      => EscapeJS($patientid),
+					APPOINTMENTID  => EscapeJS($appointmentid),
+					CONTAINERID => 'patient_financials',
+				},
+			) : (),
+	});
+}
+
+	print "<div id='toswidget'>";
+	print PatientPayment::CheckIn::GenerateCollectPaymentHTML($dbh, {
+		PATIENTID => $patientid,
+		APPOINTMENTID => $appointmentid,
+		PRIMARYPATIENTINSURANCEID => $isactiveinsurance ? $default{PRIMARYPATIENTINSURANCEID} : undef,
+		PAGE => 'CHECKIN',
+		EPAYMENT => $epaymentsbetaon,
+		PATIENTSTATEMENTDATA => $patientstatementdata,
+		OUTSTANDINGDATA => $outstandingdata,
+	});
+	print "</div>";

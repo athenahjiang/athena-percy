@@ -1,0 +1,93 @@
+Issue key,Issue id,Parent id,Summary,Custom field (Story Points),Custom field (Epic Link)
+COLTEC-1080,2908419,,Prepare Copay Nimbus App on React Side,3,COLTEC-894
+COLTEC-1106,2928079,,[Spike] Copay base level structure and base APIs design ,3,COLTEC-894
+COLTEC-1033,2866596,,Spike - Copay tech design discussion,8,COLTEC-894
+COLTEC-1063,2891697,,[SPIKE] Copay Nimbus App Insertion,3,COLTEC-894
+COLTEC-1101,2924026,,User favorites are not getting saved with EliD 1.3.2 version,5,COLTEC-903
+COLTEC-920,2809860,,Update Navigation from Custom Elig Check to go to Service Types tab for the Date of Service Requested,2,COLTEC-903
+COLTEC-1177,2972868,,Release ELID 1.3.6 & CEC 1.2.1,2,COLTEC-903
+COLTEC-1144,2948842,,Create SNS Topic datafabirc_xmatters,2,COLTEC-737
+COLTEC-1030,2863961,,"Clean up unused AWS resources, feature branch",2,COLTEC-737
+COLTEC-909,2797592,,[Fetch All Improvements] Add Athenaconf Rollout get_enhanced_eligibility_history,0.5,COLTEC-523
+COLTEC-677,2657572,,[SPIKE] Fetch All Bus Call Improvements,3,COLTEC-523
+COLTEC-924,2816430,,[Fetch All Improvements] Add Athenaconf Rollout get_enhanced_benefit_details,0.5,COLTEC-523
+COLTEC-647,2642510,,Spike - KT EliD Summary Tab,3,COLTEC-523
+COLTEC-454,2531580,,Drain production data into snowflake,2,COLTEC-523
+COLTEC-738,2687732,,EliD learning,3,COLTEC-523
+COLTEC-827,2746893,,[Fetch All Improvements] Update FetchAllEligibilityInfo to use GetEnhancedEligibilityHistory,3,COLTEC-523
+COLTEC-828,2746894,,[Fetch All Improvements] Create app layer function GetEligibilityBenefitsFromTrack,3,COLTEC-523
+COLTEC-785,2722948,,Another Attempt To Fix Grafana Issue,1,COLTEC-523
+COLTEC-596,2624340,,Spike - Learn about Auto-scaling (timebox),3,COLTEC-523
+COLTEC-693,2669933,,Fix EliD styling.,1,COLTEC-523
+COLTEC-1253,3024577,,"Make ELID ""DOS Dropdown Oriented""",5,COLTEC-1122
+COLTEC-1221,3019612,,[Spike] Where should Copay data be filtered?,,COLTEC-1122
+COLTEC-1220,3019611,,[Spike] Investigate color options for dropdown,0,COLTEC-1122
+COLTEC-1155,2961077,,EliD 1.3.3 throwing error intermittently,5,COLTEC-959
+COLTEC-1196,2986832,,Investigate switch-to-legacy bugginess,2,COLTEC-959
+COLTEC-607,2630261,,Unable to Launch Eligibility Details in New Tab,,COLTEC-602
+COLTEC-623,2635048,,Hide Custom Eligibility Check on Quickview,2,COLTEC-602
+COLTEC-833,2749364,,[SPIKE] What Logic Drives Copay Type?,3,COLTEC-284
+COLTEC-486,2561685,,Identify benefits that are empty,5,COLTEC-274
+COLTEC-505,2574343,,Spike - Eligibility details 2.0 Header and Summary info consistency,2,COLTEC-274
+COLTEC-529,2593873,,Spike - Confirm non-existence of PHI/PII in logging.,2,COLTEC-407
+COLTEC-526,2590123,,Add Alert for MS Container memory usage,3,COLTEC-407
+COLTEC-591,2621597,,Optimize eligibility history endpoint ,2,COLTEC-407
+COLTEC-578,2612639,,"Review Grafana Prod dashboard to surface latency (avg), throughput and errors",3,COLTEC-407
+COLTEC-580,2615957,,Surface Percentile metrics and add to Grafana dashboard,2,COLTEC-407
+COLTEC-429,2514511,,Create grafana dashboards for our custom prometheus metrics,3,COLTEC-407
+COLTEC-1148,2952881,,Onboard Aurora to MDIP,3,COLTEC-1084
+COLTEC-1163,2967037,,Eventing Lambda Point at Aurora,2,COLTEC-1084
+COLTEC-1093,2922335,,Come up with Aurora deployment plan,3,COLTEC-1084
+COLTEC-1132,2939948,,Replicate app secret to us-west-2,1,COLTEC-1084
+COLTEC-1094,2922337,,Do the actual Aurora migration [dev],2,COLTEC-1084
+COLTEC-1096,2922340,,Do the actual Aurora migration [prod],3,COLTEC-1084
+COLTEC-1184,2979712,,Contribute to IAC Teams,,COLTEC-1146
+COLTEC-1007,2844784,,Spike - Future of ELIS Deployment - Jenkins Pipeline Separation,2,COLTEC-896
+COLTEC-927,2818707,,[SPIKE] Where Should Eligibility Data Live in the Future,2,COLTEC-896
+COLTEC-936,2828062,,[SPIKE] Eligibility Eventing Lambda,3,COLTEC-896
+COLTEC-1006,2841545,,Spike - Investigate alternative Lambda code deploy mechanism,2,COLTEC-896
+COLTEC-1002,2841323,,Insert the received track data into PSQL tables,3,COLTEC-896
+COLTEC-995,2841313,,Create Eli-S3 bucket to store benefits data,3,COLTEC-896
+COLTEC-1000,2841320,,Lambda Infra and message processing,5,COLTEC-896
+COLTEC-1039,2873182,,Optimize Lambda  DB connection during initialization,3,COLTEC-896
+COLTEC-1035,2871904,,Create new PSQL Track table,5,COLTEC-896
+COLTEC-1297,3051742,,Rebuild Integration,3,COLTEC-896
+COLTEC-1149,2956179,,[POC] ELID APIs Rough Performance Comparison,3,COLTEC-896
+COLTEC-723,2685628,,Add 'PCP' to Header,5,COLTEC-699
+COLTEC-783,2722668,,Maximize Header Insurance Package Line Length Before Wrap,2,COLTEC-699
+COLTEC-816,2739527,,Have Clickable DOS in History Tab for a Custom Check Take the User Directly to the Requested STC's Card,3,COLTEC-698
+COLTEC-888,2780948,,"Modify Grafana Panel ""JVM Memory Heap Usage""",0.5,COLTEC-459
+COLTEC-812,2737338,,Force users again and again to use EliD instead of legacy elig page,2,COLTEC-676
+COLTEC-818,2741281,,Defect - Spinner keeps going on,2,COLTEC-676
+COLTEC-709,2685614,,Favoriting User Experience: Shuffle,2,COLTEC-676
+COLTEC-815,2739323,,Different survey links based on nimbus version/alpha wave,1,COLTEC-676
+COLTEC-702,2685607,,Move date selection to single conslidated dropdown,5,COLTEC-676
+COLTEC-714,2685619,,Error cases while favoriting,3,COLTEC-676
+COLTEC-701,2685606,,Individual STC Cards Front End/UI,5,COLTEC-676
+COLTEC-706,2685611,,Favoriting User Experience: General,5,COLTEC-676
+COLTEC-696,2676793,,Service Types Tab - Individual STC Cards Back End,3,COLTEC-676
+COLTEC-668,2650559,,Prototype EliD (1.5),8,COLTEC-676
+COLTEC-732,2685637,,Spike: Grace Period,2,COLTEC-676
+COLTEC-713,2685618,,Default ordering of suggested service types,1,COLTEC-676
+COLTEC-733,2685638,,Achieve parity with red text warnings,1,COLTEC-697
+COLTEC-735,2685640,,Displaying Information Not Returned from Payer,2,COLTEC-697
+COLTEC-842,2751948,,Cleanup service folder,3,COLTEC-840
+COLTEC-850,2751960,,TSX cleanup in EligibilitySection,3,COLTEC-840
+COLTEC-843,2751949,,Clean up types.ts,5,COLTEC-840
+COLTEC-849,2751959,,TSX cleanup in ServiceBenefit,5,COLTEC-840
+COLTEC-831,2748845,,Copy up of //anet/tasks/COLTEC_filtered/coltec_825_athenaconf_user_pref_key on Wed May 17 11:16:25 2023,,
+COLTEC-624,2635942,,Copy up of //anet/tasks/COLTEC_filtered/coltec_623_candidate on Wed Feb 22 11:43:45 2023,,
+COLTEC-456,2531721,2531580,Allow ingress traffic to our RDS instance from Reporting Service VPC ,,
+COLTEC-912,2801772,,Copy up of //anet/tasks/COLTEC_filtered/coltec_827_enhanced_history on Mon Jun 26 10:08:53 2023,,
+COLTEC-824,2745026,2737338,Add Field to athenaconf,,
+COLTEC-670,2652019,2652029,Grafana Prod is not showing option to surface prod data,,
+COLTEC-759,2706144,2685607,DOS Dropdown Frontend Changes,,
+COLTEC-758,2706143,2685607,DOS Dropdown Backend Changes,,
+COLTEC-825,2745027,2737338,Perl Get User Preference Key from athenaconf,,
+COLTEC-770,2714084,2685628,Header PCP Frontend Changes,,
+COLTEC-563,2608206,2608062,Add indexes to DB,,
+COLTEC-455,2531589,2531580,"Set rds.logical_replication=1 parameter on our dev, int and production RDS instances",,
+COLTEC-925,2817799,,Copy up of //anet/tasks/COLTEC_filtered/coltec_828_enhanced_benefits on Fri Jul  7 10:04:11 2023,,
+COLTEC-1032,2866582,2841327,Test and release to prod,,
+COLTEC-1115,2932060,2924026,DML to clean empty benefit - OTJ,,
+,,,,208.5,

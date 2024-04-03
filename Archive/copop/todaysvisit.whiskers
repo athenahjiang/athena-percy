@@ -1,0 +1,204 @@
+# $ATHENA_HOME/htdocs/static/templates/checkin/todaysvisit.whiskers
+
+<tr class='highlightheading'>
+	<td><div class='subrowspacer'></div></td>
+	<td colspan="4">
+		{{#ISVISIT}}Current visit{{/ISVISIT}}
+		{{^ISVISIT}}Today's visit{{/ISVISIT}}
+	</td>
+</tr>
+
+{{#APPOINTMENTID}}
+	{{#COPAY}}
+		{{#COPAYSECONDARYBANNER}}
+			<tr>
+				<td><div class='subrowspacer'></div></td>
+				<td colspan='3'><div class='adminnotificationmessage useradminremove' id='copaysecondarybanner'>{{COPAYSECONDARYBANNER}}</div></td>
+			</tr>
+		{{/COPAYSECONDARYBANNER}}
+		{{#COPAYBANNER}}
+			<tr>
+				<td><div class='subrowspacer'></div></td>
+				<td colspan='3'><div class='adminnotificationmessage useradminremove' id='copaybanner'>{{COPAYBANNER}}</div></td>
+			</tr>
+		{{/COPAYBANNER}}
+		{{^COPAYBANNER}}
+			<tr class='rowpadding'>	
+				<td colspan='5'> </td>
+			</tr>
+		{{/COPAYBANNER}}
+
+		<tr class='replaceeligcopay'>
+			<td><div class='subrowspacer'></div></td>
+			<td nowrap ><span class='subheadingstyle'><b>Copay</b></span>
+				<span id='copaynotrequiredtext' class="{{^COPAYNOTREQUIRED}}hidden{{/COPAYNOTREQUIRED}}"> - Not Required</span>
+				<span id='copaylinkhidespan' class="{{#COPAYNOTREQUIRED}}hidden{{/COPAYNOTREQUIRED}}">
+					<span id='editablecopay' style="display: none;">{{{COPAYEDITABLEHTML}}}</span>
+					&nbsp;&nbsp;&nbsp; <a href='javascript:void(0);' id='EDITCOPAYTYPE' >Edit</a>
+					|
+				</span>
+				{{^COPAYNOTREQUIRED}}
+					<a id="copayrequiredlink" href="#" data-required="1">Mark as not required</a>
+				{{/COPAYNOTREQUIRED}}
+				{{#COPAYNOTREQUIRED}}
+					<a id="copayrequiredlink" href="#" data-required="0">Reset</a>
+				{{/COPAYNOTREQUIRED}}
+				|
+				<a id='percy-test-app-button-monolith' href="javascript: console.log('percy-test-app-button clicked'); show_lightbox_button = jQuery('#percy-test-app-button-react'); show_lightbox_button.click();">View Payer Provided Copays</a>
+				<div id='percy-test-app-container' style="width: 400%;"></div>
+			</td>
+			<td  class="right-align"><span id='displaycopay' class='amountfontsize rightpadding {{#COPAYREQUIRED}}needsattention{{/COPAYREQUIRED}}' data-actualvalue="{{DISPLAYCOPAY}}">
+				{{^COPAYNOTREQUIRED}}
+					{{DISPLAYCOPAY}}
+				{{/COPAYNOTREQUIRED}}
+				{{#COPAYNOTREQUIRED}}
+					$0.00
+				{{/COPAYNOTREQUIRED}}
+			</span></td>
+			<!--SO SHITY NAMING BUT COPAY REQUIRED OPERATES DIFFERENTLY THAN COPAYNOTREQUIRED copayrequired is a 0 check copaynotrequired is a check for if the copay reason is that the copay was not required -->
+			<td class="right-align" nowrap>
+				$<input id="copayamount" value="{{#COPAYNOTREQUIRED}}0.00{{/COPAYNOTREQUIRED}}" size='8' maxlength='22'
+					class='currencyonchange TopLevelCollection {{#REQUIRED}}{{#COPAYREQUIRED}}{{^COPAYNOTREQUIRED}}RequiredFieldColor{{/COPAYNOTREQUIRED}}{{/COPAYREQUIRED}}{{/REQUIRED}}'
+					data-outstanding='{{COPAYAMOUNT}}' data-copayrequired='{{COPAYREQUIRED}}' data-typeid='{{COPAYTYPEID}}' align="right" data-question='copayreasonprompt'>
+				<input type='hidden' id='copayoptioninfo' value='{{COPAYOPTIONINFO}}'>
+				<input type='hidden' id='copaytypeinfo' value='{{COPAYTYPEINFO}}'>
+				<input type='hidden' id='copayrollouttoggle' value='{{COPAYROLLOUTTOGGLE}}'>
+				<input type='hidden' id='copaymenutoggle' value='{{COPAYMENUTOGGLE}}'>
+			</td>
+		</tr>
+		{{#COPAYCOLLECTIONPROMPT}}
+			<tr style="display: none;" class='subsuberow'>
+				<td><div class='subrowspacer'></div></td>
+				<td colspan='3'>
+					{{> checkin/non-collection-reason-prompt}}
+				</td>
+			</tr>
+		{{/COPAYCOLLECTIONPROMPT}}
+		<tr>
+			<td ><div class='subrowspacer'></div></td>
+			<td class='borderbottom' colspan='3'></td>
+			<td><div class='subrowspacer'></div></td>
+		</tr>
+	{{/COPAY}}
+	{{#FAMILYCOPAY}}
+		<tr class='rowpadding'>	
+			<td colspan='5'> </td>
+		</tr>
+		<tr>
+			<td><div></div></td>
+			<td nowrap><span class='subheadingstyle'><b>Copay</b></span>: {{PATIENTNAME}} |
+				<span id='Fam{{PATIENTID}}readonlycopay'>{{COPAYTYPE}}</span> <span id='Fam{{PATIENTID}}editablecopay' style="display: none;">{{{COPAYEDITABLEHTML}}}</span> &nbsp;&nbsp;&nbsp; <a href='javascript:void(0);' class='EditFamCopay' data-id={{PATIENTID}}>Edit</a>
+			</td>
+			<td class="right-align amountfontsize amountpadding"><span id='Fam{{PATIENTID}}displaycopay'>{{{DISPLAYCOPAY}}}</span></td>
+			<td class="right-align" nowrap>
+				$<input id="Fam{{PATIENTID}}copayamount" value="" size='8' maxlength='22'
+					class='currencyonchange TopLevelCollection FamilyCopay'
+					data-outstanding='{{COPAYAMOUNT}}' data-typeid='{{COPAYTYPEID}}'
+					align="right" data-patientid='{{PATIENTID}}' data-apptid='{{APPOINTMENTID}}'>
+				<input type='hidden' id='Fam{{PATIENTID}}copayoptioninfo' value='{{COPAYOPTIONINFO}}'>
+				<input type='hidden' id='Fam{{PATIENTID}}copaytypeinfo' value='{{COPAYTYPEINFO}}'>
+			</td>
+		</tr>
+		<tr>
+			<td ><div class='subrowspacer'></div></td>
+			<td class='borderbottom' colspan='3'></td>
+			<td><div class='subrowspacer'></div></td>
+		</tr>
+	{{/FAMILYCOPAY}}
+{{/APPOINTMENTID}}
+{{^UNAPPLIEDPBANNER}}
+	{{#ENABLESLIDINGFEETOSBANNER}}
+		<tr>
+			<td><div class='subrowspacer'></div></td>
+			<td colspan='3'><div id ="slidingfeetosbanner" name = "slidingfeetosbanner" class='adminnotificationmessage useradminremove' style="display: {{SFBANNERDISPLAY}};">{{SFBANNERCONTENT}}</div></td>
+		</tr>
+	{{/ENABLESLIDINGFEETOSBANNER}}
+{{/UNAPPLIEDPBANNER}}
+{{#UNAPPLIEDPBANNER}}
+	<tr>
+		<td><div class='subrowspacer'></div></td>
+		<td colspan='3'><div class='adminnotificationmessage useradminremove'>{{UNAPPLIEDPBANNER}}</div></td>
+	</tr>
+{{/UNAPPLIEDPBANNER}}
+{{#PATIENTLIABILITYESTIMATE}}
+	<tr class='rowpadding'>	
+		<td colspan='5'> </td>
+	</tr>
+	<tr>
+		<td class='{{#ESTIMATEMESSAGE}}estimatedetailstopborder estimatedetailsleftborder estimatedetailshasborder{{/ESTIMATEMESSAGE}}'></td>
+		<td class='{{#ESTIMATEMESSAGE}}estimatedetailstopborder estimatedetailsrightborder estimatedetailshasborder{{/ESTIMATEMESSAGE}}'>
+			<span class='subheadingstyle'><b>Estimated additional cost: </b><strong>{{RANGE}}</strong></span>{{#ESTIMATEMESSAGE}}&nbsp;{{ESTIMATETYPE}}&nbsp;<a href='javascript:void(0);' id='showhideestimateinfo'>Show Details &gt;</a>{{/ESTIMATEMESSAGE}}
+			<input type='hidden' id='overrideeligcopay' value='{{OVERRIDEELIGCOPAY}}'>
+		</td>
+		{{#ESTIMATEMESSAGE}}
+		<td rowspan='{{^COFEXISTS}}3{{/COFEXISTS}} {{#COFEXISTS}}2{{/COFEXISTS}}' colspan='2' class='estimatedetailsmessagecontainer estimatedetailshasborder'>
+			<span id='estimateinfo'>{{{ESTIMATEMESSAGE}}}</span>
+		</td>
+		{{/ESTIMATEMESSAGE}}
+		{{^ESTIMATEMESSAGE}}
+		<td></td>
+		<td></td>
+		{{/ESTIMATEMESSAGE}}
+	</tr>
+	{{#COFEXISTS}}
+	<tr>
+		<td></td>
+		<td colspan='3'>
+			<div class='athenainfomessage'>The patient has authorized a card for this balance.</div>
+		</td>
+	</tr>
+	{{/COFEXISTS}}
+	{{#SHOWINPUT}}
+	<tr>
+		<td class='{{#ESTIMATEMESSAGE}}estimatedetailsleftborder estimatedetailshasborder{{/ESTIMATEMESSAGE}}'></td>
+		<td class='indented {{#ESTIMATEMESSAGE}}estimatedetailsrightborder estimatedetailshasborder{{/ESTIMATEMESSAGE}}'>
+			{{{CHECKBOX}}} Authorize a card for automatic payment {{{CARDONFILEINFO}}}
+		</td>
+		{{^ESTIMATEMESSAGE}}
+		<td></td>
+		<td></td>
+		{{/ESTIMATEMESSAGE}}
+	</tr>
+	<tr>
+		<td class='{{#ESTIMATEMESSAGE}}estimatedetailsbottomborder estimatedetailsleftborder estimatedetailshasborder toreplacebottomborder{{/ESTIMATEMESSAGE}}'></td>
+		<td class='smallindented {{#ESTIMATEMESSAGE}}estimatedetailsbottomborder estimatedetailsrightborder estimatedetailshasborder toreplacebottomborder{{/ESTIMATEMESSAGE}}'>
+			Maximum : {{{LIMITINPUT}}} {{#MONTHLYLIMITINPUT}}&nbsp;<a href='javascript:void(0);' id='SHOWLIABILITYMONTHLYCOFINPUT'>Set monthly limit</a>{{/MONTHLYLIMITINPUT}}
+		</td>
+		{{^ESTIMATEMESSAGE}}
+		<td></td>
+		<td></td>
+		{{/ESTIMATEMESSAGE}}
+	</tr>
+	{{#MONTHLYLIMITINPUT}}
+	<tr id='LIABILITYMONTHLYCOFINPUT'>
+		<td class='{{#ESTIMATEMESSAGE}}estimatedetailsbottomborder estimatedetailsleftborder estimatedetailshasborder{{/ESTIMATEMESSAGE}}'></td>
+		<td class='smallindented {{#ESTIMATEMESSAGE}}estimatedetailsbottomborder estimatedetailsrightborder estimatedetailshasborder{{/ESTIMATEMESSAGE}}'>
+			Monthly&nbsp; &nbsp; : {{{MONTHLYLIMITINPUT}}} &nbsp;<span class='sprite-close-16x16 closeliabilitymonthlycofinput' id='HIDELIABILITYMONTHLYCOFINPUT'></span>
+			<input type='hidden' id='defaultliabilitymonthlylimit' value='{{DEFAULTLIABILITYMONTHLYLIMIT}}'>
+		</td>
+		{{^ESTIMATEMESSAGE}}
+		<td></td>
+		<td></td>
+		{{/ESTIMATEMESSAGE}}
+	</tr>
+	{{/MONTHLYLIMITINPUT}}
+	{{/SHOWINPUT}}
+{{/PATIENTLIABILITYESTIMATE}}
+{{^PATIENTLIABILITYESTIMATE}}
+	{{^UNAPPLIEDPBANNER}}
+		<tr class='rowpadding'>	
+			<td colspan='5'> </td>
+		</tr>
+	{{/UNAPPLIEDPBANNER}}
+{{/PATIENTLIABILITYESTIMATE}}
+<tr>
+	<td><div class='subrowspacer'></div></td>
+	<td class='subheadingstyle'><b>{{ADDITIONALPAYMENTLABEL}}</b></td>
+	<td class='amountfontsize amountpadding right-align'>--</td>
+	<td class="right-align" nowrap>
+		$<input id="additionalpaymentamount" value="" size='8' maxlength='22' class='currencyonchange ExtraTopCharges' align="right">
+	</td>
+</tr>
+<tr class='rowpadding'>	
+	<td colspan='5'> </td>
+</tr>

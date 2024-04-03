@@ -1,0 +1,16 @@
+{
+    "EB01": "Eligibility or Benefit Information Code",
+    "EB02": "Coverage Level Code",
+    "EB03": "Service Type Code",
+    "EB04": "Insurance Type Code",
+    "EB05": "Plan Coverage Description",
+    "EB06": "Time Period Qualifier",
+    "EB07": "Monetary Amount",
+    "EB08": "Percent",
+    "EB09": "Quantity Qualifier",
+    "EB10": "Quantity",
+    "EB11": "Yes/No Cond Resp Code (The authorization or certification indicator)",
+    "EB12": "Yes/No Cond Resp Code (The plan network indicator)",
+    "EB13": "Comp. Med Proced. ID",
+    "EB14": "Comp. Diag. Code Code Point."
+}

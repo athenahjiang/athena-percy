@@ -1,0 +1,21 @@
+{
+    "1": "Active Coverage",
+    "6": "Inactive",
+    "A": "Co-Insurance",
+    "B": "Copay",
+    "C": "Deductible",
+    "CB": "Coverage Basis",
+    "D": "Benefit Description",
+    "E": "Exclusions",
+    "F": "Limitations",
+    "G": "Out of Pocket (Stop Loss)",
+    "H": "Unlimited",
+    "I": "Non-Covered",
+    "L": "Primary Care Provider",
+    "N": "Services Restricted to Following Provider",
+    "P": "Benefit Disclaimer",
+    "R": "Other or Additional Payor",
+    "V": "Cannot Process",
+    "X": "Health Care Facility",
+    "Y": "Spend Down"
+}

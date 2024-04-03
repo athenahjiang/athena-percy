@@ -1,0 +1,63 @@
+{
+    "source":
+    {
+        "observer":
+        {
+            "reference": "Organization/a-1.Practice-"
+        }
+    },
+    "resourceType": "AuditEvent",
+    "meta":
+    {
+        "versionId": "0"
+    },
+    "entity":
+    [
+        {
+            "what":
+            {
+                "reference": "#payload"
+            }
+        }
+    ],
+    "agent":
+    [
+        {
+            "name": "collector.eligibility",
+            "requestor": "false"
+        }
+    ],
+    "contained":
+    [
+        {
+            "payload":
+            {
+                "contextId": "432",
+                "patientId": "123",
+                "patientInsuranceId": "456",
+                "eligibilityTrackId": "789",
+                "checkedBy": "pjiang4",
+                "eligibilityClass": "UHC",
+                "eligibilityReceiver": "UHC_VPN",
+                "benefitsVersion": "1",
+                "providerId": "57",
+                "providerName": "bkaiser",
+                "dateOfService": "10/30/2023",
+                "dateOfInquiry": "10/30/2023",
+                "inquiryReason": "USER-REQUESTED",
+                "subscriberId": "939798072",
+                "result":
+                {
+                    "code": "1"
+                }
+            }
+        }
+    ],
+    "id": "8227AC14-7738-11EE-A225-EC427ABAC52E",
+    "type":
+    {
+        "system": "http://fhir.athena.io/CodeSystem/SubscriptionTopic",
+        "code": "Eligibility.checked"
+    },
+    "recorded": "2023-10-30T11:25:08-04:00"
+}

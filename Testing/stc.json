@@ -1,0 +1,750 @@
+[
+  {
+    "code":"1",
+    "definition":"Medical Care"
+  },
+  {
+    "code":"2",
+    "definition":"Surgical"
+  },
+  {
+    "code":"3",
+    "definition":"Consultation"
+  },
+  {
+    "code":"4",
+    "definition":"Diagnostic X-Ray"
+  },
+  {
+    "code":"5",
+    "definition":"Diagnostic Lab"
+  },
+  {
+    "code":"6",
+    "definition":"Radiation Therapy"
+  },
+  {
+    "code":"7",
+    "definition":"Anesthesia"
+  },
+  {
+    "code":"8",
+    "definition":"Surgical Assistance"
+  },
+  {
+    "code":"9",
+    "definition":"Other Medical"
+  },
+  {
+    "code":"10",
+    "definition":"Blood Charges"
+  },
+  {
+    "code":"11",
+    "definition":"Used DME"
+  },
+  {
+    "code":"12",
+    "definition":"DME Purchase"
+  },
+  {
+    "code":"13",
+    "definition":"Ambulatory Service Center Facility"
+  },
+  {
+    "code":"14",
+    "definition":"Renal Supplies in the Home"
+  },
+  {
+    "code":"15",
+    "definition":"Alternate Method Dialysis"
+  },
+  {
+    "code":"16",
+    "definition":"Chronic Renal Disease Equipment"
+  },
+  {
+    "code":"17",
+    "definition":"Pre-Admission Testing"
+  },
+  {
+    "code":"18",
+    "definition":"DME Rental"
+  },
+  {
+    "code":"19",
+    "definition":"Pneumonia Vaccine"
+  },
+  {
+    "code":"20",
+    "definition":"Second Surgical Option"
+  },
+  {
+    "code":"21",
+    "definition":"Third Surgical Opinion"
+  },
+  {
+    "code":"22",
+    "definition":"Social Work"
+  },
+  {
+    "code":"23",
+    "definition":"Diagnostic Dental"
+  },
+  {
+    "code":"24",
+    "definition":"Periodontics"
+  },
+  {
+    "code":"25",
+    "definition":"Restorative"
+  },
+  {
+    "code":"26",
+    "definition":"Endontics"
+  },
+  {
+    "code":"27",
+    "definition":"Maxillofacial Prosthetics"
+  },
+  {
+    "code":"28",
+    "definition":"Adjunctive Dental Services"
+  },
+  {
+    "code":"30",
+    "definition":"Health Benefit Plan Coverage"
+  },
+  {
+    "code":"32",
+    "definition":"Plan Waiting Period"
+  },
+  {
+    "code":"33",
+    "definition":"Chiropractic"
+  },
+  {
+    "code":"34",
+    "definition":"Chiropractic Office Visits"
+  },
+  {
+    "code":"35",
+    "definition":"Dental Care"
+  },
+  {
+    "code":"36",
+    "definition":"Dental Crowns"
+  },
+  {
+    "code":"37",
+    "definition":"Dental Accident"
+  },
+  {
+    "code":"38",
+    "definition":"Orthodontics"
+  },
+  {
+    "code":"39",
+    "definition":"Prothodontics"
+  },
+  {
+    "code":"40",
+    "definition":"Oral Surgery"
+  },
+  {
+    "code":"41",
+    "definition":"Routine (Preventive) Dental"
+  },
+  {
+    "code":"42",
+    "definition":"Home Health Care"
+  },
+  {
+    "code":"43",
+    "definition":"Home Health Prescriptions"
+  },
+  {
+    "code":"44",
+    "definition":"Home Health Visits"
+  },
+  {
+    "code":"45",
+    "definition":"Hospice"
+  },
+  {
+    "code":"46",
+    "definition":"Respite Care"
+  },
+  {
+    "code":"47",
+    "definition":"Hospital"
+  },
+  {
+    "code":"48",
+    "definition":"Hospital - Inpatient"
+  },
+  {
+    "code":"49",
+    "definition":"Hospital - Room and Board"
+  },
+  {
+    "code":"50",
+    "definition":"Hospital - Outpatient"
+  },
+  {
+    "code":"51",
+    "definition":"Hospital - Emergency Accident"
+  },
+  {
+    "code":"52",
+    "definition":"Hospital - Emergency Medical"
+  },
+  {
+    "code":"53",
+    "definition":"Hospital - Ambulatory Surgical"
+  },
+  {
+    "code":"54",
+    "definition":"Long Term Care"
+  },
+  {
+    "code":"55",
+    "definition":"Major Medical"
+  },
+  {
+    "code":"56",
+    "definition":"Medically Related Transportation"
+  },
+  {
+    "code":"57",
+    "definition":"Air Transportation"
+  },
+  {
+    "code":"58",
+    "definition":"Cabulance"
+  },
+  {
+    "code":"59",
+    "definition":"Licensed Ambulance"
+  },
+  {
+    "code":"60",
+    "definition":"General Benefits"
+  },
+  {
+    "code":"61",
+    "definition":"In-vitro Fertilization"
+  },
+  {
+    "code":"62",
+    "definition":"MRI/CAT Scan"
+  },
+  {
+    "code":"63",
+    "definition":"Donor Procedures"
+  },
+  {
+    "code":"64",
+    "definition":"Acupuncture"
+  },
+  {
+    "code":"65",
+    "definition":"Newborn Care"
+  },
+  {
+    "code":"66",
+    "definition":"Pathology"
+  },
+  {
+    "code":"67",
+    "definition":"Smoking Cessation"
+  },
+  {
+    "code":"68",
+    "definition":"Well Baby Care"
+  },
+  {
+    "code":"69",
+    "definition":"Maternity"
+  },
+  {
+    "code":"70",
+    "definition":"Transplants"
+  },
+  {
+    "code":"71",
+    "definition":"Audiology Exam"
+  },
+  {
+    "code":"72",
+    "definition":"Inhalation Therapy"
+  },
+  {
+    "code":"73",
+    "definition":"Diagnostic Medical"
+  },
+  {
+    "code":"74",
+    "definition":"Private Duty Nursing"
+  },
+  {
+    "code":"75",
+    "definition":"Prosthetic Device"
+  },
+  {
+    "code":"76",
+    "definition":"Dialysis"
+  },
+  {
+    "code":"77",
+    "definition":"Otological Exam"
+  },
+  {
+    "code":"78",
+    "definition":"Chemotherapy"
+  },
+  {
+    "code":"79",
+    "definition":"Allergy Testing"
+  },
+  {
+    "code":"80",
+    "definition":"Immunizations"
+  },
+  {
+    "code":"81",
+    "definition":"Routine Physical"
+  },
+  {
+    "code":"82",
+    "definition":"Family Planning"
+  },
+  {
+    "code":"83",
+    "definition":"Infertility"
+  },
+  {
+    "code":"84",
+    "definition":"Abortion"
+  },
+  {
+    "code":"85",
+    "definition":"AIDS"
+  },
+  {
+    "code":"86",
+    "definition":"Emergency Services"
+  },
+  {
+    "code":"87",
+    "definition":"Cancer"
+  },
+  {
+    "code":"88",
+    "definition":"Pharmacy"
+  },
+  {
+    "code":"89",
+    "definition":"Free Standing Prescription Drug"
+  },
+  {
+    "code":"90",
+    "definition":"Mail Order Prescription Drug"
+  },
+  {
+    "code":"91",
+    "definition":"Brand Name Prescription Drug"
+  },
+  {
+    "code":"92",
+    "definition":"Generic Prescription Drug"
+  },
+  {
+    "code":"93",
+    "definition":"Podiatry"
+  },
+  {
+    "code":"94",
+    "definition":"Podiatry - Office Visits"
+  },
+  {
+    "code":"95",
+    "definition":"Podiatry - Nursing Home Visits"
+  },
+  {
+    "code":"96",
+    "definition":"Professional (Physician)"
+  },
+  {
+    "code":"97",
+    "definition":"Anesthesiologist"
+  },
+  {
+    "code":"98",
+    "definition":"Professional (Physician) Visit - Office"
+  },
+  {
+    "code":"99",
+    "definition":"Professional (Physician) Visit - Inpatient"
+  },
+  {
+    "code":"A0",
+    "definition":"Professional (Physician) Visit - Outpatient"
+  },
+  {
+    "code":"A1",
+    "definition":"Professional (Physician) Visit - Nursing Home"
+  },
+  {
+    "code":"A2",
+    "definition":"Professional (Physician) Visit - Skilled Nursing Facility"
+  },
+  {
+    "code":"A3",
+    "definition":"Professional (Physician) Visit - Home"
+  },
+  {
+    "code":"A4",
+    "definition":"Psychiatric"
+  },
+  {
+    "code":"A5",
+    "definition":"Psychiatric - Room and Board"
+  },
+  {
+    "code":"A6",
+    "definition":"Psychotherapy"
+  },
+  {
+    "code":"A7",
+    "definition":"Psychiatric - Inpatient"
+  },
+  {
+    "code":"A8",
+    "definition":"Psychiatric - Outpatient"
+  },
+  {
+    "code":"A9",
+    "definition":"Rehabilitation"
+  },
+  {
+    "code":"AA",
+    "definition":"Rehabilitation - Room and Board"
+  },
+  {
+    "code":"AB",
+    "definition":"Rehabilitation - Inpatient"
+  },
+  {
+    "code":"AC",
+    "definition":"Rehabilitation - Outpatient"
+  },
+  {
+    "code":"AD",
+    "definition":"Occupational Therapy"
+  },
+  {
+    "code":"AE",
+    "definition":"Physical Medicine"
+  },
+  {
+    "code":"AF",
+    "definition":"Speech Therapy"
+  },
+  {
+    "code":"AG",
+    "definition":"Skilled Nursing Care"
+  },
+  {
+    "code":"AH",
+    "definition":"Skilled Nursing Care - Room and Board"
+  },
+  {
+    "code":"AI",
+    "definition":"Substance Abuse"
+  },
+  {
+    "code":"AJ",
+    "definition":"Alcoholism"
+  },
+  {
+    "code":"AK",
+    "definition":"Drug Addiction"
+  },
+  {
+    "code":"AL",
+    "definition":"Vision (Optometry)"
+  },
+  {
+    "code":"AM",
+    "definition":"Frames"
+  },
+  {
+    "code":"AN",
+    "definition":"Routine Exam"
+  },
+  {
+    "code":"AO",
+    "definition":"Lenses"
+  },
+  {
+    "code":"AQ",
+    "definition":"Nonmedically Necessary Physical"
+  },
+  {
+    "code":"AR",
+    "definition":"Experimental Drug Therapy"
+  },
+  {
+    "code":"B1",
+    "definition":"Burn Care"
+  },
+  {
+    "code":"B2",
+    "definition":"Brand Name Prescription Drug - Formulary"
+  },
+  {
+    "code":"B3",
+    "definition":"Brand Name Prescription Drug - Non-Formulary"
+  },
+  {
+    "code":"BA",
+    "definition":"Independent Medical Evaluation"
+  },
+  {
+    "code":"BB",
+    "definition":"Partial Hospitalization (Psychiatric)"
+  },
+  {
+    "code":"BC",
+    "definition":"DayCare (Psychiatric)"
+  },
+  {
+    "code":"BD",
+    "definition":"Cognitive Therapy"
+  },
+  {
+    "code":"BE",
+    "definition":"Massage Therapy"
+  },
+  {
+    "code":"BF",
+    "definition":"Pulmonary Rehabilitation"
+  },
+  {
+    "code":"BG",
+    "definition":"Cardiac Rehabilitation"
+  },
+  {
+    "code":"BH",
+    "definition":"Pediatric"
+  },
+  {
+    "code":"BI",
+    "definition":"Nursery"
+  },
+  {
+    "code":"BJ",
+    "definition":"Skin"
+  },
+  {
+    "code":"BK",
+    "definition":"Orthopedic"
+  },
+  {
+    "code":"BL",
+    "definition":"Cardiac"
+  },
+  {
+    "code":"BM",
+    "definition":"Lymphatic"
+  },
+  {
+    "code":"BN",
+    "definition":"Gastrointestinal"
+  },
+  {
+    "code":"BP",
+    "definition":"Endocrine"
+  },
+  {
+    "code":"BQ",
+    "definition":"Neurology"
+  },
+  {
+    "code":"BR",
+    "definition":"Eye"
+  },
+  {
+    "code":"BS",
+    "definition":"Invasive Procedures"
+  },
+  {
+    "code":"BT",
+    "definition":"Gynecological"
+  },
+  {
+    "code":"BU",
+    "definition":"Obstetrical"
+  },
+  {
+    "code":"BV",
+    "definition":"Obstetrical/Gynecological"
+  },
+  {
+    "code":"BW",
+    "definition":"Mail Order Prescription Drug: Brand Name"
+  },
+  {
+    "code":"BX",
+    "definition":"Mail Order Prescription Drug: Generic"
+  },
+  {
+    "code":"BY",
+    "definition":"Physician Visit - Office: Sick"
+  },
+  {
+    "code":"BZ",
+    "definition":"Physician Visit - Office: Well"
+  },
+  {
+    "code":"C1",
+    "definition":"Coronary Care"
+  },
+  {
+    "code":"CA",
+    "definition":"Private Duty Nursing - Inpatient"
+  },
+  {
+    "code":"CB",
+    "definition":"Private Duty Nursing - Home"
+  },
+  {
+    "code":"CC",
+    "definition":"Surgical Benefits - Professional (Physician)"
+  },
+  {
+    "code":"CD",
+    "definition":"Surgical Benefits - Facility"
+  },
+  {
+    "code":"CE",
+    "definition":"Mental Health Provider - Inpatient"
+  },
+  {
+    "code":"CF",
+    "definition":"Mental Health Provider - Outpatient"
+  },
+  {
+    "code":"CG",
+    "definition":"Mental Health Facility - Inpatient"
+  },
+  {
+    "code":"CH",
+    "definition":"Mental Health Facility-  Outpatient"
+  },
+  {
+    "code":"CI",
+    "definition":"Substance Abuse Facility - Inpatient"
+  },
+  {
+    "code":"CJ",
+    "definition":"Substance Abuse Facility - Outpatient"
+  },
+  {
+    "code":"CK",
+    "definition":"Screening X-ray"
+  },
+  {
+    "code":"CL",
+    "definition":"Screening laboratory"
+  },
+  {
+    "code":"CM",
+    "definition":"Mammogram, High Risk Patient"
+  },
+  {
+    "code":"CN",
+    "definition":"Mammogram, Low Risk Patient"
+  },
+  {
+    "code":"CO",
+    "definition":"Flu Vaccination"
+  },
+  {
+    "code":"CP",
+    "definition":"Eyewear and Eyewear Accessories"
+  },
+  {
+    "code":"CQ",
+    "definition":"Case Management"
+  },
+  {
+    "code":"DG",
+    "definition":"Dermatology"
+  },
+  {
+    "code":"DM",
+    "definition":"Durable Medical Equipment"
+  },
+  {
+    "code":"DS",
+    "definition":"Diabetic Supplies"
+  },
+  {
+    "code":"GF",
+    "definition":"Generic Prescription Drug - Formulary"
+  },
+  {
+    "code":"GN",
+    "definition":"Generic Prescription Drug - Non-Formulary"
+  },
+  {
+    "code":"GY",
+    "definition":"Allergy"
+  },
+  {
+    "code":"IC",
+    "definition":"Intensive Care"
+  },
+  {
+    "code":"MH",
+    "definition":"Mental Health"
+  },
+  {
+    "code":"NI",
+    "definition":"Neonatal Intensive Care"
+  },
+  {
+    "code":"ON",
+    "definition":"Oncology"
+  },
+  {
+    "code":"PT",
+    "definition":"Physical Therapy"
+  },
+  {
+    "code":"PU",
+    "definition":"Pulmonary"
+  },
+  {
+    "code":"RN",
+    "definition":"Renal"
+  },
+  {
+    "code":"RT",
+    "definition":"Residential Psychiatric Treatment"
+  },
+  {
+    "code":"TC",
+    "definition":"Transitional Care"
+  },
+  {
+    "code":"TN",
+    "definition":"Transitional Nursery Care"
+  },
+  {
+    "code":"UC",
+    "definition":"Urgent Care"
+  }
+]

@@ -1,0 +1,1014 @@
+{
+   "SE" : {
+      "FIELD01" : "76",
+      "SEGMENTTEXT" : "SE*76*00001",
+      "FIELD00" : "SE",
+      "FIELD02" : "00001"
+   },
+   "ST" : {
+      "FIELD01" : "271",
+      "SEGMENTTEXT" : "ST*271*00001*005010X279A1",
+      "FIELD03" : "005010X279A1",
+      "FIELD00" : "ST",
+      "FIELD02" : "00001"
+   },
+   "SEGMENTSEPARATOR" : "~\n",
+   "MESSAGETEXT" : "ST*271*00001*005010X279A1~\nBHT*0022*11*B432.62749*20210624*11322589~\nSE*76*00001",
+   "FULLMESSAGETEXT" : "ST*271*00001*005010X279A1~\nBHT*0022*11*B432.62749*20210624*11322589~\nHL*1**20*1~\nNM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nPER*IC**UR*WWW.UHCPROVIDER.COM~\nHL*2*1*21*1~\nNM1*1P*1*TRAINER*JANE****XX*1234567893~\nHL*3*2*22*0~\nTRN*2*B432.62749*9182736450~\nNM1*IL*1*MATSON*TABITHA*M***MI*115944236~\nREF*6P*LABYHP~\nN3*7615 MAGNOLIA BEACH RD APT 14J~\nN4*DENHAM SPRINGS*LA*707268958~\nDMG*D8*19820828*F~\nDTP*346*RD8*20210101-20211231~\nEB*1**30*MC*LA MEDICAID******Y~\nMSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~\nLS*2120~\nNM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nN3*PO BOX 31341~\nN4*SALT LAKE CITY*UT*841310341~\nPER*IC**UR*WWW.UHCPROVIDER.COM~\nLE*2120~\nEB*C*FAM*30***23*0*****W~\nEB*C*IND*30***23*0*****W~\nEB*G*FAM*30*MC**23*0*****W~\nEB*G*IND*30*MC**23*0*****W~\nEB*C*FAM*30***24*0*****W~\nEB*C*IND*30***24*0*****W~\nEB*C*FAM*30***29*0*****W~\nEB*C*IND*30***29*0*****W~\nEB*G*FAM*30*MC**24*0*****W~\nEB*G*IND*30*MC**24*0*****W~\nEB*G*FAM*30*MC**29*0*****W~\nEB*G*IND*30*MC**29*0*****W~\nEB*L~\nLS*2120~\nNM1*P3*1*FOLSE*T'LANE*M***XX*1750331997~\nN3*11424 SULLIVAN RD~\nN4*BATON ROUGE*LA*70818~\nPER*IC**TE*2252613472*FX*2252617258~\nPRV*PC*PXC*207R00000X~\nLE*2120~\nEB*1**96*********W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*1**1^33^47^48^50^86^98^MH^UC*********W~\nEB*A*IND*96***27**0****W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*A*IND*33^48^50^86^98^UC***27**0****W~\nEB*B*IND*33^48^50^86^98^UC***27*0*****W~\nEB*B*IND*96***27*0*****W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*U**35~\nLS*2120~\nNM1*VN*2*DBP DENTAL-  WONDERBOX~\nPER*IC**UR*UHCPWP.WONDERBOXSYSTEM.COM~\nLE*2120~\nEB*U**AL~\nLS*2120~\nNM1*VN*2*MARCH VISION CARE~\nPER*IC**UR*WWW.MARCHVISIONCARE.COM~\nLE*2120~\nEB*U**88~\nLS*2120~\nNM1*VN*2*OPTUMRX~\nPER*IC**UR*PROFESSIONALS.OPTUMRX.COM~\nLE*2120~\nEB*X~\nLS*2120~\nNM1*1P*1*TRAINER*JANE****XX*1234567893~\nLE*2120~\nEB*D*IND~\nMSG*NONADHERENT-AAPMY20-AGE2044~\nEB*D*IND~\nMSG*NONADHERENT-CCSMY20-TOTAL~\nSE*76*00001",
+   "2000A" : [
+      {
+         "SEGMENTSEPARATOR" : "~\n",
+         "MESSAGETEXT" : "HL*1**20*1",
+         "FULLMESSAGETEXT" : "HL*1**20*1~\nNM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nPER*IC**UR*WWW.UHCPROVIDER.COM~\nHL*2*1*21*1~\nNM1*1P*1*TRAINER*JANE****XX*1234567893~\nHL*3*2*22*0~\nTRN*2*B432.62749*9182736450~\nNM1*IL*1*MATSON*TABITHA*M***MI*115944236~\nREF*6P*LABYHP~\nN3*7615 MAGNOLIA BEACH RD APT 14J~\nN4*DENHAM SPRINGS*LA*707268958~\nDMG*D8*19820828*F~\nDTP*346*RD8*20210101-20211231~\nEB*1**30*MC*LA MEDICAID******Y~\nMSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~\nLS*2120~\nNM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nN3*PO BOX 31341~\nN4*SALT LAKE CITY*UT*841310341~\nPER*IC**UR*WWW.UHCPROVIDER.COM~\nLE*2120~\nEB*C*FAM*30***23*0*****W~\nEB*C*IND*30***23*0*****W~\nEB*G*FAM*30*MC**23*0*****W~\nEB*G*IND*30*MC**23*0*****W~\nEB*C*FAM*30***24*0*****W~\nEB*C*IND*30***24*0*****W~\nEB*C*FAM*30***29*0*****W~\nEB*C*IND*30***29*0*****W~\nEB*G*FAM*30*MC**24*0*****W~\nEB*G*IND*30*MC**24*0*****W~\nEB*G*FAM*30*MC**29*0*****W~\nEB*G*IND*30*MC**29*0*****W~\nEB*L~\nLS*2120~\nNM1*P3*1*FOLSE*T'LANE*M***XX*1750331997~\nN3*11424 SULLIVAN RD~\nN4*BATON ROUGE*LA*70818~\nPER*IC**TE*2252613472*FX*2252617258~\nPRV*PC*PXC*207R00000X~\nLE*2120~\nEB*1**96*********W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*1**1^33^47^48^50^86^98^MH^UC*********W~\nEB*A*IND*96***27**0****W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*A*IND*33^48^50^86^98^UC***27**0****W~\nEB*B*IND*33^48^50^86^98^UC***27*0*****W~\nEB*B*IND*96***27*0*****W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*U**35~\nLS*2120~\nNM1*VN*2*DBP DENTAL-  WONDERBOX~\nPER*IC**UR*UHCPWP.WONDERBOXSYSTEM.COM~\nLE*2120~\nEB*U**AL~\nLS*2120~\nNM1*VN*2*MARCH VISION CARE~\nPER*IC**UR*WWW.MARCHVISIONCARE.COM~\nLE*2120~\nEB*U**88~\nLS*2120~\nNM1*VN*2*OPTUMRX~\nPER*IC**UR*PROFESSIONALS.OPTUMRX.COM~\nLE*2120~\nEB*X~\nLS*2120~\nNM1*1P*1*TRAINER*JANE****XX*1234567893~\nLE*2120~\nEB*D*IND~\nMSG*NONADHERENT-AAPMY20-AGE2044~\nEB*D*IND~\nMSG*NONADHERENT-CCSMY20-TOTAL",
+         "2000B" : [
+            {
+               "SEGMENTSEPARATOR" : "~\n",
+               "MESSAGETEXT" : "HL*2*1*21*1",
+               "FULLMESSAGETEXT" : "HL*2*1*21*1~\nNM1*1P*1*TRAINER*JANE****XX*1234567893~\nHL*3*2*22*0~\nTRN*2*B432.62749*9182736450~\nNM1*IL*1*MATSON*TABITHA*M***MI*115944236~\nREF*6P*LABYHP~\nN3*7615 MAGNOLIA BEACH RD APT 14J~\nN4*DENHAM SPRINGS*LA*707268958~\nDMG*D8*19820828*F~\nDTP*346*RD8*20210101-20211231~\nEB*1**30*MC*LA MEDICAID******Y~\nMSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~\nLS*2120~\nNM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nN3*PO BOX 31341~\nN4*SALT LAKE CITY*UT*841310341~\nPER*IC**UR*WWW.UHCPROVIDER.COM~\nLE*2120~\nEB*C*FAM*30***23*0*****W~\nEB*C*IND*30***23*0*****W~\nEB*G*FAM*30*MC**23*0*****W~\nEB*G*IND*30*MC**23*0*****W~\nEB*C*FAM*30***24*0*****W~\nEB*C*IND*30***24*0*****W~\nEB*C*FAM*30***29*0*****W~\nEB*C*IND*30***29*0*****W~\nEB*G*FAM*30*MC**24*0*****W~\nEB*G*IND*30*MC**24*0*****W~\nEB*G*FAM*30*MC**29*0*****W~\nEB*G*IND*30*MC**29*0*****W~\nEB*L~\nLS*2120~\nNM1*P3*1*FOLSE*T'LANE*M***XX*1750331997~\nN3*11424 SULLIVAN RD~\nN4*BATON ROUGE*LA*70818~\nPER*IC**TE*2252613472*FX*2252617258~\nPRV*PC*PXC*207R00000X~\nLE*2120~\nEB*1**96*********W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*1**1^33^47^48^50^86^98^MH^UC*********W~\nEB*A*IND*96***27**0****W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*A*IND*33^48^50^86^98^UC***27**0****W~\nEB*B*IND*33^48^50^86^98^UC***27*0*****W~\nEB*B*IND*96***27*0*****W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*U**35~\nLS*2120~\nNM1*VN*2*DBP DENTAL-  WONDERBOX~\nPER*IC**UR*UHCPWP.WONDERBOXSYSTEM.COM~\nLE*2120~\nEB*U**AL~\nLS*2120~\nNM1*VN*2*MARCH VISION CARE~\nPER*IC**UR*WWW.MARCHVISIONCARE.COM~\nLE*2120~\nEB*U**88~\nLS*2120~\nNM1*VN*2*OPTUMRX~\nPER*IC**UR*PROFESSIONALS.OPTUMRX.COM~\nLE*2120~\nEB*X~\nLS*2120~\nNM1*1P*1*TRAINER*JANE****XX*1234567893~\nLE*2120~\nEB*D*IND~\nMSG*NONADHERENT-AAPMY20-AGE2044~\nEB*D*IND~\nMSG*NONADHERENT-CCSMY20-TOTAL",
+               "2100B" : [
+                  {
+                     "SEGMENTSEPARATOR" : "~\n",
+                     "MESSAGETEXT" : "NM1*1P*1*TRAINER*JANE****XX*1234567893",
+                     "FULLMESSAGETEXT" : "NM1*1P*1*TRAINER*JANE****XX*1234567893",
+                     "NM1" : {
+                        "SEGMENTTEXT" : "NM1*1P*1*TRAINER*JANE****XX*1234567893",
+                        "FIELD06" : "",
+                        "FIELD03" : "TRAINER",
+                        "FIELD00" : "NM1",
+                        "FIELD07" : "",
+                        "FIELD02" : "1",
+                        "FIELD08" : "XX",
+                        "FIELD01" : "1P",
+                        "FIELD04" : "JANE",
+                        "FIELD05" : "",
+                        "FIELD09" : "1234567893"
+                     }
+                  }
+               ],
+               "HL" : {
+                  "FIELD01" : "2",
+                  "SEGMENTTEXT" : "HL*2*1*21*1",
+                  "FIELD03" : "21",
+                  "FIELD00" : "HL",
+                  "FIELD02" : "1",
+                  "FIELD04" : "1"
+               },
+               "2000C" : [
+                  {
+                     "TRN" : [
+                        {
+                           "FIELD01" : "2",
+                           "SEGMENTTEXT" : "TRN*2*B432.62749*9182736450",
+                           "FIELD03" : "9182736450",
+                           "FIELD00" : "TRN",
+                           "FIELD02" : "B432.62749"
+                        }
+                     ],
+                     "SEGMENTSEPARATOR" : "~\n",
+                     "MESSAGETEXT" : "HL*3*2*22*0~\nTRN*2*B432.62749*9182736450",
+                     "FULLMESSAGETEXT" : "HL*3*2*22*0~\nTRN*2*B432.62749*9182736450~\nNM1*IL*1*MATSON*TABITHA*M***MI*115944236~\nREF*6P*LABYHP~\nN3*7615 MAGNOLIA BEACH RD APT 14J~\nN4*DENHAM SPRINGS*LA*707268958~\nDMG*D8*19820828*F~\nDTP*346*RD8*20210101-20211231~\nEB*1**30*MC*LA MEDICAID******Y~\nMSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~\nLS*2120~\nNM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nN3*PO BOX 31341~\nN4*SALT LAKE CITY*UT*841310341~\nPER*IC**UR*WWW.UHCPROVIDER.COM~\nLE*2120~\nEB*C*FAM*30***23*0*****W~\nEB*C*IND*30***23*0*****W~\nEB*G*FAM*30*MC**23*0*****W~\nEB*G*IND*30*MC**23*0*****W~\nEB*C*FAM*30***24*0*****W~\nEB*C*IND*30***24*0*****W~\nEB*C*FAM*30***29*0*****W~\nEB*C*IND*30***29*0*****W~\nEB*G*FAM*30*MC**24*0*****W~\nEB*G*IND*30*MC**24*0*****W~\nEB*G*FAM*30*MC**29*0*****W~\nEB*G*IND*30*MC**29*0*****W~\nEB*L~\nLS*2120~\nNM1*P3*1*FOLSE*T'LANE*M***XX*1750331997~\nN3*11424 SULLIVAN RD~\nN4*BATON ROUGE*LA*70818~\nPER*IC**TE*2252613472*FX*2252617258~\nPRV*PC*PXC*207R00000X~\nLE*2120~\nEB*1**96*********W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*1**1^33^47^48^50^86^98^MH^UC*********W~\nEB*A*IND*96***27**0****W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*A*IND*33^48^50^86^98^UC***27**0****W~\nEB*B*IND*33^48^50^86^98^UC***27*0*****W~\nEB*B*IND*96***27*0*****W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*U**35~\nLS*2120~\nNM1*VN*2*DBP DENTAL-  WONDERBOX~\nPER*IC**UR*UHCPWP.WONDERBOXSYSTEM.COM~\nLE*2120~\nEB*U**AL~\nLS*2120~\nNM1*VN*2*MARCH VISION CARE~\nPER*IC**UR*WWW.MARCHVISIONCARE.COM~\nLE*2120~\nEB*U**88~\nLS*2120~\nNM1*VN*2*OPTUMRX~\nPER*IC**UR*PROFESSIONALS.OPTUMRX.COM~\nLE*2120~\nEB*X~\nLS*2120~\nNM1*1P*1*TRAINER*JANE****XX*1234567893~\nLE*2120~\nEB*D*IND~\nMSG*NONADHERENT-AAPMY20-AGE2044~\nEB*D*IND~\nMSG*NONADHERENT-CCSMY20-TOTAL",
+                     "HL" : {
+                        "FIELD01" : "3",
+                        "SEGMENTTEXT" : "HL*3*2*22*0",
+                        "FIELD03" : "22",
+                        "FIELD00" : "HL",
+                        "FIELD02" : "2",
+                        "FIELD04" : "0"
+                     },
+                     "2100C" : [
+                        {
+                           "MESSAGETEXT" : "NM1*IL*1*MATSON*TABITHA*M***MI*115944236~\nREF*6P*LABYHP~\nN3*7615 MAGNOLIA BEACH RD APT 14J~\nN4*DENHAM SPRINGS*LA*707268958~\nDMG*D8*19820828*F~\nDTP*346*RD8*20210101-20211231",
+                           "N3" : {
+                              "FIELD01" : "7615 MAGNOLIA BEACH RD APT 14J",
+                              "SEGMENTTEXT" : "N3*7615 MAGNOLIA BEACH RD APT 14J",
+                              "FIELD00" : "N3"
+                           },
+                           "NM1" : {
+                              "SEGMENTTEXT" : "NM1*IL*1*MATSON*TABITHA*M***MI*115944236",
+                              "FIELD06" : "",
+                              "FIELD03" : "MATSON",
+                              "FIELD00" : "NM1",
+                              "FIELD07" : "",
+                              "FIELD02" : "1",
+                              "FIELD08" : "MI",
+                              "FIELD01" : "IL",
+                              "FIELD04" : "TABITHA",
+                              "FIELD05" : "M",
+                              "FIELD09" : "115944236"
+                           },
+                           "2110C" : [
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*1**30*MC*LA MEDICAID******Y",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD07" : "",
+                                    "FIELD02" : "",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "1",
+                                    "FIELD11" : "Y",
+                                    "FIELD04" : "MC",
+                                    "FIELD05" : "LA MEDICAID",
+                                    "FIELD09" : ""
+                                 },
+                                 "MESSAGETEXT" : "EB*1**30*MC*LA MEDICAID******Y~\nMSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~\nLS*2120~\nLE*2120",
+                                 "2120C" : [
+                                    {
+                                       "SEGMENTSEPARATOR" : "~\n",
+                                       "MESSAGETEXT" : "NM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nN3*PO BOX 31341~\nN4*SALT LAKE CITY*UT*841310341~\nPER*IC**UR*WWW.UHCPROVIDER.COM",
+                                       "FULLMESSAGETEXT" : "NM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nN3*PO BOX 31341~\nN4*SALT LAKE CITY*UT*841310341~\nPER*IC**UR*WWW.UHCPROVIDER.COM",
+                                       "PER" : [
+                                          {
+                                             "FIELD01" : "IC",
+                                             "SEGMENTTEXT" : "PER*IC**UR*WWW.UHCPROVIDER.COM",
+                                             "FIELD03" : "UR",
+                                             "FIELD00" : "PER",
+                                             "FIELD02" : "",
+                                             "FIELD04" : "WWW.UHCPROVIDER.COM"
+                                          }
+                                       ],
+                                       "N3" : {
+                                          "FIELD01" : "PO BOX 31341",
+                                          "SEGMENTTEXT" : "N3*PO BOX 31341",
+                                          "FIELD00" : "N3"
+                                       },
+                                       "NM1" : {
+                                          "SEGMENTTEXT" : "NM1*PR*2*UNITEDHEALTHCARE*****PI*87726",
+                                          "FIELD06" : "",
+                                          "FIELD03" : "UNITEDHEALTHCARE",
+                                          "FIELD00" : "NM1",
+                                          "FIELD07" : "",
+                                          "FIELD02" : "2",
+                                          "FIELD08" : "PI",
+                                          "FIELD01" : "PR",
+                                          "FIELD04" : "",
+                                          "FIELD05" : "",
+                                          "FIELD09" : "87726"
+                                       },
+                                       "N4" : {
+                                          "FIELD01" : "SALT LAKE CITY",
+                                          "SEGMENTTEXT" : "N4*SALT LAKE CITY*UT*841310341",
+                                          "FIELD03" : "841310341",
+                                          "FIELD00" : "N4",
+                                          "FIELD02" : "UT"
+                                       }
+                                    }
+                                 ],
+                                 "LS" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LS*2120",
+                                    "FIELD00" : "LS"
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "LE" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LE*2120",
+                                    "FIELD00" : "LE"
+                                 },
+                                 "FULLMESSAGETEXT" : "EB*1**30*MC*LA MEDICAID******Y~\nMSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~\nLS*2120~\nNM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nN3*PO BOX 31341~\nN4*SALT LAKE CITY*UT*841310341~\nPER*IC**UR*WWW.UHCPROVIDER.COM~\nLE*2120",
+                                 "MSG" : [
+                                    {
+                                       "FIELD01" : "A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED",
+                                       "SEGMENTTEXT" : "MSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED",
+                                       "FIELD00" : "MSG"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*C*FAM*30***23*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "23",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "FAM",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "C",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*C*FAM*30***23*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*C*FAM*30***23*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*C*IND*30***23*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "23",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "IND",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "C",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*C*IND*30***23*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*C*IND*30***23*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*G*FAM*30*MC**23*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "23",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "FAM",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "G",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "MC",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*G*FAM*30*MC**23*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*G*FAM*30*MC**23*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*G*IND*30*MC**23*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "23",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "IND",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "G",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "MC",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*G*IND*30*MC**23*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*G*IND*30*MC**23*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*C*FAM*30***24*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "24",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "FAM",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "C",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*C*FAM*30***24*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*C*FAM*30***24*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*C*IND*30***24*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "24",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "IND",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "C",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*C*IND*30***24*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*C*IND*30***24*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*C*FAM*30***29*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "29",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "FAM",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "C",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*C*FAM*30***29*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*C*FAM*30***29*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*C*IND*30***29*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "29",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "IND",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "C",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*C*IND*30***29*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*C*IND*30***29*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*G*FAM*30*MC**24*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "24",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "FAM",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "G",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "MC",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*G*FAM*30*MC**24*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*G*FAM*30*MC**24*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*G*IND*30*MC**24*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "24",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "IND",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "G",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "MC",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*G*IND*30*MC**24*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*G*IND*30*MC**24*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*G*FAM*30*MC**29*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "29",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "FAM",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "G",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "MC",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*G*FAM*30*MC**29*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*G*FAM*30*MC**29*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*G*IND*30*MC**29*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "29",
+                                    "FIELD03" : [
+                                       "30"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "IND",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "G",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "MC",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*G*IND*30*MC**29*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*G*IND*30*MC**29*0*****W"
+                              },
+                              {
+                                 "LS" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LS*2120",
+                                    "FIELD00" : "LS"
+                                 },
+                                 "EB" : {
+                                    "FIELD01" : "L",
+                                    "SEGMENTTEXT" : "EB*L",
+                                    "FIELD00" : "EB"
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*L~\nLS*2120~\nLE*2120",
+                                 "FULLMESSAGETEXT" : "EB*L~\nLS*2120~\nNM1*P3*1*FOLSE*T'LANE*M***XX*1750331997~\nN3*11424 SULLIVAN RD~\nN4*BATON ROUGE*LA*70818~\nPER*IC**TE*2252613472*FX*2252617258~\nPRV*PC*PXC*207R00000X~\nLE*2120",
+                                 "LE" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LE*2120",
+                                    "FIELD00" : "LE"
+                                 },
+                                 "2120C" : [
+                                    {
+                                       "MESSAGETEXT" : "NM1*P3*1*FOLSE*T'LANE*M***XX*1750331997~\nN3*11424 SULLIVAN RD~\nN4*BATON ROUGE*LA*70818~\nPER*IC**TE*2252613472*FX*2252617258~\nPRV*PC*PXC*207R00000X",
+                                       "N3" : {
+                                          "FIELD01" : "11424 SULLIVAN RD",
+                                          "SEGMENTTEXT" : "N3*11424 SULLIVAN RD",
+                                          "FIELD00" : "N3"
+                                       },
+                                       "NM1" : {
+                                          "SEGMENTTEXT" : "NM1*P3*1*FOLSE*T'LANE*M***XX*1750331997",
+                                          "FIELD06" : "",
+                                          "FIELD03" : "FOLSE",
+                                          "FIELD00" : "NM1",
+                                          "FIELD07" : "",
+                                          "FIELD02" : "1",
+                                          "FIELD08" : "XX",
+                                          "FIELD01" : "P3",
+                                          "FIELD04" : "T'LANE",
+                                          "FIELD05" : "M",
+                                          "FIELD09" : "1750331997"
+                                       },
+                                       "PRV" : {
+                                          "FIELD01" : "PC",
+                                          "SEGMENTTEXT" : "PRV*PC*PXC*207R00000X",
+                                          "FIELD03" : "207R00000X",
+                                          "FIELD00" : "PRV",
+                                          "FIELD02" : "PXC"
+                                       },
+                                       "SEGMENTSEPARATOR" : "~\n",
+                                       "PER" : [
+                                          {
+                                             "FIELD01" : "IC",
+                                             "SEGMENTTEXT" : "PER*IC**TE*2252613472*FX*2252617258",
+                                             "FIELD06" : "2252617258",
+                                             "FIELD03" : "TE",
+                                             "FIELD00" : "PER",
+                                             "FIELD02" : "",
+                                             "FIELD05" : "FX",
+                                             "FIELD04" : "2252613472"
+                                          }
+                                       ],
+                                       "FULLMESSAGETEXT" : "NM1*P3*1*FOLSE*T'LANE*M***XX*1750331997~\nN3*11424 SULLIVAN RD~\nN4*BATON ROUGE*LA*70818~\nPER*IC**TE*2252613472*FX*2252617258~\nPRV*PC*PXC*207R00000X",
+                                       "N4" : {
+                                          "FIELD01" : "BATON ROUGE",
+                                          "SEGMENTTEXT" : "N4*BATON ROUGE*LA*70818",
+                                          "FIELD03" : "70818",
+                                          "FIELD00" : "N4",
+                                          "FIELD02" : "LA"
+                                       }
+                                    }
+                                 ]
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*1**96*********W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "",
+                                    "FIELD03" : [
+                                       "96"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "",
+                                    "FIELD02" : "",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "1",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*1**96*********W~\nMSG*PROFESSIONAL (PHYSICIAN)",
+                                 "FULLMESSAGETEXT" : "EB*1**96*********W~\nMSG*PROFESSIONAL (PHYSICIAN)",
+                                 "MSG" : [
+                                    {
+                                       "FIELD01" : "PROFESSIONAL (PHYSICIAN)",
+                                       "SEGMENTTEXT" : "MSG*PROFESSIONAL (PHYSICIAN)",
+                                       "FIELD00" : "MSG"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*1**1^33^47^48^50^86^98^MH^UC*********W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "",
+                                    "FIELD03" : [
+                                       "1",
+                                       "33",
+                                       "47",
+                                       "48",
+                                       "50",
+                                       "86",
+                                       "98",
+                                       "MH",
+                                       "UC"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "",
+                                    "FIELD02" : "",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "1",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*1**1^33^47^48^50^86^98^MH^UC*********W",
+                                 "FULLMESSAGETEXT" : "EB*1**1^33^47^48^50^86^98^MH^UC*********W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*A*IND*96***27**0****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "27",
+                                    "FIELD03" : [
+                                       "96"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "",
+                                    "FIELD02" : "IND",
+                                    "FIELD08" : "0",
+                                    "FIELD01" : "A",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*A*IND*96***27**0****W~\nMSG*PROFESSIONAL (PHYSICIAN)",
+                                 "FULLMESSAGETEXT" : "EB*A*IND*96***27**0****W~\nMSG*PROFESSIONAL (PHYSICIAN)",
+                                 "MSG" : [
+                                    {
+                                       "FIELD01" : "PROFESSIONAL (PHYSICIAN)",
+                                       "SEGMENTTEXT" : "MSG*PROFESSIONAL (PHYSICIAN)",
+                                       "FIELD00" : "MSG"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*A*IND*33^48^50^86^98^UC***27**0****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "27",
+                                    "FIELD03" : [
+                                       "33",
+                                       "48",
+                                       "50",
+                                       "86",
+                                       "98",
+                                       "UC"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "",
+                                    "FIELD02" : "IND",
+                                    "FIELD08" : "0",
+                                    "FIELD01" : "A",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*A*IND*33^48^50^86^98^UC***27**0****W",
+                                 "FULLMESSAGETEXT" : "EB*A*IND*33^48^50^86^98^UC***27**0****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*B*IND*33^48^50^86^98^UC***27*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "27",
+                                    "FIELD03" : [
+                                       "33",
+                                       "48",
+                                       "50",
+                                       "86",
+                                       "98",
+                                       "UC"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "IND",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "B",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*B*IND*33^48^50^86^98^UC***27*0*****W",
+                                 "FULLMESSAGETEXT" : "EB*B*IND*33^48^50^86^98^UC***27*0*****W"
+                              },
+                              {
+                                 "EB" : {
+                                    "SEGMENTTEXT" : "EB*B*IND*96***27*0*****W",
+                                    "FIELD10" : "",
+                                    "FIELD06" : "27",
+                                    "FIELD03" : [
+                                       "96"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD12" : "W",
+                                    "FIELD07" : "0",
+                                    "FIELD02" : "IND",
+                                    "FIELD08" : "",
+                                    "FIELD01" : "B",
+                                    "FIELD11" : "",
+                                    "FIELD04" : "",
+                                    "FIELD05" : "",
+                                    "FIELD09" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*B*IND*96***27*0*****W~\nMSG*PROFESSIONAL (PHYSICIAN)",
+                                 "FULLMESSAGETEXT" : "EB*B*IND*96***27*0*****W~\nMSG*PROFESSIONAL (PHYSICIAN)",
+                                 "MSG" : [
+                                    {
+                                       "FIELD01" : "PROFESSIONAL (PHYSICIAN)",
+                                       "SEGMENTTEXT" : "MSG*PROFESSIONAL (PHYSICIAN)",
+                                       "FIELD00" : "MSG"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "LS" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LS*2120",
+                                    "FIELD00" : "LS"
+                                 },
+                                 "EB" : {
+                                    "FIELD01" : "U",
+                                    "SEGMENTTEXT" : "EB*U**35",
+                                    "FIELD03" : [
+                                       "35"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD02" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*U**35~\nLS*2120~\nLE*2120",
+                                 "FULLMESSAGETEXT" : "EB*U**35~\nLS*2120~\nNM1*VN*2*DBP DENTAL-  WONDERBOX~\nPER*IC**UR*UHCPWP.WONDERBOXSYSTEM.COM~\nLE*2120",
+                                 "LE" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LE*2120",
+                                    "FIELD00" : "LE"
+                                 },
+                                 "2120C" : [
+                                    {
+                                       "SEGMENTSEPARATOR" : "~\n",
+                                       "MESSAGETEXT" : "NM1*VN*2*DBP DENTAL-  WONDERBOX~\nPER*IC**UR*UHCPWP.WONDERBOXSYSTEM.COM",
+                                       "FULLMESSAGETEXT" : "NM1*VN*2*DBP DENTAL-  WONDERBOX~\nPER*IC**UR*UHCPWP.WONDERBOXSYSTEM.COM",
+                                       "PER" : [
+                                          {
+                                             "FIELD01" : "IC",
+                                             "SEGMENTTEXT" : "PER*IC**UR*UHCPWP.WONDERBOXSYSTEM.COM",
+                                             "FIELD03" : "UR",
+                                             "FIELD00" : "PER",
+                                             "FIELD02" : "",
+                                             "FIELD04" : "UHCPWP.WONDERBOXSYSTEM.COM"
+                                          }
+                                       ],
+                                       "NM1" : {
+                                          "FIELD01" : "VN",
+                                          "SEGMENTTEXT" : "NM1*VN*2*DBP DENTAL-  WONDERBOX",
+                                          "FIELD03" : "DBP DENTAL-  WONDERBOX",
+                                          "FIELD00" : "NM1",
+                                          "FIELD02" : "2"
+                                       }
+                                    }
+                                 ]
+                              },
+                              {
+                                 "LS" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LS*2120",
+                                    "FIELD00" : "LS"
+                                 },
+                                 "EB" : {
+                                    "FIELD01" : "U",
+                                    "SEGMENTTEXT" : "EB*U**AL",
+                                    "FIELD03" : [
+                                       "AL"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD02" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*U**AL~\nLS*2120~\nLE*2120",
+                                 "FULLMESSAGETEXT" : "EB*U**AL~\nLS*2120~\nNM1*VN*2*MARCH VISION CARE~\nPER*IC**UR*WWW.MARCHVISIONCARE.COM~\nLE*2120",
+                                 "LE" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LE*2120",
+                                    "FIELD00" : "LE"
+                                 },
+                                 "2120C" : [
+                                    {
+                                       "SEGMENTSEPARATOR" : "~\n",
+                                       "MESSAGETEXT" : "NM1*VN*2*MARCH VISION CARE~\nPER*IC**UR*WWW.MARCHVISIONCARE.COM",
+                                       "FULLMESSAGETEXT" : "NM1*VN*2*MARCH VISION CARE~\nPER*IC**UR*WWW.MARCHVISIONCARE.COM",
+                                       "PER" : [
+                                          {
+                                             "FIELD01" : "IC",
+                                             "SEGMENTTEXT" : "PER*IC**UR*WWW.MARCHVISIONCARE.COM",
+                                             "FIELD03" : "UR",
+                                             "FIELD00" : "PER",
+                                             "FIELD02" : "",
+                                             "FIELD04" : "WWW.MARCHVISIONCARE.COM"
+                                          }
+                                       ],
+                                       "NM1" : {
+                                          "FIELD01" : "VN",
+                                          "SEGMENTTEXT" : "NM1*VN*2*MARCH VISION CARE",
+                                          "FIELD03" : "MARCH VISION CARE",
+                                          "FIELD00" : "NM1",
+                                          "FIELD02" : "2"
+                                       }
+                                    }
+                                 ]
+                              },
+                              {
+                                 "LS" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LS*2120",
+                                    "FIELD00" : "LS"
+                                 },
+                                 "EB" : {
+                                    "FIELD01" : "U",
+                                    "SEGMENTTEXT" : "EB*U**88",
+                                    "FIELD03" : [
+                                       "88"
+                                    ],
+                                    "FIELD00" : "EB",
+                                    "FIELD02" : ""
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*U**88~\nLS*2120~\nLE*2120",
+                                 "FULLMESSAGETEXT" : "EB*U**88~\nLS*2120~\nNM1*VN*2*OPTUMRX~\nPER*IC**UR*PROFESSIONALS.OPTUMRX.COM~\nLE*2120",
+                                 "LE" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LE*2120",
+                                    "FIELD00" : "LE"
+                                 },
+                                 "2120C" : [
+                                    {
+                                       "SEGMENTSEPARATOR" : "~\n",
+                                       "MESSAGETEXT" : "NM1*VN*2*OPTUMRX~\nPER*IC**UR*PROFESSIONALS.OPTUMRX.COM",
+                                       "FULLMESSAGETEXT" : "NM1*VN*2*OPTUMRX~\nPER*IC**UR*PROFESSIONALS.OPTUMRX.COM",
+                                       "PER" : [
+                                          {
+                                             "FIELD01" : "IC",
+                                             "SEGMENTTEXT" : "PER*IC**UR*PROFESSIONALS.OPTUMRX.COM",
+                                             "FIELD03" : "UR",
+                                             "FIELD00" : "PER",
+                                             "FIELD02" : "",
+                                             "FIELD04" : "PROFESSIONALS.OPTUMRX.COM"
+                                          }
+                                       ],
+                                       "NM1" : {
+                                          "FIELD01" : "VN",
+                                          "SEGMENTTEXT" : "NM1*VN*2*OPTUMRX",
+                                          "FIELD03" : "OPTUMRX",
+                                          "FIELD00" : "NM1",
+                                          "FIELD02" : "2"
+                                       }
+                                    }
+                                 ]
+                              },
+                              {
+                                 "LS" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LS*2120",
+                                    "FIELD00" : "LS"
+                                 },
+                                 "EB" : {
+                                    "FIELD01" : "X",
+                                    "SEGMENTTEXT" : "EB*X",
+                                    "FIELD00" : "EB"
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*X~\nLS*2120~\nLE*2120",
+                                 "FULLMESSAGETEXT" : "EB*X~\nLS*2120~\nNM1*1P*1*TRAINER*JANE****XX*1234567893~\nLE*2120",
+                                 "LE" : {
+                                    "FIELD01" : "2120",
+                                    "SEGMENTTEXT" : "LE*2120",
+                                    "FIELD00" : "LE"
+                                 },
+                                 "2120C" : [
+                                    {
+                                       "SEGMENTSEPARATOR" : "~\n",
+                                       "MESSAGETEXT" : "NM1*1P*1*TRAINER*JANE****XX*1234567893",
+                                       "FULLMESSAGETEXT" : "NM1*1P*1*TRAINER*JANE****XX*1234567893",
+                                       "NM1" : {
+                                          "SEGMENTTEXT" : "NM1*1P*1*TRAINER*JANE****XX*1234567893",
+                                          "FIELD06" : "",
+                                          "FIELD03" : "TRAINER",
+                                          "FIELD00" : "NM1",
+                                          "FIELD07" : "",
+                                          "FIELD02" : "1",
+                                          "FIELD08" : "XX",
+                                          "FIELD01" : "1P",
+                                          "FIELD04" : "JANE",
+                                          "FIELD05" : "",
+                                          "FIELD09" : "1234567893"
+                                       }
+                                    }
+                                 ]
+                              },
+                              {
+                                 "EB" : {
+                                    "FIELD01" : "D",
+                                    "SEGMENTTEXT" : "EB*D*IND",
+                                    "FIELD00" : "EB",
+                                    "FIELD02" : "IND"
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*D*IND~\nMSG*NONADHERENT-AAPMY20-AGE2044",
+                                 "FULLMESSAGETEXT" : "EB*D*IND~\nMSG*NONADHERENT-AAPMY20-AGE2044",
+                                 "MSG" : [
+                                    {
+                                       "FIELD01" : "NONADHERENT-AAPMY20-AGE2044",
+                                       "SEGMENTTEXT" : "MSG*NONADHERENT-AAPMY20-AGE2044",
+                                       "FIELD00" : "MSG"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "EB" : {
+                                    "FIELD01" : "D",
+                                    "SEGMENTTEXT" : "EB*D*IND",
+                                    "FIELD00" : "EB",
+                                    "FIELD02" : "IND"
+                                 },
+                                 "SEGMENTSEPARATOR" : "~\n",
+                                 "MESSAGETEXT" : "EB*D*IND~\nMSG*NONADHERENT-CCSMY20-TOTAL",
+                                 "FULLMESSAGETEXT" : "EB*D*IND~\nMSG*NONADHERENT-CCSMY20-TOTAL",
+                                 "MSG" : [
+                                    {
+                                       "FIELD01" : "NONADHERENT-CCSMY20-TOTAL",
+                                       "SEGMENTTEXT" : "MSG*NONADHERENT-CCSMY20-TOTAL",
+                                       "FIELD00" : "MSG"
+                                    }
+                                 ]
+                              }
+                           ],
+                           "SEGMENTSEPARATOR" : "~\n",
+                           "FULLMESSAGETEXT" : "NM1*IL*1*MATSON*TABITHA*M***MI*115944236~\nREF*6P*LABYHP~\nN3*7615 MAGNOLIA BEACH RD APT 14J~\nN4*DENHAM SPRINGS*LA*707268958~\nDMG*D8*19820828*F~\nDTP*346*RD8*20210101-20211231~\nEB*1**30*MC*LA MEDICAID******Y~\nMSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~\nLS*2120~\nNM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nN3*PO BOX 31341~\nN4*SALT LAKE CITY*UT*841310341~\nPER*IC**UR*WWW.UHCPROVIDER.COM~\nLE*2120~\nEB*C*FAM*30***23*0*****W~\nEB*C*IND*30***23*0*****W~\nEB*G*FAM*30*MC**23*0*****W~\nEB*G*IND*30*MC**23*0*****W~\nEB*C*FAM*30***24*0*****W~\nEB*C*IND*30***24*0*****W~\nEB*C*FAM*30***29*0*****W~\nEB*C*IND*30***29*0*****W~\nEB*G*FAM*30*MC**24*0*****W~\nEB*G*IND*30*MC**24*0*****W~\nEB*G*FAM*30*MC**29*0*****W~\nEB*G*IND*30*MC**29*0*****W~\nEB*L~\nLS*2120~\nNM1*P3*1*FOLSE*T'LANE*M***XX*1750331997~\nN3*11424 SULLIVAN RD~\nN4*BATON ROUGE*LA*70818~\nPER*IC**TE*2252613472*FX*2252617258~\nPRV*PC*PXC*207R00000X~\nLE*2120~\nEB*1**96*********W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*1**1^33^47^48^50^86^98^MH^UC*********W~\nEB*A*IND*96***27**0****W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*A*IND*33^48^50^86^98^UC***27**0****W~\nEB*B*IND*33^48^50^86^98^UC***27*0*****W~\nEB*B*IND*96***27*0*****W~\nMSG*PROFESSIONAL (PHYSICIAN)~\nEB*U**35~\nLS*2120~\nNM1*VN*2*DBP DENTAL-  WONDERBOX~\nPER*IC**UR*UHCPWP.WONDERBOXSYSTEM.COM~\nLE*2120~\nEB*U**AL~\nLS*2120~\nNM1*VN*2*MARCH VISION CARE~\nPER*IC**UR*WWW.MARCHVISIONCARE.COM~\nLE*2120~\nEB*U**88~\nLS*2120~\nNM1*VN*2*OPTUMRX~\nPER*IC**UR*PROFESSIONALS.OPTUMRX.COM~\nLE*2120~\nEB*X~\nLS*2120~\nNM1*1P*1*TRAINER*JANE****XX*1234567893~\nLE*2120~\nEB*D*IND~\nMSG*NONADHERENT-AAPMY20-AGE2044~\nEB*D*IND~\nMSG*NONADHERENT-CCSMY20-TOTAL",
+                           "DMG" : {
+                              "FIELD01" : "D8",
+                              "SEGMENTTEXT" : "DMG*D8*19820828*F",
+                              "FIELD03" : "F",
+                              "FIELD00" : "DMG",
+                              "FIELD02" : "19820828"
+                           },
+                           "REF" : [
+                              {
+                                 "FIELD01" : "6P",
+                                 "SEGMENTTEXT" : "REF*6P*LABYHP",
+                                 "FIELD00" : "REF",
+                                 "FIELD02" : "LABYHP"
+                              }
+                           ],
+                           "N4" : {
+                              "FIELD01" : "DENHAM SPRINGS",
+                              "SEGMENTTEXT" : "N4*DENHAM SPRINGS*LA*707268958",
+                              "FIELD03" : "707268958",
+                              "FIELD00" : "N4",
+                              "FIELD02" : "LA"
+                           },
+                           "DTP" : [
+                              {
+                                 "FIELD01" : "346",
+                                 "SEGMENTTEXT" : "DTP*346*RD8*20210101-20211231",
+                                 "FIELD03" : "20210101-20211231",
+                                 "FIELD00" : "DTP",
+                                 "FIELD02" : "RD8"
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ],
+         "HL" : {
+            "FIELD01" : "1",
+            "SEGMENTTEXT" : "HL*1**20*1",
+            "FIELD03" : "20",
+            "FIELD00" : "HL",
+            "FIELD02" : "",
+            "FIELD04" : "1"
+         },
+         "2100A" : [
+            {
+               "SEGMENTSEPARATOR" : "~\n",
+               "MESSAGETEXT" : "NM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nPER*IC**UR*WWW.UHCPROVIDER.COM",
+               "FULLMESSAGETEXT" : "NM1*PR*2*UNITEDHEALTHCARE*****PI*87726~\nPER*IC**UR*WWW.UHCPROVIDER.COM",
+               "PER" : [
+                  {
+                     "FIELD01" : "IC",
+                     "SEGMENTTEXT" : "PER*IC**UR*WWW.UHCPROVIDER.COM",
+                     "FIELD03" : "UR",
+                     "FIELD00" : "PER",
+                     "FIELD02" : "",
+                     "FIELD04" : "WWW.UHCPROVIDER.COM"
+                  }
+               ],
+               "NM1" : {
+                  "SEGMENTTEXT" : "NM1*PR*2*UNITEDHEALTHCARE*****PI*87726",
+                  "FIELD06" : "",
+                  "FIELD03" : "UNITEDHEALTHCARE",
+                  "FIELD00" : "NM1",
+                  "FIELD07" : "",
+                  "FIELD02" : "2",
+                  "FIELD08" : "PI",
+                  "FIELD01" : "PR",
+                  "FIELD04" : "",
+                  "FIELD05" : "",
+                  "FIELD09" : "87726"
+               }
+            }
+         ]
+      }
+   ],
+   "BHT" : {
+      "FIELD01" : "0022",
+      "SEGMENTTEXT" : "BHT*0022*11*B432.62749*20210624*11322589",
+      "FIELD03" : "B432.62749",
+      "FIELD00" : "BHT",
+      "FIELD02" : "11",
+      "FIELD05" : "11322589",
+      "FIELD04" : "20210624"
+   }
+}

@@ -1,0 +1,81 @@
+<!-- project object model (pom) -->
+<!-- extensible markup language (xml) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+    <!-- default -->
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.7</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <!-- app specific -->
+    <groupId>com.athenahealth.collector.fdp</groupId>
+    <artifactId>eligibility</artifactId>
+    <version>0.1.0</version>
+    <name>eligibility-service</name>
+    <description>Eligibility Service</description>
+
+    <!-- value placeholders -->
+    <!-- accessible anywhere within a POM by using ${X} where X is the property -->
+    <properties>
+        <java.version>11</java.version>
+        <jacoco.version>0.8.4</jacoco.version>
+        <spring-cloud.version>2021.0.0</spring-cloud.version>
+    </properties>
+
+    <!-- groupId:artifactId:type:version:scope -->
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.7.5</version>
+            <!-- jar, war, ejb-client, test-jar (default is jar) -->
+            <type>jar</type>
+            <!-- compile, runtime, test, system, provided (default is compile) -->
+            <scope>compile</scope>
+            <!-- only groupId:artifactId -->
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-jxpath</groupId>
+                    <artifactId>commons-jxpath</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+    <!-- Only useful when you have multiple child projects inheriting a common parent project. In the parent POM, the main difference between dependencies and dependencyManagement is the following. -->
+    <!-- The artifacts in the dependencies section of parent POM will ALWAYS be included in child POM. -->
+    <!-- The artifacts in the dependencyManagement section of parent POM will only be included in child POM if they were also specified in dependencies section of child POM. -->
+    <!-- You still need to define the artifacts in in the child POM to show that you are using them. They are not auto included in child POM just because they are in dependencyManagement of parent POM. -->
+    <dependencyManagement></dependencyManagement>
+
+    <!-- A directory where all the project jars, library jar, plugins or any other project specific artifacts are stored and can be used by Maven easily. -->
+    <repositories></repositories>
+
+    <build>
+        <finalName>${project.name}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>com.diffplug.spotless</groupId>
+                <artifactId>spotless-maven-plugin</artifactId>
+                <version>2.12.1</version>
+                <configuration>
+                    <java>
+                        <googleJavaFormat>
+                            <version>1.9</version>
+                            <style>GOOGLE</style>
+                        </googleJavaFormat>
+                    </java>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

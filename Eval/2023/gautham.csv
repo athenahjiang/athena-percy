@@ -1,0 +1,89 @@
+Issue key,Issue id,Parent id,Summary,Custom field (Story Points),Custom field (Epic Link)
+COLTEC-941,2830136,,Release Bundle 4 Beta group,1,COLTEC-903
+COLTEC-1114,2932050,,"Release EliD 1.3.3, EliS prod",2,COLTEC-903
+COLTEC-1004,2841327,,Release EliD 1.3.1 and 1.3.2 versions to prod and deploy coltec-common-iac,2,COLTEC-903
+COLTEC-1109,2929695,,Revert COLTEC-1061 from develop,0,COLTEC-903
+COLTEC-905,2795828,,Phase wise increase Dark launch load,3,COLTEC-737
+COLTEC-919,2809568,,Update default version for patient-eligibility-details,1,COLTEC-737
+COLTEC-544,2603032,,"Spike - Release and versioning process finalization and documentation (CEC, EliS, EliD)",2,COLTEC-737
+COLTEC-1105,2927871,,Update Log Router Container Image,1,COLTEC-737
+COLTEC-883,2779618,,Make Jenkinsfile compatible with new version,1,COLTEC-737
+COLTEC-364,2478264,,SPIKE: Review and Give Feedback on Self-Pay Cost Estimate Tech Design,2,COLTEC-378
+COLTEC-485,2561565,,Spike - athenacron error for Eligibility::LAUNCHER::poor_quality_eligibilityclass_report,3,COLTEC-378
+COLTEC-679,2661109,,TRA Preparation / update and signoff,1,COLTEC-523
+COLTEC-681,2661113,,Spike - Onboard EliS with NOC,0.5,COLTEC-523
+COLTEC-511,2579644,,Bundle 3 Build and release tasks,2,COLTEC-523
+COLTEC-651,2642514,,Spike - KT EliD AtheliumJS,2,COLTEC-523
+COLTEC-882,2779207,,Phase wise release of Dark launch and monitoring for next phases,1,COLTEC-523
+COLTEC-814,2737916,,Renew SSL Cert,1,COLTEC-523
+COLTEC-791,2726476,,Dummy Jira to associate existing commits with Jira,0,COLTEC-523
+COLTEC-666,2646656,,"Spike - KT EliD Benefits UX, Domain and decisions",5,COLTEC-523
+COLTEC-881,2778997,,Release Bundle 4 Alpha,1,COLTEC-523
+COLTEC-858,2760362,,Dark Launch GA EliS by SECRETLY mounting EliD on old esp page,,COLTEC-523
+COLTEC-823,2744827,,Spike - Eligibility batch run for Medicaid-MA / GL customer,2,COLTEC-524
+COLTEC-760,2708204,,Spike - 270 of BCBS-NY not including Member id,2,COLTEC-524
+COLTEC-877,2775656,,Requesting Preview RTE Capability ,1,COLTEC-524
+COLTEC-1289,3048890,,[SPIKE] 'Leave page' warning,2,COLTEC-1206
+COLTEC-1059,2884050,,SPIKE: Investigate 404 Responses from GET /19661/patients/{patientid}/insurances/{insuranceid}/benefitdetails,2,COLTEC-959
+COLTEC-1124,2937776,,[Spike] - SECOLFDP-786 MemberID vs SSN logic,2,COLTEC-959
+COLTEC-1179,2974959,,Request to complete testing for Amplitude URL update(COLTEC),2,COLTEC-959
+COLTEC-1178,2974457,,Spike - SECOLFDP-4270 Random provider review HPCI,3,COLTEC-959
+COLTEC-1285,3043666,,Remove fake-ness for Preview Eligibility,0,COLTEC-959
+COLTEC-891,2785890,,[SPIKE] What are the Dependencies on Copay Type?,2,COLTEC-284
+COLTEC-1216,3009032,,"[Spike] Copay from PDP -> Check-in, new tables",2,COLTEC-895
+COLTEC-504,2574092,,Integration Testing and release for Jan 17th Wave,2,COLTEC-274
+COLTEC-483,2558520,,Spike - Multiple provider group and chart group determination,3,COLTEC-274
+COLTEC-545,2603248,,Bump up CEC version to 1.2.0,0.5,COLTEC-408
+COLTEC-552,2606643,,SPIKE - Limiting ALL eligibility endpoints to load only top most recent 30 eligibility requests (271s),3,COLTEC-407
+COLTEC-183,2338862,,[Spike] Come up with a DR strategy,5,COLTEC-407
+COLTEC-467,2542312,,TRA for FEATURE-3582 for GA (Sign-off Due 2/10),1,COLTEC-407
+COLTEC-667,2648127,,[MARCH 9th!] Prod release EliD,0.5,COLTEC-407
+COLTEC-487,2562147,,Eligibility Service 2.0 PSAR and Threat Model,2,COLTEC-407
+COLTEC-663,2645068,,Merge reverted changes and deploy,0,COLTEC-407
+COLTEC-464,2541344,,TRA for FEATURE-3582 for Alpha/Beta,3,COLTEC-407
+COLTEC-568,2609841,,Get prod eligibility_request data for Analytics,0.5,COLTEC-407
+COLTEC-1072,2898713,,Monolith event - compress benefits and update filepath,2,COLTEC-896
+COLTEC-1143,2946340,,Emit event for every patientinsurance,1,COLTEC-896
+COLTEC-1086,2912644,,Spike - Rollout plan for Eventing,2,COLTEC-896
+COLTEC-957,2835268,,Generate athenaEvent,5,COLTEC-896
+COLTEC-1054,2882066,,Create a new iac repo for Lambda binaries,3,COLTEC-896
+COLTEC-767,2713320,,Force Revamp Customers to use EliD,2,COLTEC-699
+COLTEC-725,2685630,,Spike - Plan Description,2,COLTEC-699
+COLTEC-804,2731596,,Fix for scrolling- perl changes,1,COLTEC-676
+COLTEC-777,2717932,,Resolve All Scrolling Issues,5,COLTEC-676
+COLTEC-880,2778996,,Release Bundle 3 Beta,0.5,COLTEC-676
+COLTEC-639,2622173,,Eligibility - Spike: Red Text Warning Messages,2,COLTEC-697
+COLTEC-885,2779599,2779207,Turn dark launch on in candidate,,
+COLTEC-813,2737576,2727564,EliD 1.1.0 release activities ,,
+COLTEC-788,2724940,2708217,Setup athenaConf for bundle 1 alpha,,
+COLTEC-781,2720628,2713320,React Changes to Force Revamp Customers to use EliD,,
+COLTEC-694,2671686,2652029,Up patient-eligibility-details to 0.2.9,,
+COLTEC-863,2767414,,Copy up of //anet/tasks/COLTEC_filtered/coltec858_dark_launch_elis on Wed May 31 12:26:02 2023,,
+COLTEC-865,2767588,2579644,Publish EliD 1.2.0,,
+COLTEC-531,2594143,2562147,Create Threat Model,,
+COLTEC-674,2653653,2648127,EliD AthenaConf 0.2.7 release,,
+COLTEC-946,2830570,2795828,Do 100%,,
+COLTEC-839,2751890,2727564,Release Bundle 2 to Small Beta,,
+COLTEC-838,2751693,2727564,"resolve conflicts between master and develop, merge master to develop",,
+COLTEC-837,2751672,2727564,Release Status tag changes (bundle 2) to alpha,,
+COLTEC-822,2743420,,Copy up of //anet/tasks/COLTEC_filtered/coltec777_more_detailed_scrolling_refactor_candidate on Fri May 12 14:12:55 2023,,
+COLTEC-817,2739735,2727564,Soft alpha bundle 2,,
+COLTEC-799,2729237,2729236,Bump EliS version,,
+COLTEC-786,2723249,,Copy up of //anet/tasks/COLTEC_filtered/coltec767_force_elid_revamp on Wed Apr 26 15:39:41 2023,,
+COLTEC-782,2721729,,Copy up of //anet/tasks/COLTEC_filtered/coltec400_invalid_success_response on Tue Apr 25 19:50:38 2023,,
+COLTEC-560,2608203,2608062,Review Develop branch for merge,,
+COLTEC-917,2807226,2795828,Do 20%,,
+COLTEC-874,2775131,2579644,"Release EliD bundle 3, and bundle 1 & 2 large beta (excluding opt out)",,
+COLTEC-787,2723252,2708217,Bump Elig Svc Version,,
+COLTEC-933,2826323,2795828,Do 70%,,
+COLTEC-923,2816229,2795828,Do 40%,,
+COLTEC-875,2775156,2579644,Do soft alpha for bundle 3,,
+COLTEC-864,2767585,2579644,Release EliS 1.0.2,,
+COLTEC-859,2760715,2760362,Initial athenaConf rollout setup,,
+COLTEC-1218,3010872,,Copy up task,0,
+COLTEC-1043,2874595,,Copy up of //anet/tasks/COLTEC_filtered/coltec957_eligibility_events on Fri Aug 11 16:34:00 2023,,
+COLTEC-1102,2924058,2841327,Rollback 1.3.2,,
+COLTEC-1154,2959887,2932050,Force users to EliD for 1.3.4 release,,
+COLTEC-1152,2958725,,Copy up of //anet/tasks/COLTEC_filtered/coltec_1115_otj on Tue Oct 17 15:30:53 2023,,
+COLTEC-1156,2961316,2932050,Revert forcing users to EliD from COLTEC-1154,,
+,,,,97.5,

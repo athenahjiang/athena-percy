@@ -1,0 +1,11 @@
+{
+    "LI": "Life Insurance",
+    "LT": "Litigation",
+    "MA": "Medicare Part A",
+    "MB": "Medicare Part B",
+    "MC": "Medicaid",
+    "MH": "Medigap Part A",
+    "MI": "Medigap Part B",
+    "MP": "Medicare Primary",
+    "OT": "Other"
+}

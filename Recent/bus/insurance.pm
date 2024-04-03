@@ -1,0 +1,1 @@
+BusCall::PatientInsurance::GetPatientInsurance($dbh, { PATIENTINSURANCEID => 8072231, RETURNASHASH => 1, });

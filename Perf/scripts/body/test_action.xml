@@ -1,0 +1,5 @@
+  <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
+    <intProp name="ActionProcessor.action">1</intProp>
+    <intProp name="ActionProcessor.target">0</intProp>
+    <stringProp name="ActionProcessor.duration">250</stringProp>
+  </TestAction>

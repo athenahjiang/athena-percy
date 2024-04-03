@@ -1,0 +1,3803 @@
+{
+	"info": {
+		"_postman_id": "1f4a090a-0897-479b-b8d5-8785b6c4f2e0",
+		"name": "Percy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16479994"
+	},
+	"item": [
+		{
+			"name": "JWT",
+			"item": [
+				{
+					"name": "ICIC",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic MG9hMTJubjQyamtITlhCQXQwaDg6MVhkdkJpbVFxR2g3SkRHRFRXMlMxSXNObXZzeV80TEhnZkV0SzNoMg=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "athena/service/PatientInsurance.CardImages.write athena/service/PatientInsurance.CardImages.read",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://athena.oktapreview.com/oauth2/ausc16vzbfqYFn4jP0h7/v1/token",
+							"protocol": "https",
+							"host": [
+								"athena",
+								"oktapreview",
+								"com"
+							],
+							"path": [
+								"oauth2",
+								"ausc16vzbfqYFn4jP0h7",
+								"v1",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eligibility-service",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic MG9hMTJubjQyamtITlhCQXQwaDg6MVhkdkJpbVFxR2g3SkRHRFRXMlMxSXNObXZzeV80TEhnZkV0SzNoMg=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "athena/service/CollectorEligibility.EligibilityService.write athena/service/CollectorEligibility.EligibilityService.read",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://athena.oktapreview.com/oauth2/ausc16vzbfqYFn4jP0h7/v1/token",
+							"protocol": "https",
+							"host": [
+								"athena",
+								"oktapreview",
+								"com"
+							],
+							"path": [
+								"oauth2",
+								"ausc16vzbfqYFn4jP0h7",
+								"v1",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Athenanet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic MG9hajdsYXo1bTRjYnc3czcxdDc6aHI0VV9XWC1Pci1Ba1pzaWkzalJRdTN3V1d4Y1p3U0NNQkNtd0pVcQ=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=92A062E23D4C90370788D102CBCEBFAC"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "athena/service/Athenanet.*",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://athenahealthpoc.okta.com/oauth2/aus13kbtj4HAdI3451t7/v1/token",
+							"protocol": "https",
+							"host": [
+								"athenahealthpoc",
+								"okta",
+								"com"
+							],
+							"path": [
+								"oauth2",
+								"aus13kbtj4HAdI3451t7",
+								"v1",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Perl FHIR",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic MG9hajdsYXo1bTRjYnc3czcxdDc6aHI0VV9XWC1Pci1Ba1pzaWkzalJRdTN3V1d4Y1p3U0NNQkNtd0pVcQ==",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=92A062E23D4C90370788D102CBCEBFAC",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "system/Practitioner.read",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "0oamt6arrbIPTt5Mg1t7",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "K9omzrRILORoGtb3YInH_Pw1dnz3i4VS3iMzy1sY",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://athenahealthpoc.okta.com/oauth2/aus13kbtj4HAdI3451t7/v1/token",
+							"protocol": "https",
+							"host": [
+								"athenahealthpoc",
+								"okta",
+								"com"
+							],
+							"path": [
+								"oauth2",
+								"aus13kbtj4HAdI3451t7",
+								"v1",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BusCall",
+			"item": [
+				{
+					"name": "Foo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJHSVRtVnVpcGprM0ZpdVdRbEtvR29HSE5pd3dQX2xMZGxfUlNydk8xS2hvIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnQ0UUtxUTFlclk5S2lMclNhZUdPRWxVNElpNW4yWUQ4MHhPSFJwekFWcVUiLCJpc3MiOiJodHRwczovL2F0aGVuYWhlYWx0aHBvYy5va3RhLmNvbS9vYXV0aDIvYXVzMTNrYnRqNEhBZEkzNDUxdDciLCJhdWQiOiJodHRwczovL2lhbS5hdGhlbmFoZWFsdGguY29tIiwiaWF0IjoxNjUzNjU3NjcwLCJleHAiOjE2NTM2NjEyNzAsImNpZCI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3Iiwic2NwIjpbImF0aGVuYS9zZXJ2aWNlL0F0aGVuYW5ldC4qIl0sInN1YiI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3In0.qdJNORqle2AJDthbQezubk12SACJ0fnhWWuRmQbGpIZL6C9-jE-j-5Zd5uUGRS3b0O3B58tND5HRNCYCN69-pHiWI6d3i8zJM5JTad9q63ShnznwmPSV5wRimvv6leU3pVfzaRGPGlqiUepneVpQ37jKWLlXevxhyy2c4oX_S-JDoZ9QRt8TNXGmg39FtrDsTXYvsbdqRpXuBrHwFwj0DCCeJC3A6JK5S6wnE9pWninFkW0-5s9CcWqXtarK37DsYu-13X1lh9KnnZOwU6PEvRMWpozulBAOOv7aOkA7lUEdee5zuvl-HjO4aV4tA7KMOGNQxStRpH-XXknAsksy3g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subsystem\": \"PatientInsurance\",\r\n    \"sub\": \"GetLocalPatientInsurance\",\r\n    \"PARAMS\": {\r\n        \"PATIENTID\": 798,\r\n        \"PATIENTINSURANCEID\": 1205\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devmain-mirror.athenahealth.com/htservices_external/ecosystem/api/tokenproxy.esp/v1/22591/subsystembuscall",
+							"protocol": "https",
+							"host": [
+								"devmain-mirror",
+								"athenahealth",
+								"com"
+							],
+							"path": [
+								"htservices_external",
+								"ecosystem",
+								"api",
+								"tokenproxy.esp",
+								"v1",
+								"22591",
+								"subsystembuscall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CanViewPatient",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI2NWI0MTQ1Yi1mZGM1LTQzMjQtODg3Yy0yYjBhZGY0YWMyY2IiLCJhbGciOiJSUzI1NiJ9.eyJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sImlhdCI6MTY3OTMyNjEwMCwianRpIjoiWkJoN2xBck9PVDBBTEJVaUFBQUFnZyIsInN1YiI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvaW50LmF0aGVuYS5pbyIsImFuZXRVc2VyIjoicGppYW5nNCIsImV4cCI6MTY3OTMyNjQwMCwiaXNzIjoiaHR0cHM6XC9cL3N0YWdlLmF0aGVuYWhlYWx0aC5jb20iLCJjaWQiOiIwb2FjMHk5bWl4WWtlVThvSDBoNyJ9.iMb74GStrtviYmLN1xIkyS8FgpT-RiKBNRfsG65CcTcjPnsNJW_SRnPkIJTcnuuc-NXi2T5RaM0qV2wMqmWoVxSJ67j67vKXZZNoWHThLd4h7VqxPzk9ZkDfokgiGJsK1naWBL6NgKs_fhrksmOMMp0UpRoIrHdoI_mLb34LZECQyTRNAFohqFt6EgtVFt-TqivlS24m2rQFpUxC48SNez1Y__K3-yxLylV8S-a0G21-X44xPRdj6ebsFczT5PHuTg9xQUHDPNitzZ4H2q5qioM3LoFa2mkBmpGuhWRRCK1h7wIe5xoWKocPdR_9spS6a04rfeHP2PBscpEicxCFR3AX0_kOo-Bpl1qll9ddU33XM2UCiJLo-dT2zvZ2iQJD0t4RnXZYJb8kcDEfC6GHOIRzaOSFn9uSbTP-7Q2pePPJFhWy273Iwm9GnokW-J_kR5T0ghwJApRGGCto7Wo_F9LqDsaKBHjqiMsSpeLmT4mI8GLU7RSr7GxwSU8JpZeUNNrXK5lhNkn8qgXntUPKXTourU-EEs4giAH8Orr7vDXqT7Mr_0gNFMWYJVWC_lHUFteASMxVvHx82Qa1XnuIq7VYC3trBXC0v8GwP3mj6AwSfDzNuGUU2uHDUXQ0IJBTXvcQfU0oQbV0_N1buuHKm6TPQnsvYNwodQ9aSvqK4uU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subsystem\": \"PatientDemographics\",\r\n    \"sub\": \"CanViewPatient\",\r\n    \"PARAMS\": {\r\n        \"PATIENTID\": 1561424,\r\n        \"USERNAME\": \"pjiang4\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://prodmirror.athenahealth.com/htservices_external/ecosystem/api/tokenproxy.esp/v1/432/subsystembuscall",
+							"protocol": "https",
+							"host": [
+								"prodmirror",
+								"athenahealth",
+								"com"
+							],
+							"path": [
+								"htservices_external",
+								"ecosystem",
+								"api",
+								"tokenproxy.esp",
+								"v1",
+								"432",
+								"subsystembuscall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CheckAltPatientEligibility",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJhVVg1UWFvdHpyS21peWhaWlhuUFY0dDc2UGk4U3BrUGJmNWhOLWgzUFZJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmVMYkxiYi1BbHNBbWtrWVpTWXFQcVRPVTZDVGp0YVh3YnhfbldkSFZrWmsiLCJpc3MiOiJodHRwczovL2F0aGVuYWhlYWx0aHBvYy5va3RhLmNvbS9vYXV0aDIvYXVzMTNrYnRqNEhBZEkzNDUxdDciLCJhdWQiOiJodHRwczovL2lhbS5hdGhlbmFoZWFsdGguY29tIiwiaWF0IjoxNjYyNDEzMTY3LCJleHAiOjE2NjI0MTY3NjcsImNpZCI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3Iiwic2NwIjpbImF0aGVuYS9zZXJ2aWNlL0F0aGVuYW5ldC4qIl0sInN1YiI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3In0.Gt4LiA2GlrvT59YDUxHwv89uOramPYq48hmER9dQjmxOOPndjK_4wsigKXkVfReCBrk7O1cYMj-MIxYrQNtkG9ehSgc9ASm_acyBI8u3JCa2a9b00retwUSo91tQVvqnqcRASY98SMEXnNA-W8tUcy0o7crCKsMXdtAroFi5pWcTRgxiYUWjOKdkiBdat22VguLeNp3jt0ODxHDRAk-pzVuvNtWv-PuP0TQ75INaIg0Y8Qb8h_cy7CGbDB5Z66TFSXiCscatrPKO21EBQdgteRnV-f7DtFfdU_R3HXeoqsNjCG-HEz3c8GKzcADu-5BPTIPV7gEf-RM0SsyIjrNsuA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJraWQiOiJHSVRtVnVpcGprM0ZpdVdRbEtvR29HSE5pd3dQX2xMZGxfUlNydk8xS2hvIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULngweVpOUTJXNXM3dTVTaUFPYnQxaFdYdmU2c1BadURwTmY1dDhteWhVSE0iLCJpc3MiOiJodHRwczovL2F0aGVuYWhlYWx0aHBvYy5va3RhLmNvbS9vYXV0aDIvYXVzMTNrYnRqNEhBZEkzNDUxdDciLCJhdWQiOiJodHRwczovL2lhbS5hdGhlbmFoZWFsdGguY29tIiwiaWF0IjoxNjUwNDU3MDk2LCJleHAiOjE2NTA0NjA2OTYsImNpZCI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3Iiwic2NwIjpbImF0aGVuYS9zZXJ2aWNlL0F0aGVuYW5ldC4qIl0sInN1YiI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3In0.Gjxz50yqJve5Hnd-7VtvBEgFN8IpXjK8PzjSz2-WmpjcZ9Eg4h4NoU_e1nwzU0Hq8f_bqa55Un_oTmcDOS6Yy1T3tDX2zbUJrxBWdg16wegVo-G48tK-W2YBglUC4urRQ1LHwAleG89CxdL69er0VMCxlbIat_1MxPchq4tk7HfJMA-G4IOhOHTfl4_tCf5mAlmyk-43ncvj4PEUkkL7q2uKt0TSUedJmIMYxTvfcWc7xU-P_UFc1pukp8GeBWz6fplSWMJhBANwVdBWDIlaK0lP8xwyD8GXvgtpBCp0uOLV5IHEhRKVWQd1VaO2dzq-utEHeKJviKezdVo0hxTL-g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subsystem\": \"Eligibility\",\n    \"sub\": \"CheckAltPatientEligibility\",\n    \"PARAMS\": {\n        \"PATIENTID\": 1561424,\n        \"PATIENTINSURANCEID\": 21320,\n        \"USERNAME\": \"pjiang4\",\n        \"INQUIRYREASON\": \"MDP-USERREQUESTED\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://devmain-mirror.athenahealth.com/htservices_external/ecosystem/api/tokenproxy.esp/v1/432/subsystembuscall",
+							"protocol": "https",
+							"host": [
+								"devmain-mirror",
+								"athenahealth",
+								"com"
+							],
+							"path": [
+								"htservices_external",
+								"ecosystem",
+								"api",
+								"tokenproxy.esp",
+								"v1",
+								"432",
+								"subsystembuscall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FetchAllEligibilityInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJ1aFMtdzZEVUowd1FJMDdQZlRldHotUnowdjctZk5BZ3liXzY0S2ZpcWc4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmlhdFB5TFFzRHotVnpMSHd0ZUZJbjhiWGZHSVRCM0R3TzF1OUlGZXJLWVUiLCJpc3MiOiJodHRwczovL2F0aGVuYWhlYWx0aHBvYy5va3RhLmNvbS9vYXV0aDIvYXVzMTNrYnRqNEhBZEkzNDUxdDciLCJhdWQiOiJodHRwczovL2lhbS5hdGhlbmFoZWFsdGguY29tIiwiaWF0IjoxNjc4MzExNzY2LCJleHAiOjE2NzgzMTUzNjYsImNpZCI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3Iiwic2NwIjpbImF0aGVuYS9zZXJ2aWNlL0F0aGVuYW5ldC4qIl0sInN1YiI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3In0.gJACZPyhJQYTTLbItB3i_SDUMIKIGhk0aVc-tF6kisG0Fwe5yF8EEOFPETn4xKvoxO2V_FOShTYiOsI5C5u63Lvn7kGKODCHmP6lrn-W5TQ-PiY3n4SblV6MjRmYgigCcItX7SXAnFdMgyFpmZv0G419QMscTs_NLEoD8eww7TPfCcvE46_BDCbfDfyF6Xe6bi7Mwu51EB4uBk0goY3WwQR7NgHW3AH352dh65bjgYZSFqmfT1FYFgQJU0we4U-_YoWOsOTex0FQc6hGlQbDg0ozq93R5VD_23Xj4UAikahdd-S9VBkk9KPp5O4pZ3Vey07G4UBx3s5_PuSvsfXHeA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subsystem\": \"Eligibility\",\r\n    \"sub\": \"FetchAllEligibilityInfo\",\r\n    \"PARAMS\": {\r\n        \"PATIENTINSURANCEID\": 1226266,\r\n        \"EXCLUDEELIGIBILITYTRACKIDS\": []\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dev104.athenahealth.com:17810/htservices_external/ecosystem/api/tokenproxy.esp/v1/94/subsystembuscall",
+							"protocol": "https",
+							"host": [
+								"dev104",
+								"athenahealth",
+								"com"
+							],
+							"port": "17810",
+							"path": [
+								"htservices_external",
+								"ecosystem",
+								"api",
+								"tokenproxy.esp",
+								"v1",
+								"94",
+								"subsystembuscall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEligibilityHistory",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI2NWI0MTQ1Yi1mZGM1LTQzMjQtODg3Yy0yYjBhZGY0YWMyY2IiLCJhbGciOiJSUzI1NiJ9.eyJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sImlhdCI6MTY3OTMyNjEwMCwianRpIjoiWkJoN2xBck9PVDBBTEJVaUFBQUFnZyIsInN1YiI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvaW50LmF0aGVuYS5pbyIsImFuZXRVc2VyIjoicGppYW5nNCIsImV4cCI6MTY3OTMyNjQwMCwiaXNzIjoiaHR0cHM6XC9cL3N0YWdlLmF0aGVuYWhlYWx0aC5jb20iLCJjaWQiOiIwb2FjMHk5bWl4WWtlVThvSDBoNyJ9.iMb74GStrtviYmLN1xIkyS8FgpT-RiKBNRfsG65CcTcjPnsNJW_SRnPkIJTcnuuc-NXi2T5RaM0qV2wMqmWoVxSJ67j67vKXZZNoWHThLd4h7VqxPzk9ZkDfokgiGJsK1naWBL6NgKs_fhrksmOMMp0UpRoIrHdoI_mLb34LZECQyTRNAFohqFt6EgtVFt-TqivlS24m2rQFpUxC48SNez1Y__K3-yxLylV8S-a0G21-X44xPRdj6ebsFczT5PHuTg9xQUHDPNitzZ4H2q5qioM3LoFa2mkBmpGuhWRRCK1h7wIe5xoWKocPdR_9spS6a04rfeHP2PBscpEicxCFR3AX0_kOo-Bpl1qll9ddU33XM2UCiJLo-dT2zvZ2iQJD0t4RnXZYJb8kcDEfC6GHOIRzaOSFn9uSbTP-7Q2pePPJFhWy273Iwm9GnokW-J_kR5T0ghwJApRGGCto7Wo_F9LqDsaKBHjqiMsSpeLmT4mI8GLU7RSr7GxwSU8JpZeUNNrXK5lhNkn8qgXntUPKXTourU-EEs4giAH8Orr7vDXqT7Mr_0gNFMWYJVWC_lHUFteASMxVvHx82Qa1XnuIq7VYC3trBXC0v8GwP3mj6AwSfDzNuGUU2uHDUXQ0IJBTXvcQfU0oQbV0_N1buuHKm6TPQnsvYNwodQ9aSvqK4uU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subsystem\": \"Eligibility\",\r\n    \"sub\": \"GetEligibilityHistory\",\r\n    \"PARAMS\": {\r\n        \"PATIENTID\": 1035931,\r\n        \"PATIENTINSURANCEID\": 20874\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://prodmirror.athenahealth.com/htservices_external/ecosystem/api/tokenproxy.esp/v1/432/subsystembuscall",
+							"protocol": "https",
+							"host": [
+								"prodmirror",
+								"athenahealth",
+								"com"
+							],
+							"path": [
+								"htservices_external",
+								"ecosystem",
+								"api",
+								"tokenproxy.esp",
+								"v1",
+								"432",
+								"subsystembuscall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetServiceTypeCodes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJhVVg1UWFvdHpyS21peWhaWlhuUFY0dDc2UGk4U3BrUGJmNWhOLWgzUFZJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlZ6bnBHNVk0ank3OVNsQ3E5VEJJOTFGUjJhaWNzZ1NFdzB3bXY3MFM5REEiLCJpc3MiOiJodHRwczovL2F0aGVuYWhlYWx0aHBvYy5va3RhLmNvbS9vYXV0aDIvYXVzMTNrYnRqNEhBZEkzNDUxdDciLCJhdWQiOiJodHRwczovL2lhbS5hdGhlbmFoZWFsdGguY29tIiwiaWF0IjoxNjYzMzg4NDc3LCJleHAiOjE2NjMzOTIwNzcsImNpZCI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3Iiwic2NwIjpbImF0aGVuYS9zZXJ2aWNlL0F0aGVuYW5ldC4qIl0sInN1YiI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3In0.NteB8XgPb0DWWWeCxKVkO8xt0leCINFKkUA23ZxB0_6V5nyepuUETTewu4jXw7eL-ALxEvgup4fqvC4r-PpjMIU5eRYAu_8iQjw5zTzJhQ6s2-iA2znGTct2jxqG9UxKpa5lg8m2B_r9J6kF-WOIsxVP11QYo_8RnPmrT3VbJW4EnSjy-hNAFlCXNSQ8E0nYFemhG-c8KkoLLn6tEu_1xdBv4J1Z-W3YHXZ7u0o9xpfREnWbkyHm33OXT5XhtE4BpJmw1F7MX4ORlDCdhA6OVWATpBlKBhEtel_PC3GWsGCBioyafzfgruijN34VFlOChXcgzKS2u3I0vcUkpWZsCQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subsystem\": \"Eligibility\",\r\n    \"sub\": \"GetServiceTypeCodes\",\r\n    \"PARAMS\": {\r\n        \"PATIENTID\": 696895,\r\n        \"PATIENTINSURANCEID\": 1166957\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dev104.athenahealth.com:17810/htservices_external/ecosystem/api/tokenproxy.esp/v1/94/subsystembuscall",
+							"protocol": "https",
+							"host": [
+								"dev104",
+								"athenahealth",
+								"com"
+							],
+							"port": "17810",
+							"path": [
+								"htservices_external",
+								"ecosystem",
+								"api",
+								"tokenproxy.esp",
+								"v1",
+								"94",
+								"subsystembuscall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBenefitDetails",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJoZ3VYWmtWOEs5QlNrTGtlUmlrS3dJc3Z1ZWNRdlAwR3N4cUZHQmRQU3dVIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnhUM3VRUDhRRnl5VWdudXNkUHNidmU3akVNWkRIaTAxd3Y4cjhyS2l4LWMiLCJpc3MiOiJodHRwczovL2F0aGVuYWhlYWx0aHBvYy5va3RhLmNvbS9vYXV0aDIvYXVzMTNrYnRqNEhBZEkzNDUxdDciLCJhdWQiOiJodHRwczovL2lhbS5hdGhlbmFoZWFsdGguY29tIiwiaWF0IjoxNjYzNjc5MDU0LCJleHAiOjE2NjM2ODI2NTQsImNpZCI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3Iiwic2NwIjpbImF0aGVuYS9zZXJ2aWNlL0F0aGVuYW5ldC4qIl0sInN1YiI6IjBvYWo3bGF6NW00Y2J3N3M3MXQ3In0.L9QwGq1Emdg1WnnjLvhYgDXxbFp2MzMP6Nt0FnGTFIbfpXJLKWSDKYFCOntP_8J5qYL25nL07MJ21X_REtLdlw_IS_5AKhiATZVrTZyD1kmHfMNYJtOrfQl-kF-I3BGQZRS75cjEO4VKW0Vby_1PIj4UZmyil3pjqAmqm8Rjrg-qdp_EdGS1Gy3lMyeBakevH1NGTMxoZDP1fI8IBYGdqAC3s5a5YLMU-i6GpSMkJD3oFyCuzNxr8LwkrKCLbyWAmrzdoTkyinLzOgW1geBufTCGxnX1ZyIgvYocUE63GiNbch7O1otxhVdi1sq2wM5B133O-tNCTZy5LSVseevsMw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subsystem\": \"Eligibility\",\r\n    \"sub\": \"GetBenefitDetails\",\r\n    \"PARAMS\": {\r\n        \"PATIENTID\": 1035931,\r\n        \"PATIENTINSURANCEID\": 20874\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devmain-mirror.athenahealth.com/htservices_external/ecosystem/api/tokenproxy.esp/v1/432/subsystembuscall",
+							"protocol": "https",
+							"host": [
+								"devmain-mirror",
+								"athenahealth",
+								"com"
+							],
+							"path": [
+								"htservices_external",
+								"ecosystem",
+								"api",
+								"tokenproxy.esp",
+								"v1",
+								"432",
+								"subsystembuscall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Eligibility Service",
+			"item": [
+				{
+					"name": "Dev",
+					"item": [
+						{
+							"name": "check",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzM5ODM3MTMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzM5ODAxMTMsImp0aSI6Ilk4Ym8wUXJPR1NzQUFNaHlBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.lemY5NCziya5ru_XH2qMnjJ2vJA4WxJBtbMq3jXdF8CC9JS7usMVEz82ogLIm1l8GDAkQT1LhgP_JsC6XMBpepy6dVj3dPNdKaGe0m67VhADfxpAH11KTG8m2FYDvXgqGV8Lh6Q9dZUX-GJa3VSRWN88wkuqth5Tnnyy_-mQI0AN-wtr9mfDs62S4v690xiGWSsw-3PXNGJkwrJ924-kPwszWH7mEOsZj8YfnyNCYraVcfej50lO-_bty7okjwv8BNV_5QmGtAaf4RLriZ71pHv9IHZM4Oh8OW6tnWKFrs5_-jZ9ysjCXYPTd5Oc7IGYkIlwoB8Y0oqqzSGHF7jplkLWLxqXAQef-wClmXS1xKrFAqoSzSVLYhkQ2Y4LFS0x2vDqc8KyNyjfQ3LTxrAK19RSzq9Al7xJrZPkiEOFYiznYXMEX-I9UvRGaHezeZYd4JV64nULdmT9lRPPenIaN3xQu4Z4A0xKo2NJqumqyPhl-NcPexftcNsEliCOuS9yF3r8qvzKU7o_LluoUcGzquwoIYnQMUfAo9agkCG2vTVQFgyYvfjqwNkGjazsedZy-9Mdj2aaizUFbVHHhpW1enFDJxDnFEYdQKrGp4smS15_39-9fO2PA9OP766GVHNAPMoBgaBzHcV-1GIF7DkfJ9PZwLQ0HmoG82SEnNKHI8g",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"patientInsuranceId\": 21423,\r\n    \"providerId\": 6,\r\n    \"userDepartmentId\": 4,\r\n    \"dateOfService\": \"12/12/2022\",\r\n    \"serviceTypeCodes\": [\r\n        30,\r\n        \"MH\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service/api/v1/eligibility/contexts/:contextId/patients/:patientId/check-eligibility",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service",
+										"api",
+										"v1",
+										"eligibility",
+										"contexts",
+										":contextId",
+										"patients",
+										":patientId",
+										"check-eligibility"
+									],
+									"variable": [
+										{
+											"key": "contextId",
+											"value": "432"
+										},
+										{
+											"key": "patientId",
+											"value": "1561457"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fetch-all",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNzAwNDk4NDMxLCJpYXQiOjE3MDA0OTEyMzEsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpWdHYzd3JPR1NzQUFOUEJBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.zaG3px-jj1kAb43NM2e9F6k0NzE4cDrrYzCJq8kCfRiuP91xAxyK1ofgMOdQpdQMCQOV7A1izNdjWhlKfVoyJmJ_oivwB6cwPmf5VR6qMVR5c94gVB75kg1MsEXv2N5-RVxdCkECAziq77ojYobTbH5DKrRFQfXeTihmnJWki5g7Rb6GA-_kYiWlPYvkEuNMsS0-FvmbnWuTWcUZPur7WT-qyu1PhzxbCkVyj8BCdMll4GC22JFMn8hceBchP21A2DKBUcnAZ4e8zcrsSSVuEcgR8rKBqjEhlRqdEfLtbJJRnRT0wlJcCsfMUT7p-lu7l1GyVLrUuYjHugxc1xRPtc4zXjjtr5_nLPwwZLaOCyJqPfMivfAPprMPlo5EziQbSdK9EFNaLQinp_WzVUZvelThD1u8WKJA5cNnzdxVYBveIDDFlp95i59Rcaw3gvkJFGyNNBtglLPuWWJ_PVjl1eNyMoP5rUh90GM8o1ujGve5spsAahh2gyJIzjwv2PchrxLeqn0-SD59_Ma84PNfTy_r4RmlgOQqT-ZeLSlnn5CNTr6X8P_XmsQLIdP7RLb3ocndwYPy6UXZucYU8mMF5cLh56UNHE_JhToOai6TOHhMmMrObeRwuoCUJHRc6jD8wS9unvdFa_RXsEuwTtiDKqLBRhtRjtuyNX6ukJHr56I",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service_1df259-dev/api/v1/eligibility/fetch-all-eligibility-info?contextId=8042&patientId=20556288&patientInsuranceId=22228321",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service_1df259-dev",
+										"api",
+										"v1",
+										"eligibility",
+										"fetch-all-eligibility-info"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "8042"
+										},
+										{
+											"key": "patientId",
+											"value": "20556288"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "22228321"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fetch-all-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk5OTAzMTE1LCJpYXQiOjE2OTk4OTU5MTUsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpWSmFhd3JPR1NzQUFJTEhBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.OxJTPBDxDs_4EmGljHmm5vJ--_pDQfB0wZwBSBbncxGlSLj0Cg4zpF9MB5L3UwEDs6o5jcMMPCdQ-_vfcjQ0gZbO4AKwcatXlhYYdg3QIcqBimt1kd79aQUmC0tTAGqfs3blNGXHFRFMhlCZtn1Po8sI-LjTTyKdFohtt2GjNHvz4KMgzQiFf_cUFo--LBA3t_QZNXQw6soTp2CQmPgJqnoj64FIiAoN0E57S_frxd0dGms6-wja6kyITaRFx3pk79tdOfpmMl28mymGVrTjycse3exQGaWGSQvkQSvmqxttDa90IcnsLUv67m3bu1Wi1BNcKvoWV1phEi5prGJxV2WJFMSSqY5Irg2ZYLVFqRAs7jpSEmh9VTmWZa1CvdQ2WYJXLHcY3nnKl4pUFwkJVCK2Pp4dbhMPelX8qeUEMG0LYIBJ0WGe9ON5BCdjOidC01p2EGdH7CmLacqnFuoIadqtGayGIIcs_lczvX7Mj-k-QHvus-gxp7UrSd6k8sV3CIbC6m9qdvAe8vvrsjk7ZahE_sXopK0uYah8ZuLgbfb_vkHtlGNFmvoNNTSrFtgv-2CmrVQZZrxU9IFVtZ8LlGPIEneRNHCmqpdI0V6mo242PoMz5NX5O_teP1CjpcByLUBGX7aexxDNtUYiZUf6baB404483PRUDr9JzkhWhFc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service_1df259-devw2/api/v1/eligibility/fetch-all-v2?contextId=432&patientId=1561458&patientInsuranceId=21424",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service_1df259-devw2",
+										"api",
+										"v1",
+										"eligibility",
+										"fetch-all-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "432"
+										},
+										{
+											"key": "patientId",
+											"value": "1561458"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "21424"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "benefits",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk5MDIyMDUwLCJpYXQiOjE2OTkwMTQ4NTAsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpVVG93Z3JPR1NzQUFERmpBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.rCSRfp-UfwIv872n-F_QoflH8XoCkKfsLjyqpcxdNDsdxm9cVhM4KZlnG9yNmeJKL4tfP4rjqj-spAcCVizNIBO5Gv2fau4n_agedRTaSaeJ3v5r76GoZHv0j6HDR4sHrCCCrwzxpwVBxiOpxPVqUtZjXthXa132b3pn5neLQ2X0zBS1qMaSsavUM5EoolXaVAkDE1DO6bH03EDKZPSQVS11WjRZ2USsYGOnYhVr9pICDB-LlpK0lZHPdO5cxP0lAPc-NytQsuilALh2hQ_1cWdJnROnLalx5QHl2_qAiJykZAV7JZuY8kVYMityIuceTt3wVDsxj6Bn_SklLjYDP-vhCrSevQUwWAhrT-LklInoNhpOae7U3E-y3hOe33mIKEvOjBdd-JKq9moMNJVFt4AZw8AQESjmGoaQF8jep2uhQ2e2KqR7y0WwyVBPd5ejkipOGTdLg_-OxTamAe1V9lKSG8qpFEzIi22gP8vONM58gExrZB42h-g2nvgao_M4-v8qFY1k-47zBaE52rVSjwUDUVYKdGztV-QGsFg4Y2OLqrzkNuDMYQtMcqFAfxQd7xzNIIDklBUEo1DFGNlh0RU4Jpp8BB7rkznaUB4fO8jluISTjnht9jEia6Pl9vha96w6i6BNxPugJWNOyjnqQPSVYROm0yBcBEJqCY8d_JE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service_1df259-dev/api/v1/eligibility/benefits?contextId=94&patientId=851810&patientInsuranceId=1213841&eligibilityTrackId=25083271",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service_1df259-dev",
+										"api",
+										"v1",
+										"eligibility",
+										"benefits"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "851810"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1213841"
+										},
+										{
+											"key": "eligibilityTrackId",
+											"value": "25083271"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "benefits-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk5MDIyMDUwLCJpYXQiOjE2OTkwMTQ4NTAsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpVVG93Z3JPR1NzQUFERmpBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.rCSRfp-UfwIv872n-F_QoflH8XoCkKfsLjyqpcxdNDsdxm9cVhM4KZlnG9yNmeJKL4tfP4rjqj-spAcCVizNIBO5Gv2fau4n_agedRTaSaeJ3v5r76GoZHv0j6HDR4sHrCCCrwzxpwVBxiOpxPVqUtZjXthXa132b3pn5neLQ2X0zBS1qMaSsavUM5EoolXaVAkDE1DO6bH03EDKZPSQVS11WjRZ2USsYGOnYhVr9pICDB-LlpK0lZHPdO5cxP0lAPc-NytQsuilALh2hQ_1cWdJnROnLalx5QHl2_qAiJykZAV7JZuY8kVYMityIuceTt3wVDsxj6Bn_SklLjYDP-vhCrSevQUwWAhrT-LklInoNhpOae7U3E-y3hOe33mIKEvOjBdd-JKq9moMNJVFt4AZw8AQESjmGoaQF8jep2uhQ2e2KqR7y0WwyVBPd5ejkipOGTdLg_-OxTamAe1V9lKSG8qpFEzIi22gP8vONM58gExrZB42h-g2nvgao_M4-v8qFY1k-47zBaE52rVSjwUDUVYKdGztV-QGsFg4Y2OLqrzkNuDMYQtMcqFAfxQd7xzNIIDklBUEo1DFGNlh0RU4Jpp8BB7rkznaUB4fO8jluISTjnht9jEia6Pl9vha96w6i6BNxPugJWNOyjnqQPSVYROm0yBcBEJqCY8d_JE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service_1df259-dev/api/v1/eligibility/benefits-v2?contextId=94&patientId=851810&patientInsuranceId=1213841&eligibilityTrackId=25083271",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service_1df259-dev",
+										"api",
+										"v1",
+										"eligibility",
+										"benefits-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "851810"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1213841"
+										},
+										{
+											"key": "eligibilityTrackId",
+											"value": "25083271"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mr-benefits",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk5MDIyMDUwLCJpYXQiOjE2OTkwMTQ4NTAsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpVVG93Z3JPR1NzQUFERmpBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.rCSRfp-UfwIv872n-F_QoflH8XoCkKfsLjyqpcxdNDsdxm9cVhM4KZlnG9yNmeJKL4tfP4rjqj-spAcCVizNIBO5Gv2fau4n_agedRTaSaeJ3v5r76GoZHv0j6HDR4sHrCCCrwzxpwVBxiOpxPVqUtZjXthXa132b3pn5neLQ2X0zBS1qMaSsavUM5EoolXaVAkDE1DO6bH03EDKZPSQVS11WjRZ2USsYGOnYhVr9pICDB-LlpK0lZHPdO5cxP0lAPc-NytQsuilALh2hQ_1cWdJnROnLalx5QHl2_qAiJykZAV7JZuY8kVYMityIuceTt3wVDsxj6Bn_SklLjYDP-vhCrSevQUwWAhrT-LklInoNhpOae7U3E-y3hOe33mIKEvOjBdd-JKq9moMNJVFt4AZw8AQESjmGoaQF8jep2uhQ2e2KqR7y0WwyVBPd5ejkipOGTdLg_-OxTamAe1V9lKSG8qpFEzIi22gP8vONM58gExrZB42h-g2nvgao_M4-v8qFY1k-47zBaE52rVSjwUDUVYKdGztV-QGsFg4Y2OLqrzkNuDMYQtMcqFAfxQd7xzNIIDklBUEo1DFGNlh0RU4Jpp8BB7rkznaUB4fO8jluISTjnht9jEia6Pl9vha96w6i6BNxPugJWNOyjnqQPSVYROm0yBcBEJqCY8d_JE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service_1df259-dev/api/v1/eligibility/most-recent-benefits?contextId=94&patientId=851810&patientInsuranceId=1213841",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service_1df259-dev",
+										"api",
+										"v1",
+										"eligibility",
+										"most-recent-benefits"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "851810"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1213841"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mr-benefits-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk5MDIyMDUwLCJpYXQiOjE2OTkwMTQ4NTAsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpVVG93Z3JPR1NzQUFERmpBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.rCSRfp-UfwIv872n-F_QoflH8XoCkKfsLjyqpcxdNDsdxm9cVhM4KZlnG9yNmeJKL4tfP4rjqj-spAcCVizNIBO5Gv2fau4n_agedRTaSaeJ3v5r76GoZHv0j6HDR4sHrCCCrwzxpwVBxiOpxPVqUtZjXthXa132b3pn5neLQ2X0zBS1qMaSsavUM5EoolXaVAkDE1DO6bH03EDKZPSQVS11WjRZ2USsYGOnYhVr9pICDB-LlpK0lZHPdO5cxP0lAPc-NytQsuilALh2hQ_1cWdJnROnLalx5QHl2_qAiJykZAV7JZuY8kVYMityIuceTt3wVDsxj6Bn_SklLjYDP-vhCrSevQUwWAhrT-LklInoNhpOae7U3E-y3hOe33mIKEvOjBdd-JKq9moMNJVFt4AZw8AQESjmGoaQF8jep2uhQ2e2KqR7y0WwyVBPd5ejkipOGTdLg_-OxTamAe1V9lKSG8qpFEzIi22gP8vONM58gExrZB42h-g2nvgao_M4-v8qFY1k-47zBaE52rVSjwUDUVYKdGztV-QGsFg4Y2OLqrzkNuDMYQtMcqFAfxQd7xzNIIDklBUEo1DFGNlh0RU4Jpp8BB7rkznaUB4fO8jluISTjnht9jEia6Pl9vha96w6i6BNxPugJWNOyjnqQPSVYROm0yBcBEJqCY8d_JE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service_1df259-dev/api/v1/eligibility/most-recent-benefits-v2?contextId=94&patientId=851810&patientInsuranceId=1213841",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service_1df259-dev",
+										"api",
+										"v1",
+										"eligibility",
+										"most-recent-benefits-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "851810"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1213841"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "history",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNzAwNDk4NDMxLCJpYXQiOjE3MDA0OTEyMzEsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpWdHYzd3JPR1NzQUFOUEJBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.zaG3px-jj1kAb43NM2e9F6k0NzE4cDrrYzCJq8kCfRiuP91xAxyK1ofgMOdQpdQMCQOV7A1izNdjWhlKfVoyJmJ_oivwB6cwPmf5VR6qMVR5c94gVB75kg1MsEXv2N5-RVxdCkECAziq77ojYobTbH5DKrRFQfXeTihmnJWki5g7Rb6GA-_kYiWlPYvkEuNMsS0-FvmbnWuTWcUZPur7WT-qyu1PhzxbCkVyj8BCdMll4GC22JFMn8hceBchP21A2DKBUcnAZ4e8zcrsSSVuEcgR8rKBqjEhlRqdEfLtbJJRnRT0wlJcCsfMUT7p-lu7l1GyVLrUuYjHugxc1xRPtc4zXjjtr5_nLPwwZLaOCyJqPfMivfAPprMPlo5EziQbSdK9EFNaLQinp_WzVUZvelThD1u8WKJA5cNnzdxVYBveIDDFlp95i59Rcaw3gvkJFGyNNBtglLPuWWJ_PVjl1eNyMoP5rUh90GM8o1ujGve5spsAahh2gyJIzjwv2PchrxLeqn0-SD59_Ma84PNfTy_r4RmlgOQqT-ZeLSlnn5CNTr6X8P_XmsQLIdP7RLb3ocndwYPy6UXZucYU8mMF5cLh56UNHE_JhToOai6TOHhMmMrObeRwuoCUJHRc6jD8wS9unvdFa_RXsEuwTtiDKqLBRhtRjtuyNX6ukJHr56I",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service_1df259-dev/api/v1/eligibility/eligibility-history?contextId=8042&patientId=20556288&patientInsuranceId=22228321",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service_1df259-dev",
+										"api",
+										"v1",
+										"eligibility",
+										"eligibility-history"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "8042"
+										},
+										{
+											"key": "patientId",
+											"value": "20556288"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "22228321"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "history-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk5NDk2NDM0LCJpYXQiOjE2OTk0ODkyMzQsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpVd2wwZ3JPR1NzQUFGcVJBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.48Vbar1ySSSkkprWVuN5Ib8LxBgJgOnRQZIs3V5dK65o2Y24lLvuV3dIDmbcvSpVyhrZPGx96c_OAYL9X82-veJBTML1uFpGn0Wu8rxDonfFo6ygxl2o_mwbbX-8eFm5teV8Mq3IBdpFJTJSxYFHe8OOqkJbUSucZqjw6Otste6rQwe26FHTVBNg492-BcMPkWuVzpUfxBZ5NIUDwsnA5cZDwHMxSvj1KpiEFl0yeGdpLCfLk4TO4rD0Gj_vqFY4QlMMXf0X6gxHbMF5NiOto4Two5b63mp97-PLgPYYuFSDprkzwaOK231OFnwjSZunakVbOcEAU7_Wpt5baMylGd1LFL5_ZefFMjRnVYkJiAsCN7u_fsrmt7D31bqp2t3-0GyNG1mxt2YULqgdwBEijnk_P8EOI9yR-lQw6WypYwRZq9bK_Urf3uwunLLquqKgQ7x28wjeY-CCktFrTh-xV1VUBIX4tU7EAF3dcGlPZADRYImV4i04CpRXlwBrT3qu5jcV15pkkLbIhzJupnL-ULmt9vqLtLSvWocyun5a7Y5fNbNNHEkv-Z-Drg9lneI6qrwyeA5EJCR3NlYAZzU-B8hCI2pDqxM4azSO7312jzHnI8n2CjwkU2liRPH2XKVqFG_tkjrj_tcwO8fkK0T1a_ZH5Z-651g20HeSd5dWFqw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service_1df259-dev/api/v1/eligibility/history-v2?contextId=432&patientId=1561458&patientInsuranceId=21424",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service_1df259-dev",
+										"api",
+										"v1",
+										"eligibility",
+										"history-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "432"
+										},
+										{
+											"key": "patientId",
+											"value": "1561458"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "21424"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all-received-stc",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk5MDIyMDUwLCJpYXQiOjE2OTkwMTQ4NTAsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpVVG93Z3JPR1NzQUFERmpBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.rCSRfp-UfwIv872n-F_QoflH8XoCkKfsLjyqpcxdNDsdxm9cVhM4KZlnG9yNmeJKL4tfP4rjqj-spAcCVizNIBO5Gv2fau4n_agedRTaSaeJ3v5r76GoZHv0j6HDR4sHrCCCrwzxpwVBxiOpxPVqUtZjXthXa132b3pn5neLQ2X0zBS1qMaSsavUM5EoolXaVAkDE1DO6bH03EDKZPSQVS11WjRZ2USsYGOnYhVr9pICDB-LlpK0lZHPdO5cxP0lAPc-NytQsuilALh2hQ_1cWdJnROnLalx5QHl2_qAiJykZAV7JZuY8kVYMityIuceTt3wVDsxj6Bn_SklLjYDP-vhCrSevQUwWAhrT-LklInoNhpOae7U3E-y3hOe33mIKEvOjBdd-JKq9moMNJVFt4AZw8AQESjmGoaQF8jep2uhQ2e2KqR7y0WwyVBPd5ejkipOGTdLg_-OxTamAe1V9lKSG8qpFEzIi22gP8vONM58gExrZB42h-g2nvgao_M4-v8qFY1k-47zBaE52rVSjwUDUVYKdGztV-QGsFg4Y2OLqrzkNuDMYQtMcqFAfxQd7xzNIIDklBUEo1DFGNlh0RU4Jpp8BB7rkznaUB4fO8jluISTjnht9jEia6Pl9vha96w6i6BNxPugJWNOyjnqQPSVYROm0yBcBEJqCY8d_JE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service_1df259-dev/api/v1/eligibility/received-service-type-codes?contextId=94&patientId=851810&patientInsuranceId=1213841",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service_1df259-dev",
+										"api",
+										"v1",
+										"eligibility",
+										"received-service-type-codes"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "851810"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1213841"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all-received-stc-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk5MDIyMDUwLCJpYXQiOjE2OTkwMTQ4NTAsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpVVG93Z3JPR1NzQUFERmpBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.rCSRfp-UfwIv872n-F_QoflH8XoCkKfsLjyqpcxdNDsdxm9cVhM4KZlnG9yNmeJKL4tfP4rjqj-spAcCVizNIBO5Gv2fau4n_agedRTaSaeJ3v5r76GoZHv0j6HDR4sHrCCCrwzxpwVBxiOpxPVqUtZjXthXa132b3pn5neLQ2X0zBS1qMaSsavUM5EoolXaVAkDE1DO6bH03EDKZPSQVS11WjRZ2USsYGOnYhVr9pICDB-LlpK0lZHPdO5cxP0lAPc-NytQsuilALh2hQ_1cWdJnROnLalx5QHl2_qAiJykZAV7JZuY8kVYMityIuceTt3wVDsxj6Bn_SklLjYDP-vhCrSevQUwWAhrT-LklInoNhpOae7U3E-y3hOe33mIKEvOjBdd-JKq9moMNJVFt4AZw8AQESjmGoaQF8jep2uhQ2e2KqR7y0WwyVBPd5ejkipOGTdLg_-OxTamAe1V9lKSG8qpFEzIi22gP8vONM58gExrZB42h-g2nvgao_M4-v8qFY1k-47zBaE52rVSjwUDUVYKdGztV-QGsFg4Y2OLqrzkNuDMYQtMcqFAfxQd7xzNIIDklBUEo1DFGNlh0RU4Jpp8BB7rkznaUB4fO8jluISTjnht9jEia6Pl9vha96w6i6BNxPugJWNOyjnqQPSVYROm0yBcBEJqCY8d_JE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service_1df259-dev/api/v1/eligibility/all-received-stc-v2?contextId=94&patientId=851810&patientInsuranceId=1213841",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service_1df259-dev",
+										"api",
+										"v1",
+										"eligibility",
+										"all-received-stc-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "851810"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1213841"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Test",
+					"item": [
+						{
+							"name": "Fetch",
+							"item": [
+								{
+									"name": "798",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=22591&patientId=798&patientInsuranceId=1205",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "22591"
+												},
+												{
+													"key": "patientId",
+													"value": "798"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "1205"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "859386",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=432&patientId=859386&patientInsuranceId=22326",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "432"
+												},
+												{
+													"key": "patientId",
+													"value": "859386"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "22326"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "1561424",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=432&patientId=1561424&patientInsuranceId=21320",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "432"
+												},
+												{
+													"key": "patientId",
+													"value": "1561424"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "21320"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "1561457",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=432&patientId=1561457&patientInsuranceId=21423",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "432"
+												},
+												{
+													"key": "patientId",
+													"value": "1561457"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "21423"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "1561458",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=432&patientId=1561458&patientInsuranceId=21424",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "432"
+												},
+												{
+													"key": "patientId",
+													"value": "1561458"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "21424"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "56142220",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=7598&patientId=56142220&patientInsuranceId=9917891",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "7598"
+												},
+												{
+													"key": "patientId",
+													"value": "56142220"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "9917891"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "55547233",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=7598&patientId=55547233&patientInsuranceId=8072231",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "7598"
+												},
+												{
+													"key": "patientId",
+													"value": "55547233"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "8072231"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "57546736",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=7598&patientId=57546736&patientInsuranceId=15800303",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "7598"
+												},
+												{
+													"key": "patientId",
+													"value": "57546736"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "15800303"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "857448",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=94&patientId=857448&patientInsuranceId=1226266",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "94"
+												},
+												{
+													"key": "patientId",
+													"value": "857448"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "1226266"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "803560",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=94&patientId=803560&patientInsuranceId=1106045",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "94"
+												},
+												{
+													"key": "patientId",
+													"value": "803560"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "1106045"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "388087",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=94&patientId=388087&patientInsuranceId=1267153",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "94"
+												},
+												{
+													"key": "patientId",
+													"value": "388087"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "1267153"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "61432",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=1884&patientId=61432&patientInsuranceId=286499",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"fetch-all-eligibility-info"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "1884"
+												},
+												{
+													"key": "patientId",
+													"value": "61432"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "286499"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "History",
+							"item": [
+								{
+									"name": "798",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=22591&patientId=798&patientInsuranceId=1205",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "22591"
+												},
+												{
+													"key": "patientId",
+													"value": "798"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "1205"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "859386",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=432&patientId=859386&patientInsuranceId=22326",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "432"
+												},
+												{
+													"key": "patientId",
+													"value": "859386"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "22326"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "1561424",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=432&patientId=1561424&patientInsuranceId=21320",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "432"
+												},
+												{
+													"key": "patientId",
+													"value": "1561424"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "21320"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "1561457",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=432&patientId=1561457&patientInsuranceId=21423",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "432"
+												},
+												{
+													"key": "patientId",
+													"value": "1561457"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "21423"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "1561458",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=432&patientId=1561458&patientInsuranceId=21424",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "432"
+												},
+												{
+													"key": "patientId",
+													"value": "1561458"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "21424"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "56142220",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=7598&patientId=56142220&patientInsuranceId=9917891",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "7598"
+												},
+												{
+													"key": "patientId",
+													"value": "56142220"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "9917891"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "55547233",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=7598&patientId=55547233&patientInsuranceId=8072231",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "7598"
+												},
+												{
+													"key": "patientId",
+													"value": "55547233"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "8072231"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "57546736",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=7598&patientId=57546736&patientInsuranceId=15800303",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "7598"
+												},
+												{
+													"key": "patientId",
+													"value": "57546736"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "15800303"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "857448",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=94&patientId=857448&patientInsuranceId=1226266",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "94"
+												},
+												{
+													"key": "patientId",
+													"value": "857448"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "1226266"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "803560",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=94&patientId=803560&patientInsuranceId=1106045",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "94"
+												},
+												{
+													"key": "patientId",
+													"value": "803560"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "1106045"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "388087",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=94&patientId=388087&patientInsuranceId=1267153",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "94"
+												},
+												{
+													"key": "patientId",
+													"value": "388087"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "1267153"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "61432",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NzQ1OTYxOTYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NzQ1ODg5OTYsImp0aSI6Ilk5QXpSQXJPR1NzQUFLVFNBQUFBQ0EiLCJjaWQiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyIsImF1ZCI6Imh0dHBzOlwvXC9kZXYuYXRoZW5hLmlvIiwic2NwIjpbImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLnJlYWQiLCJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS53cml0ZSJdfQ.kL3ZRKAz-VC7JnUtG1gXBxy__3jurYDwLpQGduUdVrvGeP15L_sAZoD_8gcJW2zIwqLvWbw-NWep_PakecGu8ctyU_H1mDUWyiokBImCuPZn2ai_oSuLTsPex7x__qf7XmreiAsPSTu_iPEjKOx_qn8_EB01-4wUu82gXVFPCiw7WTIpkKL3B5wTeTVF6JyuXjWZPXorAx-VgWyOFPdtxrfrcJdt3YuhoM83kPf1tdwhfAFnr34moO_rfPJlEvArw3V1f17GfrhCWRr5l3C-EBZqn97P9BR9ZMgMFtjHGJDgN9E5eyGc4jtqUtWexd8oE2iVAaO_kC33O_mwzXEGm59FXyhBTochi8nM8P0KkCLZQOA25b3SKra59p5NXf30CHEEnBreI4HnYKase9P-LVije7Rr3YqJ7L4AjRdBWEfW7WV9HPC5o9CwY8PLumJWfYw3E36RE7QEFgCcEsBQ2LyU0INVOnoVFyuNUNFH1cgz5d7Z9O07D8qNFeHUHmdXu4-p19wvc_5r0Gw_r5xPSgr-GNXDtg2YiYR7GnZMN7c_upUTLDTHc0LnhWA7ZbuMxrLgnGq2dpXtRxHKK4522Wv93071Esi1W0EAWukXjnqrGRSc-WQ7A7TH9LXL3A0j77l42Nrn2d3Raz8Y3vu_eCq1sO5zhy2YglMm0KHLLbk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=1884&patientId=61432&patientInsuranceId=286499",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"eligibility",
+												"eligibility-history"
+											],
+											"query": [
+												{
+													"key": "contextId",
+													"value": "1884"
+												},
+												{
+													"key": "patientId",
+													"value": "61432"
+												},
+												{
+													"key": "patientInsuranceId",
+													"value": "286499"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "hello",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/hello",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"hello"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "check",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk2MzY2MDM2LCJpYXQiOjE2OTYzNTg4MzYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpSeGh0QXJPR1NzQUFOTVVBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.yJ1SG1Hv_pLVSo2sJxviideOM2O55QIAu0A2rtvitvOkALRBRi6sm-0J7F30UwLu0SWbQEotrwBncFzSz2A5LL5OjucfYDEC9iL0359Db3rWm1Ttg1oFB2wPnDC3U5sftHQby36JOIffXODqvY3JoEU_IeCHDkC2Ikk1-vtRTMgt2vgAkB4IFggEne_8CXIVlJcKU3hO4YLcuya5mAPE09CBy2dMso2QiOgviCD-Sb6a_WDTOsRGFCHkN617WIGJc7yq1DSsOclbGqa0UURJT8Fz1e6LL8wwFE-hgd2qgyoSgrXna1zCuz0xgYQ5zcAh-RpYac1P8f78bP_RjITuJcURj9jq-TYB0qT_JS3fXtq_4P-miXDnX7zuE-g0uonUg7IwReiXA8NnpGwp1lrojaTw9pEGkLXvhTrck5dbeLNJ8WDif2gA4aNQzOpYmLqnIKoN7jgPa4CyaF6zSZC4yfl0Q3nhjQlMa7D979Voe_NxfLTTrpQIBWnjEzKduuwhZv1gGhftWAoFmebJDGpr1Ul3Rtm9tKBIC7Xh-e6k6ldj5EiOKC5k6A3C1YgiOYlBfpGTE-Cbc4Vph_KiBGC7scxuMjfqZEulS9aR-n4MM3FO9mWWPwF-UKmgWQuLRVhrIBIdLjnrQvr1G0BfLD5Vy3wvwQjcA3_1eo9hLyrEzB0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"patientInsuranceId\": 286499,\r\n    \"dateOfService\": \"01/21/2024\",\r\n    \"serviceTypeCodes\": [\r\n        \"UC\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/contexts/:contextId/patients/:patientId/check-eligibility",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"contexts",
+										":contextId",
+										"patients",
+										":patientId",
+										"check-eligibility"
+									],
+									"variable": [
+										{
+											"key": "contextId",
+											"value": "1884"
+										},
+										{
+											"key": "patientId",
+											"value": "61432"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fetch-all",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk2MzY2MDM2LCJpYXQiOjE2OTYzNTg4MzYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpSeGh0QXJPR1NzQUFOTVVBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.yJ1SG1Hv_pLVSo2sJxviideOM2O55QIAu0A2rtvitvOkALRBRi6sm-0J7F30UwLu0SWbQEotrwBncFzSz2A5LL5OjucfYDEC9iL0359Db3rWm1Ttg1oFB2wPnDC3U5sftHQby36JOIffXODqvY3JoEU_IeCHDkC2Ikk1-vtRTMgt2vgAkB4IFggEne_8CXIVlJcKU3hO4YLcuya5mAPE09CBy2dMso2QiOgviCD-Sb6a_WDTOsRGFCHkN617WIGJc7yq1DSsOclbGqa0UURJT8Fz1e6LL8wwFE-hgd2qgyoSgrXna1zCuz0xgYQ5zcAh-RpYac1P8f78bP_RjITuJcURj9jq-TYB0qT_JS3fXtq_4P-miXDnX7zuE-g0uonUg7IwReiXA8NnpGwp1lrojaTw9pEGkLXvhTrck5dbeLNJ8WDif2gA4aNQzOpYmLqnIKoN7jgPa4CyaF6zSZC4yfl0Q3nhjQlMa7D979Voe_NxfLTTrpQIBWnjEzKduuwhZv1gGhftWAoFmebJDGpr1Ul3Rtm9tKBIC7Xh-e6k6ldj5EiOKC5k6A3C1YgiOYlBfpGTE-Cbc4Vph_KiBGC7scxuMjfqZEulS9aR-n4MM3FO9mWWPwF-UKmgWQuLRVhrIBIdLjnrQvr1G0BfLD5Vy3wvwQjcA3_1eo9hLyrEzB0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-eligibility-info?contextId=1884&patientId=61432&patientInsuranceId=286499",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"fetch-all-eligibility-info"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "1884"
+										},
+										{
+											"key": "patientId",
+											"value": "61432"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "286499"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fetch-all-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk2MjA1MDg4LCJpYXQiOjE2OTYxOTc4ODgsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpSbnRBQXJPR1NzQUFIOXNBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.kY1dY7Q_etonOkTs66Ll4GEpcFZKhhh8ffDNeEWRnszvbECBhNQkUid6MBas31iTrcbVNgRDxwbi0x1RgAWdM38HQfbB1rjr6MdQrVzkqmcIlzfIO2Tau63XEMcMd-gG3wfIYAqFFkBS-6kpO6jMkqTy2Mu2csg3Put2x_ZszU7Gh_1I2KWBn4isN_IEErzfkmbi5I7PgQWr1DbWb9gocwNUwbGCJT3qPTLoFsYFWkq4RE4D18XfRUHT8-gqnyjJiOQqeshzxyq-sT3BvjmCFTuvaMrqcM9Gtp61RId01lS94fiNC8OFHPUWJPDsqn1CBIEOEwjpBcRt2lr_behl-nN3oJ8Jof5gjpv2gI3Q1k14Wz5xA0eFMW4MTZapu-tviZkEhGpvlvJJYs2JQIOa3vjWX-wqCMAbaCHtI4agocvF5oqSRt7e2-je2QQyKVzRLshrwKO1G9kaaBlOQDbwQovXgvSG0AqYRkJXxFVR6FSxLXOH2Ji4aH6Hqo1hDNTBYwtqlCv9tRkQ5KFsZfux0aBQX7CIPaRo1KBuSGTOfwCjHMB6R0LWKZ00jhjW2aMPELObEucyc_orUmnUaDsZP2QVDjdXHoAkcihEg6oHsRLYADjMj72Pb3u_NBo37o-huknJOQZW-MKix_jlpP2R12PAx53X-66FNCQINKc4wgQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/fetch-all-v2?contextId=94&patientId=803560&patientInsuranceId=1106045",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"fetch-all-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "803560"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1106045"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all-stc",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk2MzY2MDM2LCJpYXQiOjE2OTYzNTg4MzYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpSeGh0QXJPR1NzQUFOTVVBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.yJ1SG1Hv_pLVSo2sJxviideOM2O55QIAu0A2rtvitvOkALRBRi6sm-0J7F30UwLu0SWbQEotrwBncFzSz2A5LL5OjucfYDEC9iL0359Db3rWm1Ttg1oFB2wPnDC3U5sftHQby36JOIffXODqvY3JoEU_IeCHDkC2Ikk1-vtRTMgt2vgAkB4IFggEne_8CXIVlJcKU3hO4YLcuya5mAPE09CBy2dMso2QiOgviCD-Sb6a_WDTOsRGFCHkN617WIGJc7yq1DSsOclbGqa0UURJT8Fz1e6LL8wwFE-hgd2qgyoSgrXna1zCuz0xgYQ5zcAh-RpYac1P8f78bP_RjITuJcURj9jq-TYB0qT_JS3fXtq_4P-miXDnX7zuE-g0uonUg7IwReiXA8NnpGwp1lrojaTw9pEGkLXvhTrck5dbeLNJ8WDif2gA4aNQzOpYmLqnIKoN7jgPa4CyaF6zSZC4yfl0Q3nhjQlMa7D979Voe_NxfLTTrpQIBWnjEzKduuwhZv1gGhftWAoFmebJDGpr1Ul3Rtm9tKBIC7Xh-e6k6ldj5EiOKC5k6A3C1YgiOYlBfpGTE-Cbc4Vph_KiBGC7scxuMjfqZEulS9aR-n4MM3FO9mWWPwF-UKmgWQuLRVhrIBIdLjnrQvr1G0BfLD5Vy3wvwQjcA3_1eo9hLyrEzB0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://eligibility.dev.api.athena.io/eligibility-service_64ccb9-dev/api/v1/eligibility/service-type-codes",
+									"protocol": "https",
+									"host": [
+										"eligibility",
+										"dev",
+										"api",
+										"athena",
+										"io"
+									],
+									"path": [
+										"eligibility-service_64ccb9-dev",
+										"api",
+										"v1",
+										"eligibility",
+										"service-type-codes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "latest",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/latest-eligibility?contextId=94&patientId=813371&patientInsuranceId=1129384",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"latest-eligibility"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "813371"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1129384"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "latest-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/latest-v2?contextId=94&patientId=813371&patientInsuranceId=1129384",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"latest-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "813371"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1129384"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "history",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk2MzY2MDM2LCJpYXQiOjE2OTYzNTg4MzYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpSeGh0QXJPR1NzQUFOTVVBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.yJ1SG1Hv_pLVSo2sJxviideOM2O55QIAu0A2rtvitvOkALRBRi6sm-0J7F30UwLu0SWbQEotrwBncFzSz2A5LL5OjucfYDEC9iL0359Db3rWm1Ttg1oFB2wPnDC3U5sftHQby36JOIffXODqvY3JoEU_IeCHDkC2Ikk1-vtRTMgt2vgAkB4IFggEne_8CXIVlJcKU3hO4YLcuya5mAPE09CBy2dMso2QiOgviCD-Sb6a_WDTOsRGFCHkN617WIGJc7yq1DSsOclbGqa0UURJT8Fz1e6LL8wwFE-hgd2qgyoSgrXna1zCuz0xgYQ5zcAh-RpYac1P8f78bP_RjITuJcURj9jq-TYB0qT_JS3fXtq_4P-miXDnX7zuE-g0uonUg7IwReiXA8NnpGwp1lrojaTw9pEGkLXvhTrck5dbeLNJ8WDif2gA4aNQzOpYmLqnIKoN7jgPa4CyaF6zSZC4yfl0Q3nhjQlMa7D979Voe_NxfLTTrpQIBWnjEzKduuwhZv1gGhftWAoFmebJDGpr1Ul3Rtm9tKBIC7Xh-e6k6ldj5EiOKC5k6A3C1YgiOYlBfpGTE-Cbc4Vph_KiBGC7scxuMjfqZEulS9aR-n4MM3FO9mWWPwF-UKmgWQuLRVhrIBIdLjnrQvr1G0BfLD5Vy3wvwQjcA3_1eo9hLyrEzB0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/eligibility-history?contextId=1884&patientId=61432&patientInsuranceId=286499",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"eligibility-history"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "1884"
+										},
+										{
+											"key": "patientId",
+											"value": "61432"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "286499"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "history-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjg4MDcwNDc1LCJpYXQiOjE2ODgwNjMyNzUsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpKM05Ld3JPR1NzQUFJQnhBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.tNKuoPUHkTFRKJ4VyHLier6LpNlOjln91GyxX3aaDnxi9wqXcZSuId6WXy8BMIT-evhQ2VuIoTRWgRXQKpVp48JI-5cxzOIJ9WpaafDDLi5QT3_M_0Lf3bjeYCpmlR13IaRwx51hIE2JiKULrgOL23eVB7CrEh5oHlAMT4zPGkc7IWUA9AoBJ4-H4x51pixjzonzL0SHQqVnvm5hzTh6F--aXgt-ShQuroB-Z4XRdYit3mjOySl491GKiyIanXUdhRQqwf63Zsy9o_sA0uW-dFj8E7AwQDtNvZpG1ON-F-HVihuf5eXWTfhnKk5gwnManuHhr3Mj4hTW3DXH1RdlZ0ZmWc2Q1acGjanNH6ichH4yOPH8T7g-L9tRhSNhhZu8HbHHOJEpfC_wyzue2RjFdnTC0kDEy49E0EPuWxDF1KsvzCufZHZEA6H4kfLmWgvi8UBl7cjhmU6FHRuIeDCroOLjoMIWpe6lLdrdgkI0_pSMl1MEqriddCupliwt60BA5ZLEvl4jca1H82363T4m6_egMqeLKnN25En0flYpERP1JRyf9Qs7ozQrVDz1l-0RYovlP2EZfaabRJ4Q0PeuZG054zI-1uBYpaBp4960OAufiMcMuqGMVhQZCEALZm2oqopZyP7Xkn344bsM1mzhIRVwAC4nnrCYt3DqHuVF3qs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/history-v2?contextId=94&patientId=803560&patientInsuranceId=1106045",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"history-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "803560"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1106045"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "dos-list",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/date-of-service-list?contextId=94&patientId=813371&patientInsuranceId=1129384",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"date-of-service-list"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "813371"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1129384"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "dos-list-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/dos-v2?contextId=94&patientId=813371&patientInsuranceId=1129384",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"dos-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "813371"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1129384"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all-received-stc",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI5MjA3OTBkLTgzODEtNDUyMC04ZGViLWI0YWVkNjEzZGFkYyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvYXRoZW5hLmlvIiwiY2lkIjoiMG9hZXQwcmZqTnp5S0NpUVEyOTYiLCJleHAiOjE2OTc2NzMzOTIsImlhdCI6MTY5NzY3MzA5MiwiaXNzIjoiaHR0cHM6XC9cL2F0aGVuYW5ldC5hdGhlbmFoZWFsdGguY29tIiwianRpIjoiWlRCdmhBcmdDMDhBQXlmRkFBQ25nUSIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXSwic3ViIjoicGppYW5nNCJ9.VI6MiLV8KmYRuefjfVXe2b3Gq5CYuLY2swC-jhP0Ei_szip_rMokDbygKfVhjnIrCwFPU2vhmOhpFwgX04qiYnGUnnKejwMMxytWiymzsX3Dt_uOBNmBvMlIozyj-i92j_N_2WhTfWSgMBFab2VESBtsEmQ7Ai_MkVMpdpLgyhvkGx-vHls3mgaSRSWTA-O04ZigpzoViMDqzC8HXc6snl6ix6gz5TsnIc_pf9g9wken-4teSL-Ua0kMFsipXo8ksq6n_fxEjoGwqtmP0B8CX5nDeGn5fPFQKmio1Tp9AKupph9c2ZpeAURP2dUfrwZeKfPI4R0ZSKpkkYtaHqMR2VyM4Kyf9613_Ka1HbO9aJg0aAogGcTf90SW464Wd-Ffz8tkCJtQslvghfrJCKbm2j5VmvN_g_NwkBkQ-psonfF_Ra7YOXtM8_3aBagKKV8EoKf4AmL_AlzDx_VljE25G2vPrHSUV-48iyCo1BaunM-z6oXQpCLaZlO-xCUia8Y0Rhpqe5R57yZCanD0sZ8pO_JNGgNC9FaEPaUO-IhbtklUUj8MdNsbafw3QwaWHHfEgL8xC_sjqrqID5K53mM691U_WcbgVCXnkeFMeW-QQvWMk5zLh0Mn0zOHR01VLcH5eJ2Sed5dYlu-eFFRvVZdbcFwTslnD9fPWf6hDOcsqPA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/received-service-type-codes?contextId=94&patientId=813371&patientInsuranceId=1129384",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"received-service-type-codes"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "813371"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1129384"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all-received-stc-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/all-received-stc-v2?contextId=94&patientId=813371&patientInsuranceId=1129384",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"all-received-stc-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "813371"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1129384"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mr-benefits",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/most-recent-benefits?contextId=94&patientId=813371&patientInsuranceId=1129384",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"most-recent-benefits"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "813371"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1129384"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mr-benefits-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/most-recent-benefits-v2?contextId=94&patientId=813371&patientInsuranceId=1129384",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"most-recent-benefits-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "813371"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1129384"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "benefits",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/benefits?contextId=94&patientId=813371&patientInsuranceId=1129384&eligibilityTrackId=28500742",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"benefits"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "813371"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1129384"
+										},
+										{
+											"key": "eligibilityTrackId",
+											"value": "28500742"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "benefits-v2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/benefits-v2?contextId=94&patientId=813371&patientInsuranceId=1129384&eligibilityTrackId=28500742",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"benefits-v2"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "813371"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1129384"
+										},
+										{
+											"key": "eligibilityTrackId",
+											"value": "28500742"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "track-info",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/elig-track-info?contextId=94&patientId=813371&patientInsuranceId=1129384&eligibilityTrackId=25382528",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"elig-track-info"
+									],
+									"query": [
+										{
+											"key": "contextId",
+											"value": "94"
+										},
+										{
+											"key": "patientId",
+											"value": "813371"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "1129384"
+										},
+										{
+											"key": "eligibilityTrackId",
+											"value": "25382528"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "eligibilities",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/contexts/:contextId/patients/:patientId/patientinsurances/:patientInsuranceId/eligibilities/:eligibilityTrackId",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"contexts",
+										":contextId",
+										"patients",
+										":patientId",
+										"patientinsurances",
+										":patientInsuranceId",
+										"eligibilities",
+										":eligibilityTrackId"
+									],
+									"variable": [
+										{
+											"key": "contextId",
+											"value": "1884"
+										},
+										{
+											"key": "patientId",
+											"value": "61432"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "286499"
+										},
+										{
+											"key": "eligibilityTrackId",
+											"value": "1805442"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "eligibilities-latest",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJlMjNmMjhmOS1hNWRhLTQ4MmEtOGMzNS02NjFlM2ViMDZiMTMiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2NjA5Mzc1MjMsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImFuZXRVc2VyIjoicGppYW5nNCIsInN1YiI6InBqaWFuZzQiLCJpYXQiOjE2NjA5MzcyMjMsImp0aSI6Ill2XC9rQndyT0dTc0FBQjZZQUFBQVVBIiwiY2lkIjoiMG9hNTU0aHpiaFNiR29ndnQxdDciLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsInNjcCI6WyJhdGhlbmFcL3VzZXJcL0NvbGxlY3RvckVsaWdpYmlsaXR5LkVsaWdpYmlsaXR5U2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2Uud3JpdGUiXX0.br4qrJ4oQAd_ZKz4dY2T0Wm8ix8o1EP2nWDVtmRMuaCALSOJlE-R4rmWpXQyv-bpkdN6BNsZ3UdZNy9UoJDs9BbTs25M8oR_oC3dIZZ8KfxjmxOPV7S6jyjFrpZaEENTKBFl2bsqR8OMS99nNSCd5qD4ld7dsvcgJonD1SHtIQyt8u8AL0IUcQ85Gdjx1Ci1pZl5M4m66j8MCjGtTOMIQOOFMl-MriHtCvzN7XGSiVVBulz1Nr7llH0yJmvPQXe-GGQoQdNnc4mt8gC4wH068Bd-2Td9dS_z0hM-8WGIw88zsBfjJlu63_oUlWu1YqvyGm0_Tcmmu07d-GOXUZw7hZCRaXhMlodRfi8aSlMnx7WKgL-Lv7wGqPo7_bdOmFC5XPslMAzPQUuFjPOSzeOdzojmzQj74ImP_6pT5l7tUdC0-D-0-eWkTrixpMm12mdlxdkXWZeZal3vvCY1sDadCNVgcrpcJImzZMSe4lxtqoyFLfYqyrssG0c577vwzb-q5GCMiORcB8t9UP0Q-kNICLVV9qCjM8Lw1lO3SZ9DcazNev8rRM4yqm84Xa0POFJGtwci6vFNKFmZKt_z1HV0qkfDnFVdlBWuAv91h68OUruQgJtQpv2_31Jazl7HQNJoZ6FP03zEUDwgzvUx1AVhJYd4-MsABou0U9XUDDK3mGo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/contexts/:contextId/patients/:patientId/patientinsurances/:patientInsuranceId/eligibilities/latest",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"contexts",
+										":contextId",
+										"patients",
+										":patientId",
+										"patientinsurances",
+										":patientInsuranceId",
+										"eligibilities",
+										"latest"
+									],
+									"variable": [
+										{
+											"key": "contextId",
+											"value": "1884"
+										},
+										{
+											"key": "patientId",
+											"value": "61432"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "286499"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "dental-post_allArgs",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk2MzY2MDM2LCJpYXQiOjE2OTYzNTg4MzYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpSeGh0QXJPR1NzQUFOTVVBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.yJ1SG1Hv_pLVSo2sJxviideOM2O55QIAu0A2rtvitvOkALRBRi6sm-0J7F30UwLu0SWbQEotrwBncFzSz2A5LL5OjucfYDEC9iL0359Db3rWm1Ttg1oFB2wPnDC3U5sftHQby36JOIffXODqvY3JoEU_IeCHDkC2Ikk1-vtRTMgt2vgAkB4IFggEne_8CXIVlJcKU3hO4YLcuya5mAPE09CBy2dMso2QiOgviCD-Sb6a_WDTOsRGFCHkN617WIGJc7yq1DSsOclbGqa0UURJT8Fz1e6LL8wwFE-hgd2qgyoSgrXna1zCuz0xgYQ5zcAh-RpYac1P8f78bP_RjITuJcURj9jq-TYB0qT_JS3fXtq_4P-miXDnX7zuE-g0uonUg7IwReiXA8NnpGwp1lrojaTw9pEGkLXvhTrck5dbeLNJ8WDif2gA4aNQzOpYmLqnIKoN7jgPa4CyaF6zSZC4yfl0Q3nhjQlMa7D979Voe_NxfLTTrpQIBWnjEzKduuwhZv1gGhftWAoFmebJDGpr1Ul3Rtm9tKBIC7Xh-e6k6ldj5EiOKC5k6A3C1YgiOYlBfpGTE-Cbc4Vph_KiBGC7scxuMjfqZEulS9aR-n4MM3FO9mWWPwF-UKmgWQuLRVhrIBIdLjnrQvr1G0BfLD5Vy3wvwQjcA3_1eo9hLyrEzB0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\": \"Eligible\",\r\n    \"benefitPeriod\": \"CalendarYear\",\r\n    \"fiscalYearBegin\": \"January\",\r\n    \"annualMaximumBenefit\": 50000,\r\n    \"benefitRemaining\": 45000,\r\n    \"individualDeductible\": 2500,\r\n    \"individualDeductibleRemaining\": 2250,\r\n    \"familyDeductible\": 5000,\r\n    \"familyDeductibleRemaining\": 4500,\r\n    \"preventivePercent\": 80,\r\n    \"basicPercent\": 70,\r\n    \"basicWaitingPeriod\": true,\r\n    \"basicEffectiveDate\": \"01/01/2023\",\r\n    \"majorPercent\": 50,\r\n    \"majorWaitingPeriod\": false,\r\n    \"majorEffectiveDate\": \"01/01/2023\",\r\n    \"prophylaxisVisits\": 20,\r\n    \"prophylaxisVisitsPerMonths\": 2,\r\n    \"prophylaxisRemaining\": 18,\r\n    \"examVisits\": 10,\r\n    \"examVisitsPerMonths\": 1,\r\n    \"examRemaining\": 9,\r\n    \"bitewingVisits\": 5,\r\n    \"bitewingVisitsPerMonths\": 1,\r\n    \"bitewingRemaining\": 4,\r\n    \"fluorideVisits\": 15,\r\n    \"fluorideVisitsPerMonths\": 3,\r\n    \"fluorideRemaining\": 12,\r\n    \"fluorideAgeLimit\": true,\r\n    \"fluorideAge\": 18,\r\n    \"sealantCoverage\": true,\r\n    \"sealantAgeLimit\": false,\r\n    \"sealantAge\": 16,\r\n    \"missingToothClause\": false,\r\n    \"fullMouthXrayPerMonths\": 6,\r\n    \"fullMouthXrayLastDate\": \"01/01/2023\",\r\n    \"fullMouthXrayAgeLimit\": true,\r\n    \"fullMouthXrayAge\": 21,\r\n    \"eligibilityMessage\": \"Eligibility message.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/contexts/:contextId/patients/:patientId/patientinsurances/:patientInsuranceId/dental-eligibility",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"contexts",
+										":contextId",
+										"patients",
+										":patientId",
+										"patientinsurances",
+										":patientInsuranceId",
+										"dental-eligibility"
+									],
+									"variable": [
+										{
+											"key": "contextId",
+											"value": "432"
+										},
+										{
+											"key": "patientId",
+											"value": "1561424"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "17"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "dental-post_minArgs",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNjk2MzY2MDM2LCJpYXQiOjE2OTYzNTg4MzYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpSeGh0QXJPR1NzQUFOTVVBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.yJ1SG1Hv_pLVSo2sJxviideOM2O55QIAu0A2rtvitvOkALRBRi6sm-0J7F30UwLu0SWbQEotrwBncFzSz2A5LL5OjucfYDEC9iL0359Db3rWm1Ttg1oFB2wPnDC3U5sftHQby36JOIffXODqvY3JoEU_IeCHDkC2Ikk1-vtRTMgt2vgAkB4IFggEne_8CXIVlJcKU3hO4YLcuya5mAPE09CBy2dMso2QiOgviCD-Sb6a_WDTOsRGFCHkN617WIGJc7yq1DSsOclbGqa0UURJT8Fz1e6LL8wwFE-hgd2qgyoSgrXna1zCuz0xgYQ5zcAh-RpYac1P8f78bP_RjITuJcURj9jq-TYB0qT_JS3fXtq_4P-miXDnX7zuE-g0uonUg7IwReiXA8NnpGwp1lrojaTw9pEGkLXvhTrck5dbeLNJ8WDif2gA4aNQzOpYmLqnIKoN7jgPa4CyaF6zSZC4yfl0Q3nhjQlMa7D979Voe_NxfLTTrpQIBWnjEzKduuwhZv1gGhftWAoFmebJDGpr1Ul3Rtm9tKBIC7Xh-e6k6ldj5EiOKC5k6A3C1YgiOYlBfpGTE-Cbc4Vph_KiBGC7scxuMjfqZEulS9aR-n4MM3FO9mWWPwF-UKmgWQuLRVhrIBIdLjnrQvr1G0BfLD5Vy3wvwQjcA3_1eo9hLyrEzB0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\": \"Eligible\",\r\n    \"benefitPeriod\": \"CalendarYear\",\r\n    \"preventivePercent\": 80,\r\n    \"basicPercent\": 70,\r\n    \"majorPercent\": 50\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/eligibility/contexts/:contextId/patients/:patientId/patientinsurances/:patientInsuranceId/dental-eligibility",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eligibility",
+										"contexts",
+										":contextId",
+										"patients",
+										":patientId",
+										"patientinsurances",
+										":patientInsuranceId",
+										"dental-eligibility"
+									],
+									"variable": [
+										{
+											"key": "contextId",
+											"value": "432"
+										},
+										{
+											"key": "patientId",
+											"value": "1561424"
+										},
+										{
+											"key": "patientInsuranceId",
+											"value": "16"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://eligibility.dev.api.athena.io/eligibility-service_947726-dev/actuator/health",
+							"protocol": "https",
+							"host": [
+								"eligibility",
+								"dev",
+								"api",
+								"athena",
+								"io"
+							],
+							"path": [
+								"eligibility-service_947726-dev",
+								"actuator",
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cost Estimate Service",
+			"item": [
+				{
+					"name": "withoutSlidingFee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNzA4NTU0NDE5LCJpYXQiOjE3MDg1NDcyMTksImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpkWmNrd3JPR1NzQUFMZGZBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db3N0RXN0aW1hdGUuQ29zdEVzdGltYXRlU2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db3N0RXN0aW1hdGUuQ29zdEVzdGltYXRlU2VydmljZS53cml0ZSJdLCJzdWIiOiJwamlhbmc0In0.fGBQTgO0WmoXfMzl1qEgPuN7Tsvr0bbS4ZJjz0hbhvGNiTZSlTcSXQMUYQoug0AY2aqXYDichwfNhg7I-0qz-6KDB4BHUuBesEw0J48rUX_NQzyyLCTaP-sQ21ek4BFxvwVU13jYeSXXZ2OE_rPG21glEetWZraU8TvofZsZhdMZAPCJmlqNa2D8BFb2ipEPnB_kNuWDZx71cCbxLNAs1imk3mnOvrzD2y43DqR6F4lXo0xtPfturyit584ZotcDZiAtKKZs_s5Q5LlvjWZA4MVQR1moagHTsjxWNbJMwN5QM9wIVWu_VmWVPmLuJwOrOug7Jr5cFYdtOBUoNbKULm1Nts6D8FjUR6hRmPk5axE6TzEWPAo4tlHyRwTXtl_eepVJhEigHbmRLfH7BAlx54Z6WjIF-HnzRAq1p4iyQvlAANVBmlNziXW3DGa2yePHPfzTNNrLTJqg5rsLs3Bit965ZmGTMR1elP7v_1wJX1SZ45a5NvlkUIdmpdL6izZwMy7OVwkLb-CcSkaEXsOolCoEprd0y_W7LLNmIGL0s89ieDC4N0jyiHAU_OPTuz94lQme-CzZxKRZ_c2J5MmkSJdUxHoM-734YoI6o539ysG4W8-kWeWefy-LEErZJ6FnbADDlEKXRibaasOwYMhmiL-dhEo_f8066CDc3xewrK0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"appointmentId\": \"123\",\r\n  \"departmentId\": 11,\r\n  \"renderingProviderId\": 12,\r\n  \"totalItemizedCost\": 100,\r\n  \"procedures\": [\r\n    {\r\n      \"code\": \"TEST\",\r\n      \"description\": \"Test description\",\r\n      \"cost\": 100,\r\n      \"units\": 1,\r\n      \"procedureWithModifier\": \"TEST\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/cost-estimates/contexts/:contextId/patients/:patientId/self-pay",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cost-estimates",
+								"contexts",
+								":contextId",
+								"patients",
+								":patientId",
+								"self-pay"
+							],
+							"variable": [
+								{
+									"key": "contextId",
+									"value": "432"
+								},
+								{
+									"key": "patientId",
+									"value": "1561424"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "withSlidingFee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNzA4NTU0NDE5LCJpYXQiOjE3MDg1NDcyMTksImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpkWmNrd3JPR1NzQUFMZGZBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db3N0RXN0aW1hdGUuQ29zdEVzdGltYXRlU2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db3N0RXN0aW1hdGUuQ29zdEVzdGltYXRlU2VydmljZS53cml0ZSJdLCJzdWIiOiJwamlhbmc0In0.fGBQTgO0WmoXfMzl1qEgPuN7Tsvr0bbS4ZJjz0hbhvGNiTZSlTcSXQMUYQoug0AY2aqXYDichwfNhg7I-0qz-6KDB4BHUuBesEw0J48rUX_NQzyyLCTaP-sQ21ek4BFxvwVU13jYeSXXZ2OE_rPG21glEetWZraU8TvofZsZhdMZAPCJmlqNa2D8BFb2ipEPnB_kNuWDZx71cCbxLNAs1imk3mnOvrzD2y43DqR6F4lXo0xtPfturyit584ZotcDZiAtKKZs_s5Q5LlvjWZA4MVQR1moagHTsjxWNbJMwN5QM9wIVWu_VmWVPmLuJwOrOug7Jr5cFYdtOBUoNbKULm1Nts6D8FjUR6hRmPk5axE6TzEWPAo4tlHyRwTXtl_eepVJhEigHbmRLfH7BAlx54Z6WjIF-HnzRAq1p4iyQvlAANVBmlNziXW3DGa2yePHPfzTNNrLTJqg5rsLs3Bit965ZmGTMR1elP7v_1wJX1SZ45a5NvlkUIdmpdL6izZwMy7OVwkLb-CcSkaEXsOolCoEprd0y_W7LLNmIGL0s89ieDC4N0jyiHAU_OPTuz94lQme-CzZxKRZ_c2J5MmkSJdUxHoM-734YoI6o539ysG4W8-kWeWefy-LEErZJ6FnbADDlEKXRibaasOwYMhmiL-dhEo_f8066CDc3xewrK0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"appointmentId\": \"123\",\r\n  \"slidingFeeProgramId\": \"123\",\r\n  \"slidingFeePlanId\": \"123\",\r\n  \"slidingFeePlanName\": \"Test plan\",\r\n  \"departmentId\": 11,\r\n  \"renderingProviderId\": 12,\r\n  \"totalItemizedCost\": 100,\r\n  \"procedures\": [\r\n    {\r\n      \"code\": \"TEST\",\r\n      \"description\": \"Test description\",\r\n      \"cost\": 100,\r\n      \"units\": 1,\r\n      \"procedureWithModifier\": \"TEST\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/cost-estimates/contexts/:contextId/patients/:patientId/self-pay",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cost-estimates",
+								"contexts",
+								":contextId",
+								"patients",
+								":patientId",
+								"self-pay"
+							],
+							"variable": [
+								{
+									"key": "contextId",
+									"value": "432"
+								},
+								{
+									"key": "patientId",
+									"value": "1561424"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "idList",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNzA4NTU0NDE5LCJpYXQiOjE3MDg1NDcyMTksImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpkWmNrd3JPR1NzQUFMZGZBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db3N0RXN0aW1hdGUuQ29zdEVzdGltYXRlU2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db3N0RXN0aW1hdGUuQ29zdEVzdGltYXRlU2VydmljZS53cml0ZSJdLCJzdWIiOiJwamlhbmc0In0.fGBQTgO0WmoXfMzl1qEgPuN7Tsvr0bbS4ZJjz0hbhvGNiTZSlTcSXQMUYQoug0AY2aqXYDichwfNhg7I-0qz-6KDB4BHUuBesEw0J48rUX_NQzyyLCTaP-sQ21ek4BFxvwVU13jYeSXXZ2OE_rPG21glEetWZraU8TvofZsZhdMZAPCJmlqNa2D8BFb2ipEPnB_kNuWDZx71cCbxLNAs1imk3mnOvrzD2y43DqR6F4lXo0xtPfturyit584ZotcDZiAtKKZs_s5Q5LlvjWZA4MVQR1moagHTsjxWNbJMwN5QM9wIVWu_VmWVPmLuJwOrOug7Jr5cFYdtOBUoNbKULm1Nts6D8FjUR6hRmPk5axE6TzEWPAo4tlHyRwTXtl_eepVJhEigHbmRLfH7BAlx54Z6WjIF-HnzRAq1p4iyQvlAANVBmlNziXW3DGa2yePHPfzTNNrLTJqg5rsLs3Bit965ZmGTMR1elP7v_1wJX1SZ45a5NvlkUIdmpdL6izZwMy7OVwkLb-CcSkaEXsOolCoEprd0y_W7LLNmIGL0s89ieDC4N0jyiHAU_OPTuz94lQme-CzZxKRZ_c2J5MmkSJdUxHoM-734YoI6o539ysG4W8-kWeWefy-LEErZJ6FnbADDlEKXRibaasOwYMhmiL-dhEo_f8066CDc3xewrK0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/cost-estimates/contexts/:contextId/patients/:patientId/self-pay/estimates/ids",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cost-estimates",
+								"contexts",
+								":contextId",
+								"patients",
+								":patientId",
+								"self-pay",
+								"estimates",
+								"ids"
+							],
+							"variable": [
+								{
+									"key": "contextId",
+									"value": "432"
+								},
+								{
+									"key": "patientId",
+									"value": "1561424"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNzA4NTU0NDE5LCJpYXQiOjE3MDg1NDcyMTksImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpkWmNrd3JPR1NzQUFMZGZBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db3N0RXN0aW1hdGUuQ29zdEVzdGltYXRlU2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db3N0RXN0aW1hdGUuQ29zdEVzdGltYXRlU2VydmljZS53cml0ZSJdLCJzdWIiOiJwamlhbmc0In0.fGBQTgO0WmoXfMzl1qEgPuN7Tsvr0bbS4ZJjz0hbhvGNiTZSlTcSXQMUYQoug0AY2aqXYDichwfNhg7I-0qz-6KDB4BHUuBesEw0J48rUX_NQzyyLCTaP-sQ21ek4BFxvwVU13jYeSXXZ2OE_rPG21glEetWZraU8TvofZsZhdMZAPCJmlqNa2D8BFb2ipEPnB_kNuWDZx71cCbxLNAs1imk3mnOvrzD2y43DqR6F4lXo0xtPfturyit584ZotcDZiAtKKZs_s5Q5LlvjWZA4MVQR1moagHTsjxWNbJMwN5QM9wIVWu_VmWVPmLuJwOrOug7Jr5cFYdtOBUoNbKULm1Nts6D8FjUR6hRmPk5axE6TzEWPAo4tlHyRwTXtl_eepVJhEigHbmRLfH7BAlx54Z6WjIF-HnzRAq1p4iyQvlAANVBmlNziXW3DGa2yePHPfzTNNrLTJqg5rsLs3Bit965ZmGTMR1elP7v_1wJX1SZ45a5NvlkUIdmpdL6izZwMy7OVwkLb-CcSkaEXsOolCoEprd0y_W7LLNmIGL0s89ieDC4N0jyiHAU_OPTuz94lQme-CzZxKRZ_c2J5MmkSJdUxHoM-734YoI6o539ysG4W8-kWeWefy-LEErZJ6FnbADDlEKXRibaasOwYMhmiL-dhEo_f8066CDc3xewrK0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/cost-estimates/contexts/:contextId/patients/:patientId/self-pay/:estimateId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cost-estimates",
+								"contexts",
+								":contextId",
+								"patients",
+								":patientId",
+								"self-pay",
+								":estimateId"
+							],
+							"variable": [
+								{
+									"key": "contextId",
+									"value": "432"
+								},
+								{
+									"key": "patientId",
+									"value": "1561424"
+								},
+								{
+									"key": "estimateId",
+									"value": "687392fb-400d-4551-a192-3e23f423e433"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "id Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNzA4NTU0NDE5LCJpYXQiOjE3MDg1NDcyMTksImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpkWmNrd3JPR1NzQUFMZGZBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db3N0RXN0aW1hdGUuQ29zdEVzdGltYXRlU2VydmljZS5yZWFkIiwiYXRoZW5hXC91c2VyXC9Db3N0RXN0aW1hdGUuQ29zdEVzdGltYXRlU2VydmljZS53cml0ZSJdLCJzdWIiOiJwamlhbmc0In0.fGBQTgO0WmoXfMzl1qEgPuN7Tsvr0bbS4ZJjz0hbhvGNiTZSlTcSXQMUYQoug0AY2aqXYDichwfNhg7I-0qz-6KDB4BHUuBesEw0J48rUX_NQzyyLCTaP-sQ21ek4BFxvwVU13jYeSXXZ2OE_rPG21glEetWZraU8TvofZsZhdMZAPCJmlqNa2D8BFb2ipEPnB_kNuWDZx71cCbxLNAs1imk3mnOvrzD2y43DqR6F4lXo0xtPfturyit584ZotcDZiAtKKZs_s5Q5LlvjWZA4MVQR1moagHTsjxWNbJMwN5QM9wIVWu_VmWVPmLuJwOrOug7Jr5cFYdtOBUoNbKULm1Nts6D8FjUR6hRmPk5axE6TzEWPAo4tlHyRwTXtl_eepVJhEigHbmRLfH7BAlx54Z6WjIF-HnzRAq1p4iyQvlAANVBmlNziXW3DGa2yePHPfzTNNrLTJqg5rsLs3Bit965ZmGTMR1elP7v_1wJX1SZ45a5NvlkUIdmpdL6izZwMy7OVwkLb-CcSkaEXsOolCoEprd0y_W7LLNmIGL0s89ieDC4N0jyiHAU_OPTuz94lQme-CzZxKRZ_c2J5MmkSJdUxHoM-734YoI6o539ysG4W8-kWeWefy-LEErZJ6FnbADDlEKXRibaasOwYMhmiL-dhEo_f8066CDc3xewrK0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"appointmentId\": \"123\",\r\n  \"departmentId\": 11,\r\n  \"renderingProviderId\": 12,\r\n  \"totalItemizedCost\": 100,\r\n  \"procedures\": [\r\n    {\r\n      \"code\": \"TEST\",\r\n      \"description\": \"Test description\",\r\n      \"cost\": 100,\r\n      \"units\": 1,\r\n      \"procedureWithModifier\": \"TEST\"\r\n    }\r\n  ],\r\n  \"notifyPatient\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/cost-estimates/contexts/:contextId/patients/:patientId/self-pay/:estimateId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cost-estimates",
+								"contexts",
+								":contextId",
+								"patients",
+								":patientId",
+								"self-pay",
+								":estimateId"
+							],
+							"variable": [
+								{
+									"key": "contextId",
+									"value": "432"
+								},
+								{
+									"key": "patientId",
+									"value": "1561424"
+								},
+								{
+									"key": "estimateId",
+									"value": "687392fb-400d-4551-a192-3e23f423e433"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FHIR",
+			"item": [
+				{
+					"name": "Directory Practitioner",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJoZ3VYWmtWOEs5QlNrTGtlUmlrS3dJc3Z1ZWNRdlAwR3N4cUZHQmRQU3dVIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULkpXWjRSUnJiYjlYMGltTklHd0dsdTQtc0x5R2h5SkJOX0xPZjE4TjVXazAiLCJpc3MiOiJodHRwczovL2F0aGVuYWhlYWx0aHBvYy5va3RhLmNvbS9vYXV0aDIvYXVzMTNrYnRqNEhBZEkzNDUxdDciLCJhdWQiOiJodHRwczovL2lhbS5hdGhlbmFoZWFsdGguY29tIiwiaWF0IjoxNjY2MjE0MjI0LCJleHAiOjE2NjYyMTQ1MjQsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3Iiwic2NwIjpbImF0aGVuYS9zZXJ2aWNlL0RpcmVjdG9yeS5QcmFjdGl0aW9uZXIucmVhZCJdLCJzdWIiOiIwb2E1NTRoemJoU2JHb2d2dDF0NyJ9.FasgHaMEIrFf7R9AFbRXzEBwlpPHI5-H_aWgUyc4weWLrDXt6hXCrJP9C5mImtYRcB-K-X8HTplTaZp0U2ryqfVcv_eE6Kgovo6iVVMGhWIoGTo9uB0UtIlWk1y9D3nstD1_QUQYhPX9tBPiio3tOgt6H1TkGFy-GLH4z78tj1qyPl2lDEQHmnmS-Eh-_sMIwztOdoLYLKFViaN8lMJF6tA1FbTjsBPD4BuhFic24tMCo-iWmOP8tIXMftxaNGJUx3K1YeXcny4t3iBDaMysiQ-0Iazlldw0KUPKrPrfAHP7GQgSCfzqvehNPTl8LOGCoCgCJU13XO7H24b4L70ttg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://directory.dev.api.athena.io/directory/fhir/4_0_0/Practitioner/athenanet.athena432.provider-4",
+							"protocol": "https",
+							"host": [
+								"directory",
+								"dev",
+								"api",
+								"athena",
+								"io"
+							],
+							"path": [
+								"directory",
+								"fhir",
+								"4_0_0",
+								"Practitioner",
+								"athenanet.athena432.provider-4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Perl Practitioner",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJoZ3VYWmtWOEs5QlNrTGtlUmlrS3dJc3Z1ZWNRdlAwR3N4cUZHQmRQU3dVIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnpJVlVKSUFDekQ0Q2FYNG8zWWdaX3RqLW5tZmsybnRZM0o3UjE2bDNfLU0iLCJpc3MiOiJodHRwczovL2F0aGVuYWhlYWx0aHBvYy5va3RhLmNvbS9vYXV0aDIvYXVzMTNrYnRqNEhBZEkzNDUxdDciLCJhdWQiOiJodHRwczovL2lhbS5hdGhlbmFoZWFsdGguY29tIiwiaWF0IjoxNjY2NzUzMDg4LCJleHAiOjE2NjY3NTY2ODgsImNpZCI6IjBvYW10NmFycmJJUFR0NU1nMXQ3Iiwic2NwIjpbInN5c3RlbS9QcmFjdGl0aW9uZXIucmVhZCJdLCJzdWIiOiIwb2FtdDZhcnJiSVBUdDVNZzF0NyJ9.c-MfV_BxRgcRA0_A38-IT7l0f668aN94SDFzn5d6A--9L0GBhtV5I7mIH1aos6XHd8953bX-78QxTSlUk_4fIaYdh3LJd-9Z-17YdJeoPFGr9StJLqeZ5UdKe5_qKJ5KVC7uVQzuvRbINMNzN75Bx1k3pOW0zW8QgvfAggNtGBD70ZgdUEXB_fjWn15ei4d0njCzJYiV49b-cUPWpbzgcuKBYgF82zycSdDGNkjQhnEHhZ9yfSI7mundk_71H1vsryKx5Ke2aQPRk4AF3dxLw2AWeQvFTjQFKv1zFz8kxd5r72CQbkktF-F0jz4oUG9t0zG-nSAu30O1bSTK44voVg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://prodmirror.api.fhir.nonprod.athena.io/fhir/r4/Practitioner/a-432.Provider-4",
+							"protocol": "https",
+							"host": [
+								"prodmirror",
+								"api",
+								"fhir",
+								"nonprod",
+								"athena",
+								"io"
+							],
+							"path": [
+								"fhir",
+								"r4",
+								"Practitioner",
+								"a-432.Provider-4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Glance",
+			"item": [
+				{
+					"name": "iac-tool",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glance.aws.athenahealth.com/api/resource/iac-tool?acc_ids=all",
+							"protocol": "https",
+							"host": [
+								"glance",
+								"aws",
+								"athenahealth",
+								"com"
+							],
+							"path": [
+								"api",
+								"resource",
+								"iac-tool"
+							],
+							"query": [
+								{
+									"key": "acc_ids",
+									"value": "all"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tf-workspace",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glance.aws.athenahealth.com/api/iac-tooling/tf-workspace?username=hjiang&account_id=922056656510",
+							"protocol": "https",
+							"host": [
+								"glance",
+								"aws",
+								"athenahealth",
+								"com"
+							],
+							"path": [
+								"api",
+								"iac-tooling",
+								"tf-workspace"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "hjiang"
+								},
+								{
+									"key": "account_id",
+									"value": "922056656510"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tf-state-object",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glance.aws.athenahealth.com/api/iac-tooling/tf-state-object?bucket_name=iac-terraform-aws-state-789532807069-us-east-1&object_key=COLINS/workshop-terrapy-appointment/79fe53-dev/application-workspace-template/terraform.tfstate",
+							"protocol": "https",
+							"host": [
+								"glance",
+								"aws",
+								"athenahealth",
+								"com"
+							],
+							"path": [
+								"api",
+								"iac-tooling",
+								"tf-state-object"
+							],
+							"query": [
+								{
+									"key": "bucket_name",
+									"value": "iac-terraform-aws-state-789532807069-us-east-1"
+								},
+								{
+									"key": "object_key",
+									"value": "COLINS/workshop-terrapy-appointment/79fe53-dev/application-workspace-template/terraform.tfstate"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://alertmanager-eligibility.us-east-1.dev.eligibility.aws.athenahealth.com/api/v2/status",
+					"protocol": "https",
+					"host": [
+						"alertmanager-eligibility",
+						"us-east-1",
+						"dev",
+						"eligibility",
+						"aws",
+						"athenahealth",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

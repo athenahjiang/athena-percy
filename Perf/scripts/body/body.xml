@@ -1,0 +1,20 @@
+<hashTree>
+  <RecordingController guiclass="RecordController" testclass="RecordingController" testname="requests" enabled="true"/>
+  <hashTree>
+    <!-- percy: insert endpoints here -->
+  </hashTree>
+  <!-- percy: insert test action here -->
+  <hashTree>
+    <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+      <stringProp name="ConstantTimer.delay">1000</stringProp>
+      <stringProp name="RandomTimer.range">100</stringProp>
+    </UniformRandomTimer>
+    <hashTree/>
+  </hashTree>
+  <!-- percy: insert result collector here -->
+  <hashTree/>
+  <!-- percy: insert csv data set here -->
+  <hashTree/>
+  <!-- percy: insert argument here -->
+  <hashTree/>
+</hashTree>
