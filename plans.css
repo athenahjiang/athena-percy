@@ -1,0 +1,18 @@
+.elis_test {
+	psql load db
+	group deprecated stuff
+	evented apis with etl and date time
+}
+
+.elis_dev {
+	sonar cube
+	new spotless
+	dental clean code
+	delete deprecated code
+}
+
+.aws {
+	boto3 thanos:;
+	glance cost advisor
+	aws billing and cost mgmt
+}
