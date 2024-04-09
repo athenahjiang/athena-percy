@@ -1,10 +1,4 @@
-create table ELIGIBILITYCLASS
-(
-    ID           varchar2(50),
-    NAME         varchar2(20),
-    RECEIVERNAME varchar2(20)
-)
-;
+-- noinspection SqlResolveForFile
 
 -- get class from receiver
 select ID, NAME, RECEIVERNAME

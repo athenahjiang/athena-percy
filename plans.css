@@ -5,6 +5,7 @@
 }
 
 .elis_dev {
+	disable all mdp
 	sonar cube
 	new spotless
 	dental clean code

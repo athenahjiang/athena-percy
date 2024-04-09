@@ -1,17 +1,4 @@
-create table INSURANCEPACKAGE
-(
-    ID                 varchar2(50),
-    NAME               varchar2(50),
-    NONINSURANCETYPEID varchar2(50)
-)
-;
-
-create table NONINSURANCETYPE
-(
-    ID   varchar2(50),
-    NAME varchar2(50)
-)
-;
+-- noinspection SqlResolveForFile
 
 -- get patient with only standard policies
 select PATIENTINSURANCE.PATIENTID

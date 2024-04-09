@@ -6,30 +6,17 @@
 aws-azure-login --profile saml --mode gui
 
 ####
-#### ssh
-####
-
-# jump
-ssh jump.us-east-1.dev.922056656510.aws.athenahealth.com
-ssh jump.us-east-1.prod.213397030215.aws.athenahealth.com
-
-# rds
-ssh -L 5432:eligsvcdb-799329-dev-eligsvc.cmlaglbozjbo.us-east-1.rds.amazonaws.com:5432 jump.us-east-1.dev.922056656510.aws.athenahealth.com
-ssh -L 5432:eligsvcdb-eb92cc-int-eligsvc.cmlaglbozjbo.us-east-1.rds.amazonaws.com:5432 jump.us-east-1.dev.922056656510.aws.athenahealth.com
-ssh -L 5432:eligibility-service-aurora-prod.cluster-c3jfihid7gkd.us-east-1.rds.amazonaws.com:5432 jump.us-east-1.prod.213397030215.aws.athenahealth.com
-
-####
 #### services
 ####
 
 # ec2 describe
 aws ec2 describe-instances
-aws ec2 describe-instances --filters Name=tag:deployment_id,Values=5cc5a4-dev
-aws ec2 describe-instances --filters Name=tag:deployment_id,Values=5cc5a4-dev --query "Reservations[].Instances[].InstanceId" --output text
+aws ec2 describe-instances --filters Name=tag:deployment_id,Values=c3e0e6-dev
+aws ec2 describe-instances --filters Name=tag:deployment_id,Values=c3e0e6-dev --query "Reservations[].Instances[].InstanceId" --output text
 
 # ec2 connect
 aws ec2-instance-connect ssh --os-user hjiang --instance-id i-04acf74fa9126b670 --profile saml
-ssh -L 5432:eligibility-service-aurora-5cc5a4-dev.cluster-cmlaglbozjbo.us-east-1.rds.amazonaws.com:5432 hjiang@i-04acf74fa9126b670 -o ProxyCommand="aws ec2-instance-connect open-tunnel --instance-id i-04acf74fa9126b670"
+ssh -L 5432:eligibility-service-aurora-c3e0e6-dev.cluster-cmlaglbozjbo.us-east-1.rds.amazonaws.com:5432 hjiang@i-04acf74fa9126b670 -o ProxyCommand="aws ec2-instance-connect open-tunnel --instance-id i-04acf74fa9126b670"
 
 # ecs
 aws ecs list-task-definitions --family-prefix eligsvc
@@ -57,3 +44,15 @@ aws secretsmanager delete-secret --force-delete-without-recovery --region us-wes
 
 # route53
 aws route53 delete-hosted-zone --id Z00498262HXXA6GMUTZ2Z
+
+# rds
+aws-azure-login --profile saml
+# get bastion host instance ID
+aws ec2 describe-instances --filters Name=tag:jumpserver,Values=true --query "Reservations[].Instances[].InstanceId" --output text
+# connect to an ec2 instance
+aws ec2-instance-connect ssh --os-user <YOUR_USERNAME> --instance-id <EC2_BASTION_INSTANCE_ID> --profile saml
+# (will be prompted for your OpenLDAP password)
+# ssh into your application instance from Bastion
+ssh <PRIVATE_IP_OF_APPLICATION_INSTANCE>
+# run psql and connect to a db (lookup passwd from secrets manager, use readonly credentials)
+sudo docker run -it --rm postgres:13-alpine psql -h <DBHOST> -U <DB_USERNAME> -d insmgmt

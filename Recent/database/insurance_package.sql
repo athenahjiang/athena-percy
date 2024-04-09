@@ -1,9 +1,4 @@
-create table INSURANCEPACKAGE
-(
-    ID   int,
-    NAME int
-)
-;
+-- noinspection SqlResolveForFile
 
 -- from package id
 select PATIENTINSURANCE.PATIENTID,
@@ -67,3 +62,41 @@ where ip.name like '%MEDICAID REPLACEMENT%'
 order by length(ip.name) desc
     fetch first 5 rows only
 ;
+
+-- get name from id
+select NAME
+from INSURANCEPACKAGE
+where ID = 982;
+
+-- get id from name
+select ID, NAME
+from INSURANCEPACKAGE
+where NAME = 'MEDICARE'
+order by ID, NAME
+    fetch first 20 rows only
+;
+
+-- get package name from patient
+select PATIENTINSURANCE.ID as PIID,
+       PATIENTINSURANCE.SEQUENCENUMBER,
+       INSURANCEPACKAGE.ID as IPID,
+       INSURANCEPACKAGE.NAME
+from INSURANCEPACKAGE
+         inner join PATIENTINSURANCE on PATIENTINSURANCE.INSURANCEPACKAGEID = INSURANCEPACKAGE.ID
+where PATIENTINSURANCE.PATIENTID = 1561424
+  and PATIENTINSURANCE.CANCELLED is null
+  and PATIENTINSURANCE.DELETED is null
+;
+
+-- get long package name patient
+select PATIENTINSURANCE.PATIENTID,
+       PATIENTINSURANCE.SEQUENCENUMBER,
+       length(INSURANCEPACKAGE.NAME)
+from INSURANCEPACKAGE
+         inner join PATIENTINSURANCE on PATIENTINSURANCE.INSURANCEPACKAGEID = INSURANCEPACKAGE.ID
+where PATIENTINSURANCE.CANCELLED is null
+  and PATIENTINSURANCE.DELETED is null
+order by length(INSURANCEPACKAGE.NAME) desc
+    fetch first 10 rows only
+;
+

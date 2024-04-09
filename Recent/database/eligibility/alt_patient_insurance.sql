@@ -1,3 +1,5 @@
+-- noinspection SqlResolveForFile
+
 -- from pi, get all alt pi
 select PI.ID, ALTPI.ID
 from PATIENTINSURANCE PI

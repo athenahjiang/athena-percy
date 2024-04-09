@@ -17,11 +17,12 @@ multi region dr
 elid call monolith save dom
 
 # tech
-what is the best way to reach you?
-rank channel, office hour chat, dm
-things don't really concern the rest
-a lot of times ppl chime in
-i find it more annoying than helpful
-feel free to delay response
-great idea to rotate sprint between 2 teams
-elis clean code smuggle on your coltec sprint
+
+devs channel > office hour > dm
+phrase suggestion, convince the devs first
+preview infra
+maybe not merge cost-estimate
+
+## north star
+macro to eks to oracle, micro to separate eks to psql
+won't happen until data center moves
