@@ -1,4 +1,3 @@
-<!-- results -->
 <!-- avg/min/max/std/err, ms/% -->
 
 # jmx
@@ -21,6 +20,12 @@
 - arguments (host, prefix, jwt)
 
 # maximus
+
+## disable mdp
+stub out the link in application.dev.yaml
+stub out dao calls
+
+## info
 
 go/maximus
 Collaboration-Solutions-COLTEC

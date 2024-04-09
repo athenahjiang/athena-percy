@@ -3,6 +3,7 @@ select 1;
 select *
 from flyway_schema_history;
 
+-- tables
 select count(*)
 from eligibility_request;
 select count(*)
@@ -11,6 +12,10 @@ select count(*)
 from anet_eligibility_track;
 select count(*)
 from anet_eligibility_benefits;
+
+--
+-- information schema
+--
 
 select table_name
 from INFORMATION_SCHEMA.COLUMNS;
