@@ -12,17 +12,15 @@ whish if there's some tool to transform code and graph
 glance cost advisor
 aws billing & cost mgmt
 
-# poc list
-multi region dr
-elid call monolith save dom
-
 # tech
 
 devs channel > office hour > dm
 phrase suggestion, convince the devs first
-preview infra
-maybe not merge cost-estimate
 
 ## north star
-macro to eks to oracle, micro to separate eks to psql
-won't happen until data center moves
+multi region dr in single state
+preview infra
+maybe not merge cost-estimate
+macro to eks to oracle, micro to separate eks to psql, won't happen until data center moves
+cost-estimate templating
+new perf test tool

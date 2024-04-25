@@ -19,9 +19,9 @@ docker run --detach --name eligsvcdb --publish 5432:5432 --env POSTGRES_DB=eligs
 # estimatedb
 docker run --detach --name estimatedb --publish 5433:5432 --env POSTGRES_DB=estimatedb --env POSTGRES_USER=localuser --env POSTGRES_PASSWORD=localpassword postgres:14.5
 
+# jwt
+$AX_HOME/fhir/fhir create-anet-jwt --username pjiang4 --scopes athena/user/CollectorEligibility.EligibilityService.read,athena/user/CollectorEligibility.EligibilityService.write
+
 # perforce
 create_stream --type task --jiraproject COLTEC --parentstream //anet/pipeline/core/devmain_filtered --streamname coltec_1115_user_favorites
 submit_files.pl COLTEC-1115 --runverifycode --runtests
-
-# jwt
-$AX_HOME/fhir/fhir create-anet-jwt --username pjiang4 --scopes athena/user/CollectorEligibility.EligibilityService.read,athena/user/CollectorEligibility.EligibilityService.write

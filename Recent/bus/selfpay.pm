@@ -1,13 +1,14 @@
 ####
 #### fee schedule
 ####
-BusCall::Claim::FeeScheduleLookUpCodes($dbh, { searchTerms =>[{ procedureCode => '00170', date => "06-02-2022", departmentID => 52, }], insurancePackageID => 131462, });
-BusCall::Claim::FeeScheduleLookUpCodes($dbh, { searchTerms =>[{ procedureCode=> '00170', departmentID=> 5480, date => "01-09-2023" }], insurancePackageID => 692810, });
-# example? ip id always null?
+BusCall::Claim::FeeScheduleLookUpCodes($dbh, { searchTerms =>[{ procedureCode=> '00170', departmentID=> 52, date => "04/24/2024" }], insurancePackageID => 0, });
+use FeeSchedule;
+FeeSchedule::LookUpCodes($dbh, { searchTerms =>[{ procedureCode=> '90210', departmentID=> 103, date => "04/24/2024" }], insurancePackageID => 0, });
 
 ####
 #### sliding fee
 ####
+BusCall::SlidingFeeSchedule::GetPatientResponsibilityWithExclusion($dbh, {slidingFeePlanId=>43,slidingFeeProgramId=>43,departmentId=>103,renderingProviderId=>123,procedures=>[{cost=>500,units=>1,procedureWithModifier=>"TEST",}],});
 # get program and maybe plan
 BusCall::Appointment::GetAppointmentSlidingFeeInfo($dbh,{ APPOINTMENTID => 1314345, });
 # get plan from program

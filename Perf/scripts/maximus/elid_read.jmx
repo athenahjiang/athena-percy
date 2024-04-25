@@ -50,7 +50,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">100</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">900</stringProp>
         <stringProp name="ThreadGroup.ramp_time">300</stringProp>
@@ -282,7 +282,7 @@
             <boolProp name="TransactionController.parent">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="latest-eligibilities" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="eligibilities/latest" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -407,7 +407,7 @@
             </elementProp>
             <elementProp name="authToken" elementType="Argument">
               <stringProp name="Argument.name">authToken</stringProp>
-              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNzEyNjk4MDQ2LCJpYXQiOjE3MTI2OTA4NDYsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpoV1duZ3JPR1NzQUFIY0tBQUFBQ0EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.U_3fEIw51fYM7_QQedbYbwYu_juZM75xt7okfqv4fgSwLUtQ5WROxpwtkH-klIv8yUHWmqN2IsVMeq-Vik3O3ZxO8vyOc5johsekrjQ8m59vuHqREDUZ77hLgpNPNmp8F3izyK9cpNIUO0T-RlbzvKQnGZuyAbySuYopyaRMKsfoTKkB3Ji7zmZeLoN-T5WG6MWvEae8F2TgRg1mFKJa_YnbK3hdR03fpxVYwwAaGazykfQe4GQmLhnBIhLuDX4KcSREIJiuK8YQ_pbPYWhROVEbXHegifkJlgOHLXdi4Z1IVuSlQpql0WyEr2dctIDRX-psbWjuxDNlRI4G9JTkRR_LJmjJGIbTwv-QXoj1PjHZ7r4WpnWUtaQsnTbY64Ct0tdn8iCPN_lnVNRhi5OUllBLQyBVZc6kYXxF7j8W-9xNOTHKDgZMkcgwp7_NwwJjE-bOpWvdikHiB7azQhMEW1QL7MDRv3pv4BKFu5awzyBzOR6UgtLkKBi_MNUQR6nqKY5qiXUdag-4g7abVaaxOyxF7BphGWNM3y_d7a7p5e9VFgrgwnw7uN0fafelttoyyZMtNWQjpbPpcx7jOh1y3ahW1RpKjJwBYUCzKvfUhF-hcdNAmdDpd1BzALfmK9m4AWA_Z5jb6mx0n8NhydiUjix4aWQ4y87rQDx1dXnQl_M</stringProp>
+              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsImtpZCI6ImUyM2YyOGY5LWE1ZGEtNDgyYS04YzM1LTY2MWUzZWIwNmIxMyJ9.eyJhbmV0VXNlciI6InBqaWFuZzQiLCJhdWQiOiJodHRwczpcL1wvZGV2LmF0aGVuYS5pbyIsImNpZCI6IjBvYTU1NGh6YmhTYkdvZ3Z0MXQ3IiwiZXhwIjoxNzEzMzEyMjE0LCJpYXQiOjE3MTMzMDUwMTQsImlzcyI6Imh0dHBzOlwvXC9kZXYuYXRoZW5haGVhbHRoLmNvbSIsImp0aSI6IlpoNzF0Z3JPR1NzQUFKSExBQUFBQ1EiLCJzY3AiOlsiYXRoZW5hXC91c2VyXC9Db2xsZWN0b3JFbGlnaWJpbGl0eS5FbGlnaWJpbGl0eVNlcnZpY2UucmVhZCIsImF0aGVuYVwvdXNlclwvQ29sbGVjdG9yRWxpZ2liaWxpdHkuRWxpZ2liaWxpdHlTZXJ2aWNlLndyaXRlIl0sInN1YiI6InBqaWFuZzQifQ.1xeTxz-k4NSsQat1w9NZsIgW3KSVjGEAgMDD97jHMcvDTLCOSiv6D8mPP1gFsCQIfaJjAhMMtdBnMnNOAmloYqWpodS7LCE-F7iJwrdTot5h42xHoceAWrBBsZM5_I5QeQ-GzA2ZFw1e0RvTn8XbtfQQdKJ2icjmO6NyP7X2DS7aCNXqqhDIqkMzx2eo7sLf_Cg2E6FLCZL2iyBzbq17cZhHy5NEZXIFg3OIVamTSwMwtSe-lAS3H6nSTUUyjMgX0oJZp8BwUhRw-E75ZP06QENPlFMG7yovBb8TwOgEbggK0S7s-Pvs5KeDLT6sauH36qZgOzVRcOJ1FHLo6Ik5at0I4dAAnaYY6y3gGPGCibtffB85TVNtixquqQEmJtBoX8e9WEWVozByqaTzWVA3c99tC7w7fwX_mPwp6oClZgWgwJvDURgQV7oeOZBR0gvEe2l0gZucK-xhvQals10Wn8pAjLoLoyAWhMd_N9sSuqkUjpvJBn5aNPLttj__vGuemxZRhsZgLYwQ-kI24gEbQqfS8ZpMDVyHjNIr8g9NMAMm5XAHfyHGhstdY1yr3STd3LJJ--AeAysovQDlxttXugf_8FpmE96Jl2TPimhpQ7xewX8jS4xMqovaev5iOy8qDvRABadBHJEXyxG4WY0Ijo34gISdYXEwDKfHn2GWU5E</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="prefix" elementType="Argument">

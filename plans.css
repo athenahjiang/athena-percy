@@ -1,15 +1,28 @@
 .elis_test {
-	psql load db
-	group deprecated stuff
 	evented apis with etl and date time
 }
 
 .elis_dev {
-	disable all mdp
-	sonar cube
+	preview
 	new spotless
-	dental clean code
-	delete deprecated code
+}
+
+.cost_estimate {
+	flow
+	delete infra
+}
+
+.rui {
+	ut
+	lodash
+	react-query
+	faker-js/faker
+	ffa route
+	react use context
+	react use demo
+	imo-api
+	fuse js
+	msw
 }
 
 .aws {
