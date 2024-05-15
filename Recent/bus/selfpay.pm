@@ -8,7 +8,13 @@ FeeSchedule::LookUpCodes($dbh, { searchTerms =>[{ procedureCode=> '90210', depar
 ####
 #### sliding fee
 ####
-BusCall::SlidingFeeSchedule::GetPatientResponsibilityWithExclusion($dbh, {slidingFeePlanId=>43,slidingFeeProgramId=>43,departmentId=>103,renderingProviderId=>123,procedures=>[{cost=>500,units=>1,procedureWithModifier=>"TEST",}],});
+BusCall::Eligibility::GetPatientResponsibilityWithExclusion($dbh, { slidingFeePlanId => 43, slidingFeeProgramId => 43, departmentId => 103, renderingProviderId => 123, procedures => [ { cost => 500, units => 1, procedureWithModifier => "TEST", } ], });
+BusCall::SlidingFeeSchedule::GetPatientResponsibilityWithExclusion($dbh, { slidingFeePlanId => 43, slidingFeeProgramId => 43, departmentId => 103, renderingProviderId => 123, procedures => [ { cost => 500, units => 1, procedureWithModifier => "TEST", } ], });
+BusCall::SlidingFeeSchedule::GetSlidingFeeInfoForAppointment($dbh, { APPOINTMENTID => 4453479 });
+
+####
+#### others
+####
 # get program and maybe plan
 BusCall::Appointment::GetAppointmentSlidingFeeInfo($dbh,{ APPOINTMENTID => 1314345, });
 # get plan from program

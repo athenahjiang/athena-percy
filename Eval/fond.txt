@@ -1,0 +1,15 @@
+Excellence is a mindset. Thank you for always looking for new ways to improve our performance and the value athenahealth delivers! Props for all the new things you've tackled and done well with recently, plat 2.0, rules tasks, learning react/redux for charge entry, documenting thoroughly and asking thoughtful technical questions.
+
+Thank you for having the courage to work outside your comfort zone to create a thriving ecosystem that delivers accessible, high-quality and sustainable healthcare for all!
+
+Excellence is a mindset. Thank you for always looking for new ways to improve our performance and the value athenahealth delivers! The work you did and continue doing to improve user experience in Eligibility 2.0 is very valuable and your hard work and dedication is highly appreciated! Thank you and keep up the great work!
+
+Thank you Percy for your focused and conscious contribution towards FetchAll performance improvements. Your precision, understanding of system, monolith code grasp, speed of change, quality of work, backing up your thoughts with investigation, comparing results using profiling tools and determination to make change for betterment has yielded good result. Monolith Fetchall end point 95 percentile latency was hovering 2.5+ seconds and more. With your two rounds of valuable work, it has come down to range of 1 sec to 1.5 second, that is overall improvement of 40-50% . Remarkable contribution.
+
+High Five to each and everyone of you (including Vijaya and Mike) from ePayment and COLTEC team for EliD, EliS successful GA. Eligibility is high traffic (800+ loads per minute) and core feature of Athena. With dedicated, focused and conscious value add, you all gave it is new face and setup path for next generation of changes. A Successful GA is milestone and reflection of your valued effort.
+
+Thank you all for making fundamental architectural improvement in eligibility 2.0 journey by adopting to Events, triggered from Monolith eligibility check and passing over many hops such as Collector message bus, lambdas, SQS, event bridges. This change on one hand will help surface Eligibility benefits in more performant way over the time and on other hand will unlock many other potential workflow where dependent workflows can subscribe to these events and take near real time decision making.
+
+Thank you team COLTEC for successful migration of Postgres RDS to Amazon native Aurora RDS. This will help in many aspects such as out-of-the-box failover in case of distaster recovery, lesser maintenance, overall slightly better performance and saving some expense.
+This is also a milestone in Disaster Recovery Initiative. Thank you all.
+
